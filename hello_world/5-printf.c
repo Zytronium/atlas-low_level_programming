@@ -2,7 +2,7 @@
 /*prints a string with printf and returns with int 0*/
 /**
  * main - prints a string with printf and returns with zero
- * Return - always returns 0
+ * Return: always returns zero
  */
 int main(void) /*prints a string with printf and returns with zero*/
 {
