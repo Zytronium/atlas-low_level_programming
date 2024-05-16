@@ -4,7 +4,7 @@
  *
  * Return: always 0
  */
-int main(void);
+int main(void)
 {
 	printf("Size of a char: ${sizeof(char)} byte(s)");
 	return (0);
