@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - prints whether a randomly generated number is positive, negative, or equal to zero. The number is different each time this is ran.
+ * main - prints whether a randomly generated number is 
+ * positive, negative, or equal to zero. The number is 
+ * different each time this is ran.
  *
  * Return: 0
  */
@@ -12,8 +14,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-        printf("%d %s\n", n, (n > 0) ? "is positive" : (n < 0) ? "is negative" : "is zero");
-        return (0);
+	printf("%d is %s\n", n, (n > 0) ? "positive" : (n < 0) ? "negative" : "zero");
+	return (0);
 }
-
 
