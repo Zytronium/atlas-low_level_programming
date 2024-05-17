@@ -19,7 +19,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	x = n%10;
-	printf("The last digit of %d is %d and is ", n, x);
+	printf("Last digit of %d is %d and is ", n, x);
 	if (x > 5)
 	{
 		printf("greater than 5\n");
