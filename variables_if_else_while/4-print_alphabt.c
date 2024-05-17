@@ -2,7 +2,8 @@
 /**
  * main - entry point
  *
- * Description: prints every letter in the alphabet excerpt e and q, and then prints a new line.
+ * Description: prints every letter in the alphabet
+ * except e and q, and then prints a new line.
  *
  * Return: 0
  */
