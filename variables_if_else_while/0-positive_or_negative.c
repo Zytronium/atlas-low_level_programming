@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - prints whether a randomly generated number is 
- * positive, negative, or equal to zero. The number is 
+ * main - prints whether a randomly generated number is
+ * positive, negative, or equal to zero. The number is
  * different each time this is ran.
  *
  * Return: 0
