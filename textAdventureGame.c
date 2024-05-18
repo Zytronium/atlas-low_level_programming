@@ -2,7 +2,10 @@
 #include <string.h>
 #include <stdlib.h>
 #include <time.h>
-
+/** This is an AI generated Text Adventure Game. All I did was debug the code.
+  * It's in this repo because I wanted to put it on github, and I was working
+  * in this repo when I generated this code. 
+  */
 #define MAX_ROOMS 5
 #define MAX_DESCRIPTION 100
 #define MAX_CHOICE 20
