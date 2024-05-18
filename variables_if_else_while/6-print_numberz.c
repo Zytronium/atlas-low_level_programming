@@ -1,1 +1,24 @@
 #include <stdio.h>
+/**
+ * main - entry point
+ *
+ * Description: prints every single-digit number
+ * of base 10 starting from 0, then a new line.
+ * LITERALLY identical to the last one, since my
+ * previous script already met all the requirements
+ * of this one. :/
+ *
+ * Return: 0
+ */
+int main(void)
+{
+	char i;
+
+	for (i = '0'; i <= '9'; i++)
+	{
+		putchar(i);
+	}
+	putchar('\n');
+
+	return (0);
+}
