@@ -2,7 +2,8 @@
 /**
  * main - entry point
  *
- * Description: prints every letter in the alphabet in reverse and then a new line.
+ * Description: prints every letter in the alphabet
+ * in reverse and then a new line.
  *
  * Return: 0
  */
