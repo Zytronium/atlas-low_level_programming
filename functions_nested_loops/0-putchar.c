@@ -10,6 +10,7 @@ int main(void)
 	int i;
 	char *string = "_putchar";
 
+	i = 0;
 	while (i<8)
 	{
 		_putchar(string[i]);
