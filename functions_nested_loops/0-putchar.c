@@ -10,11 +10,12 @@ int main(void)
 	int i;
 	char *string = "_putchar";
 
-	while (i=0;i<8;i++)
+	while (i<8)
 	{
 		_putchar(string[i]);
+		i++;
 	}
-       _putchar('\n')
+       _putchar('\n');
 
         return(0);
 } 
