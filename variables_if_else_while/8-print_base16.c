@@ -1,1 +1,21 @@
 #include <stdio.h>
+/**
+ * main - entry point
+ *
+ * Description: prints every letter in the alphabet and then a new line.
+ *
+ * Return: 0
+ */
+int main(void)
+{
+	char l;
+
+	for (l = '0'; l <= 'f'; l++)
+	{
+		if (l <= '9' || l >= 'a')
+			putchar(l);
+	}
+	putchar('\n');
+
+	return (0);
+}
