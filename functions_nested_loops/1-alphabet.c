@@ -2,11 +2,11 @@
 
 /**
  * main - entry point
- * Description:  ashdfashdf
+ * Description: prints the alphabet, in lowercase, followed by a new line.
  * Return: 0
  */
 
-void print_alphabet(void)
+print_alphabet =
 {
 	char c;
 
@@ -17,5 +17,5 @@ void print_alphabet(void)
 		_putchar(c);
 		c++;
 	}
-	return(0);
+	_putchar('\n');
 }
