@@ -40,10 +40,12 @@ void jack_bauer(void)
 		if (minute < 60)
 		{
 			minute++;
-			hour++;
 		}
 		else
+		{
 			minute = 0;
+			hour++;
+		}
 	}
 
 }
