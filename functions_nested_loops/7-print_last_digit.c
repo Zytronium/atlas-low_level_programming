@@ -8,7 +8,7 @@
  */
 int print_last_digit(int n)
 {
-	printf(INT_MIN);
+	printf("%d\n", INT_MIN);
 	int i;
 
 	i = n;
