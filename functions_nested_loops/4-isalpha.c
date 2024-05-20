@@ -1,21 +1,18 @@
 #include "main.h"
 
 /**
- * print_alphabet - entry point I think
- * Description: prints the alphabet, in lowercase, followed by a new line.
- * Return: 0
+ * c: character ASCII code
+ * _islower: entry point I think
+ * Description: checks for lowercase character
+ * Return: 1 or 0
  */
 
-void print_alphabet(void)
+int _islower(int c)
 {
-	char c;
-
-	c = 'a';
-
-	while (c <= 'z')
+	if (c >= 97 && c <= 122)
 	{
-		_putchar(c);
-		c++;
+		return (1);
 	}
-	_putchar('\n');
+	else
+		return (0);
 }
