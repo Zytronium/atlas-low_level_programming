@@ -37,7 +37,7 @@ void jack_bauer(void)
 		}
 		_putchar('\n');
 
-		if (minute < 60)
+		if (minute < 59)
 		{
 			minute++;
 		}
