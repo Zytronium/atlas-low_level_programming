@@ -8,11 +8,9 @@
 void jack_bauer(void)
 {
 	int hour;
-	int minute;
-
+	int minute
 	hour = 0;
 	minute = 0;
-
 	while (hour <= 23)
 	{
 		if (hour < 10)
@@ -21,10 +19,8 @@ void jack_bauer(void)
 			_putchar('1');
 		else
 			_putchar('2');
-
 		_putchar('0' + (hour % 10));
 		_putchar(':');
-
 		if (minute < 10)
 		{
 			_putchar('0');
@@ -36,11 +32,8 @@ void jack_bauer(void)
 			_putchar('0' + (minute % 10));
 		}
 		_putchar('\n');
-
 		if (minute < 59)
-		{
 			minute++;
-		}
 		else
 		{
 			minute = 0;
