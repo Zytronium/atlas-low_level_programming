@@ -2,7 +2,8 @@
 
 /**
  * print_alphabet_x10 - entry point I think
- * Description: prints the alphabet, in lowercase, followed by a new line, then repeats x10
+ * Description: prints the alphabet in lowercase followed by a new line, 10
+ * times
  * Return: 0
  */
 
