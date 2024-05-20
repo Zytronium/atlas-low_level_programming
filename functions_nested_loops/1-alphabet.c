@@ -6,7 +6,7 @@
  * Return: 0
  */
 
-print_alphabet =
+print_alphabet() =
 {
 	char c;
 
