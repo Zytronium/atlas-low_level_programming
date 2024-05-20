@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * print_last_digit - prints a number's last digit
- * @n: input number
- * Return: the last digit of n
+ * times_table - prints a times table from 0 to 9
+ * Return: what
  */
 void times_table(void)
 {
@@ -28,10 +27,8 @@ void times_table(void)
 				_putchar('0' + a);
 			}
 			if (x < 9)
-			{
-			_putchar(',');
+				_putchar(',');
 			_putchar(' ');
-			}
 			x++;
 		}
 		_putchar('\n');
