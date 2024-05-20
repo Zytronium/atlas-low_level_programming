@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <limits.h>
+#include <stdio.h>
 /**
  * print_last_digit - prints a number's last digit
  * @n: input number
@@ -7,6 +8,7 @@
  */
 int print_last_digit(int n)
 {
+	printf(INT_MIN);
 	int i;
 
 	i = n;
