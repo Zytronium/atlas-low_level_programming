@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_alphabet - entry point I think
- * Description: prints the alphabet, in lowercase, followed by a new line.
+ * print_alphabet_x10 - entry point I think
+ * Description: prints the alphabet, in lowercase, followed by a new line, then repeats x10
  * Return: 0
  */
 
