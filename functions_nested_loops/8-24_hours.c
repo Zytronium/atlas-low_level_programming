@@ -9,6 +9,7 @@ void jack_bauer(void)
 {
 	int hour;
 	int minute;
+
 	hour = 0;
 	minute = 0;
 	while (hour <= 23)
