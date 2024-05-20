@@ -13,22 +13,35 @@ void jack_bauer(void)
 	hour = 0;
 	minute = 0;
 
-	while (hour <= 12)
+	while (hour <= 23)
 	{
 		if (hour < 10)
 			_putchar('0');
-		_putchar('0' + hour);
+		else if (hour < 20)
+			_putchar('1');
+		else
+			_putchar('2');
+
+		_putchar('0' + (hour % 10));
 		_putchar(':');
 		hour++;
-		while (minute < 60)
+
+		if (minute < 10)
 		{
-			if (minute < 10)
-				_putchar('0');
+			_putchar('0');
 			_putchar('0' + minute);
-			_putchar('\n');
-			minute++;
 		}
-		minute = 0;
+		else
+		{
+			_putchar('0' + ((minute - (minute % 10)) / 10));
+			_putchar('0' + (minute % 10));
+		}
+		_putchar('\n');
+
+		if (minute < 60)
+			minute++;
+		else
+			minute = 0;
 	}
 
 }
