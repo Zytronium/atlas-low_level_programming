@@ -1,0 +1,29 @@
+#include "main.h"
+
+/**
+ * print_last_digit - prints a number's last digit
+ * @n: input number
+ * Return: the last digit of n
+ */
+void times_table(void)
+{
+	int x;
+	int y;
+
+	x = 0;
+	y = 0;
+	while (y <= 9)
+	{
+		while (x <= 9)
+		{
+			int a = x * y;
+			_putchar('0' + a);
+			x++;
+		_putchar(',');
+		_putchar(' ');	
+		}
+		_putchar('\n');
+		x = 0;
+		y++;
+	}
+}
