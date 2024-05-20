@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * c: character ASCII code
- * _islower: entry point I think
- * Description: checks for lowercase character
+ * _islower - checks for lowercase character
+ * @c: ASCII code for provided character
+ *
  * Return: 1 or 0
  */
-
 int _islower(int c)
 {
 	if (c >= 97 && c <= 122)
