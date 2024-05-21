@@ -18,7 +18,7 @@ void times_table(void)
 			product = x * y;
 			if (product >= 10)
 			{
-				_putchar('0' + (product / 10));
+				_putchar('0' + (product / 10) % 10);
 				_putchar('0' + (product % 10));
 			}
 			else

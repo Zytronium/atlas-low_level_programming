@@ -44,14 +44,14 @@ void printInt(int n)
 		_putchar('0' + n);
 	else if (countDigits(n) == 2)
 	{
-		_putchar('0' + n / 10;
+		_putchar('0' + n / 10);
 		_putchar('0' + (n % 10));
 	}
 	else if (countDigits(n) == 3)
 	{
 		int ones = n % 10;
-		int tens = n / 10;
-		int hundreds = n / 100;
+		int tens = (n / 10) % 10;
+		int hundreds = (n / 100) % 100;
 
 		_putchar('0' + hundreds);
 		_putchar('0' + tens);
