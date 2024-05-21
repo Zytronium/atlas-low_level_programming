@@ -44,14 +44,14 @@ void printInt(int n)
 		_putchar('0' + n);
 	else if (countDigits(n) == 2)
 	{
-		_putchar('0' + ((n - (n % 10)) / 10) % 10);
+		_putchar('0' + n / 10;
 		_putchar('0' + (n % 10));
 	}
 	else if (countDigits(n) == 3)
 	{
 		int ones = n % 10;
-		int tens = ((n - ones) / 10) % 10;
-		int hundreds = (n - (n % 100)) / 100;
+		int tens = n / 10;
+		int hundreds = n / 100;
 
 		_putchar('0' + hundreds);
 		_putchar('0' + tens);
@@ -63,21 +63,15 @@ void printInt(int n)
 /**
  * countDigits - returns a number's number of digits
  * @x: the number to count the digits of
- * Return: mumber of digits in x
+ * Return: number of digits in x
  */
 int countDigits(int x)
 {
-	int y = x;
-	int count = 0;
-
-	if (y == 0)
-		return (1);
-	if (y < 0)
-		y = -y;
-	while (y != 0)
+	if (x < 0)
 	{
-		y /= 10;
-		count++;
+		if(x > -10) return (1);
 	}
-	return (count);
+	else if (x < 10) return (1);
+
+	return (1 + countDigits(x /10));
 }
