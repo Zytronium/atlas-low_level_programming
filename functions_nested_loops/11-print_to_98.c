@@ -68,7 +68,7 @@ int countDigits(int x)
 	int count = 0;
 
 	if (y == 0)
-		return 1;
+		return (1);
 	if (y < 0)
 		y = -y;
 	while (y != 0)
@@ -76,5 +76,5 @@ int countDigits(int x)
 		y /= 10;
 		count++;
 	}
-	return count;
+	return (count);
 }
