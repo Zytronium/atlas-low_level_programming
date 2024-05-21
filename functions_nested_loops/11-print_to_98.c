@@ -62,7 +62,8 @@ void printInt(int n)
 		n *= -1;
 }
 
-int countDigits(int x) {
+int countDigits(int x)
+{
 	int y = x;
 	int count = 0;
 
