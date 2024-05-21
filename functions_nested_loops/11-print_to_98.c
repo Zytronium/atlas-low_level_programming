@@ -22,27 +22,27 @@ void print_to_98(int n)
 	}
 	if (n == 98)
 	{
-		printInt(98)
+		printInt(98);
 		_putchar('\n');
 	}
 }
 
 void printInt(int n)
 {
-	bool isNegative;
+	int isNegative;
 
 	if (n < 0)
 	{
-		isNegative = true;
+		isNegative = 1;
 		_putchar('-');
 	}
 	else
-		isNegative = false;
+		isNegative = 0;
 
-	if (isNegative)
+	if (isNegative == 1)
 		n *= -1;
 	if (countDigits(n) == 1)
-		_putchar('0' + n)
+		_putchar('0' + n);
 	else if (countDigits(n) == 2)
 	{
 		_putchar('0' + ((n - (n % 10)) / 10));
@@ -58,7 +58,7 @@ void printInt(int n)
 		_putchar('0' + tens);
 		_putchar('0' + ones);
 	}
-	if (isNegative)
+	if (isNegative == 1)
 		n *= -1;
 }
 
