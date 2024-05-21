@@ -2,10 +2,6 @@
 /**
  * print_to_98 - counts up or down starting from n until 98
  * @n: starting number
- * printInt - prints an integer up to 3 digits
- * @n: number to print
- * countDigits - returns a number's number of digits
- * @x: the number to count the digits of
  * Return: doesn't return
  */
 void print_to_98(int n)
@@ -26,7 +22,10 @@ void print_to_98(int n)
 		_putchar('\n');
 	}
 }
-
+/**
+ * printInt - prints an integer up to 3 digits
+ * @n: number to print
+ */
 void printInt(int n)
 {
 	int isNegative;
@@ -61,7 +60,10 @@ void printInt(int n)
 	if (isNegative == 1)
 		n *= -1;
 }
-
+/**
+ * countDigits - returns a number's number of digits
+ * @x: the number to count the digits of
+ */
 int countDigits(int x)
 {
 	int y = x;
