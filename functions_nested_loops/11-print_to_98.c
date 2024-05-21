@@ -63,6 +63,7 @@ void printInt(int n)
 /**
  * countDigits - returns a number's number of digits
  * @x: the number to count the digits of
+ * Return: mumber of digits in x
  */
 int countDigits(int x)
 {
