@@ -52,7 +52,7 @@ void printInt(int n)
 	{
 		int ones = n % 10;
 		int tens = (n - ones) / 10;
-		int hundreds = (n - tens) / 100;
+		int hundreds = (n - tens - ones) / 100;
 
 		_putchar('0' + hundreds);
 		_putchar('0' + tens);
