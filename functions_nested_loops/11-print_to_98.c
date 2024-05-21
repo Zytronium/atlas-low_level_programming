@@ -45,14 +45,14 @@ void printInt(int n)
 		_putchar('0' + n);
 	else if (countDigits(n) == 2)
 	{
-		_putchar('0' + ((n - (n % 10)) / 10));
+		_putchar('0' + ((n - (n % 10)) / 10) % 10);
 		_putchar('0' + (n % 10));
 	}
 	else if (countDigits(n) == 3)
 	{
 		int ones = n % 10;
-		int tens = (n - ones) / 10;
-		int hundreds = (n - tens - ones) / 100;
+		int tens = ((n - ones) / 10) % 10;
+		int hundreds = (n - (n % 100)) / 100;
 
 		_putchar('0' + hundreds);
 		_putchar('0' + tens);
@@ -70,7 +70,7 @@ int countDigits(int x) {
 		return 1;
 	if (y < 0)
 		y = -y;
-	while (y!= 0)
+	while (y != 0)
 	{
 		y /= 10;
 		count++;
