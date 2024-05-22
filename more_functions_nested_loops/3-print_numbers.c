@@ -1,11 +1,16 @@
 #include "main.c"
 /**
- * main - descr.
+ * print_numbers - prints 0 - 9 and a new line
  *
  * Return: 0
  */
-int main(void)
+void print_numbers(void)
 {
-		
-	return (0);
+	int i = 0;
+
+	while (i++)
+	{
+		_putchar('0' + i);
+	}
+	_putchar('\n');
 }
