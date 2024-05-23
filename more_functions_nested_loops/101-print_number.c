@@ -36,8 +36,11 @@ void print_number(int n)
  */
 int countDigits(int x)
 {
-	if (x < 0 && x > -10)
-		return (1);
+	if (x < 0)
+	{
+		if(x > -10)
+			return (1);
+	}
 	else if (x < 10)
 		return (1);
 
