@@ -7,11 +7,13 @@
  */
 void print_number(int n)
 {
+	int isPos;
 	int digit;
 	int i;
 
 	if (n < 0)
 	{
+		isPos = 1
 		_putchar('-');
 		n *= -1;
 	}
