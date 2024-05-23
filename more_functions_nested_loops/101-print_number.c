@@ -9,7 +9,7 @@ void print_number(int n)
 {
 	int isPos = 2;
 	int digit;
-	int i;;
+	int i;
 
 	if (n < 0)
 	{
