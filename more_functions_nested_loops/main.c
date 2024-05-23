@@ -7,6 +7,10 @@
  */
 int main(void)
 {
-	more_numbers();
+	print_diagonal(5);
+	_putchar('\n');
+	print_diagonal(10);
+	_putchar('\n');
+	print_diagonal(0);
 	return (0);
 }
