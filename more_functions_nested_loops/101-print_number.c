@@ -22,7 +22,6 @@ void print_number(int n)
 		digit = (n / d) % 10;
 		_putchar('0' + digit);
 	}
-	_putchar('\n');
 }
 /**
  * countDigits - returns a number's number of digits
