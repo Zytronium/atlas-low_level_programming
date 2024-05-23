@@ -10,6 +10,7 @@ void print_number(int n)
 	int isPos = 2;
 	int digit;
 	int i;
+	int d;
 
 	if (n < 0)
 	{
@@ -19,7 +20,7 @@ void print_number(int n)
 
 	for (i = countDigits(n) - 1; i >= 0; i--)
 	{
-		int d = xPowY(10, i);
+		d = xPowY(10, i);
 		digit = (n / d) % 10;
 		if (!isPos)
 			digit *= -1;
@@ -33,13 +34,12 @@ void print_number(int n)
  */
 int countDigits(int x)
 {
-	if (x < 0)
-	{
-		if(x > -10) return (1);
-	}
-	else if (x < 10) return (1);
+	if (x < 0 && x > -10)
+		return (1);
+	else if (x < 10)
+		return (1);
 
-	return (1 + countDigits(x /10));
+	return (1 + countDigits(x / 10));
 }
 /**
  * xPowY - exponent
@@ -55,5 +55,5 @@ int xPowY(int x, int y)
 	for (i = 0; i < y; ++i)
 		output *= x;
 
-	return(output);
+	return (output);
 }
