@@ -25,6 +25,8 @@ void print_number(int n)
 		if (!isPos)
 			digit *= -1;
 		_putchar('0' + digit);
+		if (!isPos)
+			digit *= -1;
 	}
 }
 /**
