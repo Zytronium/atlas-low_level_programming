@@ -13,9 +13,9 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		isPos = 1
+		isPos = 2;
 		_putchar('-');
-		n *= -1;
+	//	n *= -1;
 	}
 
 	for (i = countDigits(n) - 1; i >= 0; i--)
