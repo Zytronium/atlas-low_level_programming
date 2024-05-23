@@ -7,15 +7,13 @@
  */
 void print_number(int n)
 {
-	int isPos;
 	int digit;
 	int i;
 
 	if (n < 0)
-	{
-		isPos = 2;
+	{;
 		_putchar('-');
-	//	n *= -1;
+		/*n *= -1;*/
 	}
 
 	for (i = countDigits(n) - 1; i >= 0; i--)
