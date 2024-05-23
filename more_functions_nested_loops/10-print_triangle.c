@@ -9,7 +9,6 @@ void print_triangle(int size)
 	int row = 1;
 	int col = 1;
 	int spaces = size;
-	int sr = 1;
 
 	while (row <= size)
 	{
