@@ -8,7 +8,7 @@ void rev_string(char *s)
 {
 	int i = 0;
 	int n = 0;
-	char reversed = s;
+	char reversed = *s;
 
 	while (s[i] != '\0')
 	{
@@ -17,7 +17,8 @@ void rev_string(char *s)
 	while (i > 0)
 	{
 		i--;
-		*s[i] = reversed[n];
+		reversed[i] = s[n];
 		n++;
 	}
+	*s = reversed;
 }
