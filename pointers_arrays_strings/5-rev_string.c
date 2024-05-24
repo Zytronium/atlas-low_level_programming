@@ -19,15 +19,15 @@ void rev_string(char *s)
 		i--;
 		reversed[i] = s[n];
 		n++;
-		_puts(reversed, s);
+		_putst(reversed, s);
 	}
 	while (n > 0)
 	{
 		n--;
 		s[n] = reversed[n];
-		_puts(reversed, s);
+		_putst(reversed, s);
 	}
-	_puts(reversed, s);
+	_putst(reversed, s);
 }
 /**
  * _puts - prints a string, followed by a new line, to stdout.
@@ -35,7 +35,7 @@ void rev_string(char *s)
  * @st: debug thing 2
  * Return: 0
  */
-void _puts(char *rev, char *st)
+void _putst(char *rev, char *st)
 {
 	int i = 0;
 	char string[] = "reversed: ";
