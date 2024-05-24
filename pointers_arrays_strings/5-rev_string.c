@@ -47,7 +47,7 @@ void _putst(char *rev, char *st)
 		i++;
 	}
 	i = 0;
-	while (*rev[i] != '\0')
+	while (rev[i] != '\0')
 	{
 		_putchar(rev[i]);
 		i++;
@@ -59,7 +59,7 @@ void _putst(char *rev, char *st)
 		i++;
 	}
 	i = 0;
-	while (*st[i] != '\0')
+	while (st[i] != '\0')
 	{
 		_putchar(st[i]);
 		i++;
