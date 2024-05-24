@@ -19,10 +19,13 @@ void rev_string(char *s)
 		i--;
 		reversed[i] = s[n];
 		n++;
+		_puts("reversed: \"%s\"\ns: \"%s\"\n", reversed, s);
 	}
 	while (n > 0)
 	{
 		n--;
 		s[n] = reversed[n];
+		_puts("reversed: \"%s\"\ns: \"%s\"\n", reversed, s);
 	}
+	_puts("reversed: \"%s\"\ns: \"%s\"\n", reversed, s);
 }
