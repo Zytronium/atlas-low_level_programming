@@ -1,10 +1,16 @@
 #include "main.h"
 /**
- * main - descr.
- *
- * Return: 0
+ * _strlen - entry point; returns @s's length.
+ * @s: a string
+ * Return: the length of the string *s
  */
-int main(void)
+int _strlen(char *s)
 {
-	return (0);
+	int i = 0;
+
+	while (*s[i] ! '\0')
+	{
+		i++;
+	
+	return (i);}
 }
