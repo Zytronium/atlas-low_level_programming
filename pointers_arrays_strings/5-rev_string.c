@@ -43,7 +43,7 @@ void _putst(char *rev, char *st)
 
 	while (string[i] != '\0')
 	{
-		_putchar(str[i]);
+		_putchar(string[i]);
 		i++;
 	}
 	i = 0;
