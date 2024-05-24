@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_rev - dprints a string/text in reverse, followed by a new line, to stdout.
+ * print_rev - prints a string/text in reverse followed by a new line to stdout
  * @s: text to be printed in reverse
  * Return: 0
  */
