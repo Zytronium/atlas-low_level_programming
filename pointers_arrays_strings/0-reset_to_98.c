@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * main - descr.
- *
+ * reset_to_98 - changes the number given to 98 using a pointer.
+ * @*n int to be changed to 98
  * Return: 0
  */
-int main(void)
+void reset_to_98(int *n)
 {
-	return (0);
+	*n = 98;
 }
