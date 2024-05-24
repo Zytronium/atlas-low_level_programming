@@ -1,10 +1,23 @@
 #include "main.h"
 /**
- * main - descr.
- *
+ * rev_string - reverses a string's value ("hello world!" >> "!dlrow olleh")
+ * @s: string/text to be reversed
  * Return: 0
  */
-int main(void)
+void rev_string(char *s)
 {
-	return (0);
+	int i = 0;
+	int n = 0;
+	char reversed = s;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	while (i > 0)
+	{
+		i--;
+		*s[i] = reversed[n];
+		n++;
+	}
 }
