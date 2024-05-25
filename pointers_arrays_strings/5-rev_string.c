@@ -8,12 +8,14 @@ void rev_string(char *s)
 {
 	int i = 0;
 	int n = 0;
-	char *reversed[] = s;
 
 	while (s[i] != '\0')
 	{
 		i++;
 	}
+	char reversed[i] = s;
+	/*int size = i;*/
+
 	while (i > 0)
 	{
 		i--;
