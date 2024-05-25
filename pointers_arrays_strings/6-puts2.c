@@ -7,27 +7,17 @@
 void puts2(char *str)
 {
 	int i = 0;
+	int n = 0;
 
-	while (i < _strlen(str))
+	while (str[i] != '\0')
 	{
-		if (!(i % 2))
-			_putchar(str[i]);
 		i++;
+	}
+	while (n < i))
+	{
+		if (!(n % 2))
+			_putchar(str[n]);
+		n++;
 	}
 	return (0);
-}
-/** _strlen - gets size of string
- * @s: string
- * Return: string length
- */
-int _strlen(char *s)
-{
-	int i = 0;
-
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-
-	return (i);
 }
