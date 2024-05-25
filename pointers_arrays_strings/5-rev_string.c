@@ -16,15 +16,15 @@ void rev_string(char *s)
 
 	while (n <= size / 2)
 	{
-		char a = *s[n];
+		char a = s[n];
 
-		*s[size] = *s[n];
-		*s[n] = a;
+		s[size] = s[n];
+		s[n] = a;
 		n++;
 		size--;
 		_putst(reversed, s);
 	}
-}
+	}
 /**
  * _puts - prints a string, followed by a new line, to stdout.
  * @rev: debug thing
