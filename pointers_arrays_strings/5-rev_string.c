@@ -6,28 +6,24 @@
  */
 void rev_string(char *s)
 {
-	int i = 0;
+	int size = 0;
 	int n = 0;
-	char *reversed = s;
-	while (s[i] != '\0')
+
+	while (s[size] != '\0')
 	{
-		i++;
+		size++;
 	}
 
-	while (i > 0)
+	while (n <= size / 2)
 	{
-		i--;
-		reversed[i] = s[n];
+		char a = *s[n];
+
+		*s[size] = *s[n];
+		*s[n] = a;
 		n++;
+		size--;
 		_putst(reversed, s);
 	}
-	while (n > 0)
-	{
-		n--;
-		s[n] = reversed[n];
-		_putst(reversed, s);
-	}
-	_putst(reversed, s);
 }
 /**
  * _puts - prints a string, followed by a new line, to stdout.
