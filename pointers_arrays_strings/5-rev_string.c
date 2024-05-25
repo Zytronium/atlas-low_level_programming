@@ -14,6 +14,7 @@ void rev_string(char *s)
 	{
 		i++;
 	}
+	i--;
 	size = i;
 	while (n <= size / 2)
 	{
