@@ -2,7 +2,7 @@
 /**
  * rev_string - reverses a string's value ("hello world!" >> "!dlrow olleh")
  * @s: string/text to be reversed
- * Return: 0
+ * Return: nothing
  */
 void rev_string(char *s)
 {
@@ -23,6 +23,5 @@ void rev_string(char *s)
 		s[n] = a;
 		n++;
 		i--;
-		}
 	}
 }
