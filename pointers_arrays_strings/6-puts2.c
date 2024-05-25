@@ -8,10 +8,10 @@ void puts2(char *str)
 {
 	int i = 0;
 
-	while (i < sizeOf(str))
+	while (i < _strlen(str))
 	{
 		if (!(i % 2))
-		_putchar(str[i]);
+			_putchar(str[i]);
 		i++;
 	}
 	return (0);
