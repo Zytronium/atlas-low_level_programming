@@ -38,9 +38,6 @@ int _atoi(char *s)
 				numberEnded = 1;
 		}
 	}
-	if (!neg)
-		neg = 1;
-	i *= neg;
 
 	return (i);
 }
