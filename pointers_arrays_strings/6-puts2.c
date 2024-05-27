@@ -13,7 +13,7 @@ void puts2(char *str)
 	{
 		i++;
 	}
-	while (n < i))
+	while (n < i)
 	{
 		if (!(n % 2))
 			_putchar(str[n]);
