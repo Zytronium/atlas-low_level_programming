@@ -23,7 +23,14 @@ int _atoi(char *s)
 				if (!numberStarted)
 					numberStarted = 1;
 				i *= 10;
-				i += s[size] - 48;
+				if (neg == -1)
+				{
+					i *= -1;
+					i -= s[size] - 48;
+					i *= -1;
+				}
+				else
+					i += s[size] - 48;
 			}
 			if (numberStarted && !numberEnded && (s[size] < 48 || s[size] > 57))
 					numberEnded = 1;
