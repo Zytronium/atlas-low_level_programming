@@ -25,10 +25,9 @@ int _atoi(char *s)
 				i *= 10;
 				i += s[size] - 48;
 			}
-			if (numberStarted && !numberEnded && (s[size] < 48 || s[size] > 57)
+			if (numberStarted && !numberEnded && (s[size] < 48 || s[size] > 57))
 					numberEnded = 1;
 		}
-
 	}
 	i *= neg;
 
