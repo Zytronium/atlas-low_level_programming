@@ -27,8 +27,10 @@ int _atoi(char *s)
 				{
 					i *= -1;
 					i -= s[size] - 48;
-					neg = 1;
+					neg = 0;
 				}
+				else if (!neg)
+					i -= s[size] - 48;
 				else
 					i += s[size] - 48;
 			}
@@ -36,6 +38,8 @@ int _atoi(char *s)
 					numberEnded = 1;
 		}
 	}
+	if (!neg)
+		neg = 1;
 	i *= neg;
 
 	return (i);
