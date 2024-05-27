@@ -27,7 +27,7 @@ int _atoi(char *s)
 				{
 					i *= -1;
 					i -= s[size] - 48;
-					i *= -1;
+					neg = 1;
 				}
 				else
 					i += s[size] - 48;
