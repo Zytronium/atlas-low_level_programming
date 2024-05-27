@@ -35,7 +35,7 @@ int _atoi(char *s)
 					i += s[size] - 48;
 			}
 			if (numberStarted && !numberEnded && (s[size] < 48 || s[size] > 57))
-					numberEnded = 1;
+				numberEnded = 1;
 		}
 	}
 	if (!neg)
