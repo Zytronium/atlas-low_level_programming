@@ -1,8 +1,8 @@
-include "main.h"
+#include "main.h"
 /**
  * _atoi - descr.
  * @s:
- * Return: 0
+ * Return: i
  */
 int _atoi(char *s)
 {
