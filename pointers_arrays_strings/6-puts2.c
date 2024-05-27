@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts2 - prints every other character of a string
+ * puts2 - prints every other character of a string and then a new line
  * @str: string to be used
  * Return: 0
  */
@@ -19,4 +19,5 @@ void puts2(char *str)
 			_putchar(str[n]);
 		n++;
 	}
+	_putchar('\n');
 }
