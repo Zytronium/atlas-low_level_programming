@@ -17,7 +17,6 @@ void print_array(int *a, int n)
 		i++;
 		if (i < n)
 			printf(", ");
-		else
-			_putchar('\n');
 	}
+	_putchar('\n');
 }
