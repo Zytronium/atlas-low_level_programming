@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * main - descr.
+ * m_strcat - adds src to dest
  *
- * Return: 0
+ * Return: dest
  */
 char *_strcat(char *dest, char *src)
 {
@@ -19,6 +19,6 @@ char *_strcat(char *dest, char *src)
 			dest[i + n] = src[n]
 			n++;
 		}
-		
-	return (0);
+
+	return (dest);
 }
