@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * m_strcat - adds src to dest
- *
+ * @dest: string that is getting @src added to it
+ * @src: string that is added to @dest
  * Return: dest
  */
 char *_strcat(char *dest, char *src)
