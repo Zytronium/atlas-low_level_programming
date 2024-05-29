@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strnncat - adds src to dest
+ * _strncat - adds src to dest
  * @dest: string that is getting @src added to it
  * @src: string that is added to @dest
  * @n: max bytes of src that will be added to dest
