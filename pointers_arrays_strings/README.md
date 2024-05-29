@@ -1,1 +1,1 @@
-# readme C stuff
+# readme More C Pointers, Arrays, and Strings. 
