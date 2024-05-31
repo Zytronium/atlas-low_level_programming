@@ -12,7 +12,7 @@
 
 	while (dest[i] != '\0' && i <= n)
 	{
-        dest[i] = src[i]
+        dest[i] = src[i];
 		i++;
 	}
 
