@@ -35,6 +35,7 @@ char *leet(char *str)
 			aeotl = 0;
 			str[i] = c;
 		}
+		i++;
 	}
 	return (str);
 }
