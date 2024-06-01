@@ -2,7 +2,7 @@
 /**
  * leet - turns the letrs a e o t and l into 4 3 0 7 and 1, respectively.
  * Not case sensitive.
- * I'm really proud of this script
+ * I'm really proud of this script.
  * @s: string to be modified to leet format
  * Return: s converted to leet
  */

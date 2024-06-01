@@ -3,7 +3,6 @@
  * reverse_array - reverses an integer array.
  * @a: int array to be reversed
  * @n: size of int array
- *
  * Return: always 0
  */
 void reverse_array(int *a, int n)
