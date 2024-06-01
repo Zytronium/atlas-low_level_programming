@@ -1,11 +1,20 @@
 #include "main.h"
 /**
- * string_toupper - descr.
- * @c: string I guess. It actually didn't give a name to use for this...
+ * string_toupper - makes the string UPPERCASE.
+ * @s: string I guess. It actually didn't give a name to use for this...
  * Return: 0
  */
-char *string_toupper(char *c)
+char *string_toupper(char *srn)
 {
+	int i;
 
-	return (0);
+	for (i = 0; srn[i]; i++)
+	{
+		if (srn[i] >= 'a' && srn[i] <= 'z')
+		{
+			srn[i] -= 32
+		}
+	}
+
+	return (*srn);
 }
