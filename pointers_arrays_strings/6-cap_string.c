@@ -13,7 +13,7 @@ char *cap_string(char *s)
 
 	for (i = 0; s[i]; i++)
 	{
-		if (cap && s[i] >= 'a' && s[i] < 'z')
+		if (cap && s[i] >= 'a' && s[i] <= 'z')
 			s[i] -= 32;
 		cap = 0;
 		for (j = 0; separators[j]; j++)
