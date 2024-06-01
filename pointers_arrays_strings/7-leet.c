@@ -12,10 +12,11 @@ char *leet(char *s)
 	char letrs[10] = "aeotl";
 	char numbs[10] = "43071";
 
-	for (i = 0; s[i]; i++) {
-			for (j = 0; letrs[j]; j++)
-				if (s[i] == letrs[j] || s[i] == letrs[j] - 32)
-					s[i] = numbs[j];
+	for (i = 0; s[i]; i++)
+	{
+		for (j = 0; letrs[j]; j++)
+			if (s[i] == letrs[j] || s[i] == letrs[j] - 32)
+				s[i] = numbs[j];
 	}
 	return (s);
 }
