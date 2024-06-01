@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * string_toupper - makes the string UPPERCASE.
- * @s: string I guess. It actually didn't give a name to use for this...
+ * @srn: string I guess. It actually didn't give a name to use for this...
  * Return: the string but all-caps
  */
 char *string_toupper(char *srn)
