@@ -34,7 +34,7 @@ char *_strstr(char *haystack, char *needle)
 				matchingStreak = 0;
 			}
 			if (matchingStreak == i)
-				return (haystack - i);
+				return (h - i);
 			h++;
 		}
 		haystack++;
