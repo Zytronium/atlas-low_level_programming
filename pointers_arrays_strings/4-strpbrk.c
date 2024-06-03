@@ -8,9 +8,9 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	while (s)
+	while (*s)
 	{
-		while (accept)
+		while (*accept)
 		{
 			if (accept == s)
 				return (s);
