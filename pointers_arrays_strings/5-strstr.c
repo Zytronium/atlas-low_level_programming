@@ -11,7 +11,7 @@ char *_strstr(char *haystack, char *needle)
 	int matchingStreak = 0;
 	int i = 0;
 
-	while (*needle[i])
+	while (needle[i])
 	{
 		i++;
 	}
