@@ -8,7 +8,6 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int matchingStreak = 0;
 	int i = 0;
 
 	while (needle[i])
@@ -21,21 +20,12 @@ char *_strstr(char *haystack, char *needle)
 		char *h = haystack;
 		char *n = needle;
 
-		while (*n)
+		while (*n == *h)
 		{
-			if (*n == *h)
-			{
-				n++;
-				matchingStreak++;
-			}
-			else
-			{
-				n = needle;
-				matchingStreak = 0;
-			}
+			n++;
 			h++;
-			if (matchingStreak == i)
-				return (h - matchingStreak);
+			if (!*n)
+				return (haystack);
 		}
 		haystack++;
 	}
