@@ -22,7 +22,7 @@ int main(void)
 	ptr2 = num;
 	*ptr1 = 17;
 
-	printf("ptr2 = num;\nptr1 = &ptr2;\n\n");
+	printf("ptr2 = num;\n*ptr1 = 17;\n\n");
 
 	printf("value of var: %d\t\t\t\tvalue of num: %d\n", var, num);
 	printf("ptr1 points to: %p\t\t\t\tptr2 points to: %p\n", ptr1, ptr2);
