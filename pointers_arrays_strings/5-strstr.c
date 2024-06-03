@@ -43,7 +43,7 @@ char *_strstr(char *haystack, char *needle)
 				return (h - i);
 			}
 			else
-				_putchar((h - haystack) + '0');
+				_putchar((matchingStreak) + '0');
 		}
 		haystack++;
 	}
