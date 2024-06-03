@@ -36,11 +36,14 @@ char *_strstr(char *haystack, char *needle)
 			h++;
 			if (matchingStreak == i)
 			{
-				_putchar('t');
-				_putchar('e');
-				_putchar('s');
-				_putchar('t');
-				return (h - i);
+				if (needle == "Holberton")
+				{
+					_putchar('t');
+					_putchar('e');
+					_putchar('s');
+					_putchar('t');
+					return (h - i);
+				}
 			}
 			else
 				_putchar((matchingStreak) + '0');
