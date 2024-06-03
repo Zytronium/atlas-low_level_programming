@@ -18,22 +18,25 @@ char *_strstr(char *haystack, char *needle)
 
 	while (*haystack)
 	{
+		char *h = haystack;
 		char *n = needle;
 
 		while (*n)
 		{
-			if (*n == *haystack)
+			if (*n == *h)
 			{
 				n++;
+				h++;
 				matchingStreak++;
 			}
 			else
 			{
 				n = needle;
+				h = haystack;
 				matchingStreak = 0;
 			}
 			if (matchingStreak == i)
-				return (haystack - i);
+				return (haystack);
 		}
 		haystack++;
 	}
