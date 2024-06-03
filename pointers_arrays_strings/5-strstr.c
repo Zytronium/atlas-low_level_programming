@@ -39,5 +39,9 @@ char *_strstr(char *haystack, char *needle)
 		}
 		haystack++;
 	}
+	_putchar('t');
+	_putchar('e');
+	_putchar('s');
+	_putchar('t');
 	return (0);
 }
