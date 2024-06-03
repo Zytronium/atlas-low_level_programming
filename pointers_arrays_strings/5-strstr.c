@@ -26,17 +26,16 @@ char *_strstr(char *haystack, char *needle)
 			if (*n == *h)
 			{
 				n++;
-				h++;
 				matchingStreak++;
 			}
 			else
 			{
 				n = needle;
-				h = haystack;
 				matchingStreak = 0;
 			}
 			if (matchingStreak == i)
 				return (haystack);
+			h++;
 		}
 		haystack++;
 	}
