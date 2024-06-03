@@ -35,13 +35,17 @@ char *_strstr(char *haystack, char *needle)
 			}
 			h++;
 			if (matchingStreak == i)
+			{
+				_putchar('t');
+				_putchar('e');
+				_putchar('s');
+				_putchar('t');
 				return (h - i);
+			}
+			else
+				_putchar(i + '0');
 		}
 		haystack++;
 	}
-	_putchar('t');
-	_putchar('e');
-	_putchar('s');
-	_putchar('t');
 	return (0);
 }
