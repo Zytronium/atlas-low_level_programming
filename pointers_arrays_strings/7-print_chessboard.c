@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_chesseboard - prints a chessboard.
+ * print_chessboard - prints a chessboard.
  * @a: matrix / 2D array of chess board in characters
  * Return: 0
  */
