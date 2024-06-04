@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_diagsums - descr.
  * @a:
@@ -7,5 +8,4 @@
  */
 void print_diagsums(int *a, int size)
 {
-	return (0);
 }
