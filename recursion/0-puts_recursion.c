@@ -18,7 +18,7 @@ void _puts_recursion(char *s)
 	if (!*s)
 		return;
 	char *ptr = s;
-	int i = ptr++;
+	ptr++;
 
 	_putchar(*s);
 	_puts_recursion(ptr);
