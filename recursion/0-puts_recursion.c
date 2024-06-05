@@ -15,11 +15,12 @@
  */
 void _puts_recursion(char *s)
 {
-	if (!*s)
-		return;
-	char *ptr = s;
+	if (*s)
+	{
+		char *ptr = s;
 
-	ptr++;
-	_putchar(*s);
-	_puts_recursion(ptr);
+		ptr++;
+		_putchar(*s);
+		_puts_recursion(ptr);
+	}
 }
