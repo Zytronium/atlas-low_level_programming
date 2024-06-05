@@ -6,7 +6,9 @@
  * give a log of some small additions I made so\n
  * you can can see my thought process and stuff\n
  * up on GitHub. Now, read the 1st word of every line.\n
- * Update: I read what to do and it's just printing a string using recursion.\n
+ * Update: I read what to do and it's just printing a string, followed by
+ * a new line, using recursion.\n
+ * \n
  * I just couldn't delete my masterpiece above.
  *
  * @s: string to print.\n
@@ -23,4 +25,6 @@ void _puts_recursion(char *s)
 		_putchar(*s);
 		_puts_recursion(ptr);
 	}
+	else
+		_putchar('\n');
 }

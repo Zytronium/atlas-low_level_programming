@@ -16,7 +16,7 @@ void finalCountdown(int num) {
 
 int main(void)
 {
-	_puts_recursion("Puts with recursion\n\n");
+	_puts_recursion("Puts with recursion");
 	finalCountdown(15);
 	return (0);
 }
