@@ -1,23 +1,23 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  * print_diagsums - descr.
  * @a: matrix/array provided
  * @size: size of the array @a
  * Return: 0
  */
+
 void print_diagsums(int *a, int size)
 {
-	int m;
-	int n;
-	int i = 0;
+	int sumN = 0;
+	int sumM = 0;
 
-	while (i < size)
+	for (int i = 0; i < size; i++)
 	{
-		m += a[i * size + i];
-		n += a[i * size + (size - (i + 1))];
-		i++;
+		sumN += a[i * size + i];
+		sumM += a[i * size + (size - 1 - i)];
 	}
 
-	printf("%d, %d\n", m, n);
+	printf("%d, %d\n", sumN, sumM);
 }
