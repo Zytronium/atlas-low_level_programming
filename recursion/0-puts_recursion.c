@@ -1,15 +1,15 @@
 #include "main.h"
 /**
- * _puts_recursion - uhh, I admit that I
- * never read what to do... yet. I am just
- * gonna go ahead and push this though, so I can
- * give a log of some small additions I made so
- * you can can see my thought process and stuff
- * up on GitHub. Now, read the 1st word of every line.
- * Update: I read what to do and it's just printing a string using recursion.
+ * _puts_recursion - uhh, I admit that I\n
+ * never read what to do... yet. I am just\n
+ * gonna go ahead and push this though, so I can\n
+ * give a log of some small additions I made so\n
+ * you can can see my thought process and stuff\n
+ * up on GitHub. Now, read the 1st word of every line.\n
+ * Update: I read what to do and it's just printing a string using recursion.\n
  * I just couldn't delete my masterpiece above.
  *
- * @s: string to print.
+ * @s: string to print.\n
  *
  * Return: nothing.
  */
