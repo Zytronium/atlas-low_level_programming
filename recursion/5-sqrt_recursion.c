@@ -21,17 +21,11 @@ int _sqrt_recursion(int n)
  */
 int _sqrt_part_two(int n, int m)
 {
-	switch (m * m)
-	{
-	case (n):
+	if (m * m == n)
 		return (m);
-		break;
 
-	case (< n):
+	if (m * m < n)
 		return _sqrt_part_two(n, m - 1);
-		break;
 
-	case (> n):
-		return (-1);
-	}
+	return (-1);
 }
