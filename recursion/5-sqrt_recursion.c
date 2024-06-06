@@ -8,10 +8,10 @@
  */
 int _sqrt_recursion(long int n)
 {
-	if (n == 1)
-		return (1);
 	if (n < 0)
 		return (-1);
+	if (n == 1)
+		return (1);
 	return ((int) (_sqrt_part_two((long int) n, (long int) n / 2)));
 }
 
