@@ -1,4 +1,4 @@
-#include "main.h"
+#include "../recursion/main.h"
 /**
  * _strchr - searches a string @s to locate a character @c.
  * @s: string to search for @c in

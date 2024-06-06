@@ -1,4 +1,4 @@
-#include "main.h"
+#include "../pointers_arrays_strings/main.h"
 /**
  * _puts_recursion - uhh, I admit that I\n
  * never read what to do... yet. I am just\n

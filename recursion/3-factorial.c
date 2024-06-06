@@ -1,4 +1,4 @@
-#include "main.h"
+#include "../pointers_arrays_strings/main.h"
 /**
  * factorial - calculates the factorial of @n using only recursion.
  * @n: number to calculate factorial of

@@ -1,4 +1,4 @@
-#include "main.h"
+#include "../recursion/main.h"
 #include <stdio.h>
 
 /**

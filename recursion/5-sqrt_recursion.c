@@ -1,4 +1,4 @@
-#include "main.h"
+#include "../pointers_arrays_strings/main.h"
 /**
  * _sqrt_recursion - gets the natural square root of a number @n.
  *
