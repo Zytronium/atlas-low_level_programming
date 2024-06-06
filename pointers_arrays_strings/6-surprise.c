@@ -1,4 +1,4 @@
-#include "../recursion/main.h"
+#include "main.h"
 /**
  * repeat_print_surprise - prints a surprise a certain number of times.
  * file 6 was skipped, so I made this joke to fill in

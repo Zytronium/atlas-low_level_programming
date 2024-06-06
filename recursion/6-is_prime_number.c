@@ -1,4 +1,4 @@
-#include "../pointers_arrays_strings/main.h"
+#include "main.h"
 /**
  * is_prime_number - determines if a given number is a prime number or not
  *

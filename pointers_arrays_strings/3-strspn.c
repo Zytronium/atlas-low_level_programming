@@ -1,4 +1,4 @@
-#include "../recursion/main.h"
+#include "main.h"
 /**
  * _strspn - gets the length of a prefix substring.
  * Does not have to be in the same order as in @accept

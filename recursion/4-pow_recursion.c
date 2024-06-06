@@ -1,4 +1,4 @@
-#include "../pointers_arrays_strings/main.h"
+#include "main.h"
 
 /**
  * _pow_recursion - does exponents on a number by returning @x^@y.

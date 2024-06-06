@@ -1,4 +1,4 @@
-#include "../pointers_arrays_strings/main.h"
+#include "main.h"
 #include <stdio.h>
 
 /**

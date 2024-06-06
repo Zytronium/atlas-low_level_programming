@@ -1,4 +1,4 @@
-#include "../pointers_arrays_strings/main.h"
+#include "main.h"
 /**
  * _strlen_recursion - gets the a string's length using recursion.
  * Does not print anything.

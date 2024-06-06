@@ -1,4 +1,4 @@
-#include "../pointers_arrays_strings/main.h"
+#include "main.h"
 /**
  * _sqrt_recursion - gets the natural square root of a number @n.
  *
@@ -19,7 +19,7 @@ int _sqrt_part_two(int n, int m)
 {
 	switch (m * m)
 	{
-	case n:
+	case (n):
 		return (m);
 		break;
 

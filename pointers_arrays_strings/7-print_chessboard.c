@@ -1,4 +1,4 @@
-#include "../recursion/main.h"
+#include "main.h"
 /**
  * print_chessboard - prints a chessboard.
  * @a: matrix / 2D array of chess board in characters

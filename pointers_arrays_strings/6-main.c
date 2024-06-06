@@ -1,4 +1,4 @@
-#include "../recursion/main.h"
+#include "main.h"
 #include <stdio.h>
 /** main - prints a surprise string 6 times.
  *
