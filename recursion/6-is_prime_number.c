@@ -6,7 +6,7 @@
  *
  * Return: 1 (true) if @n is a prime number; 0 (false) if not
  */
-int is_prime_number(int n)
+int is_prime_number(long int n)
 {
 	if (n <= 1 || (!(n % 2) && n != 2))
 		return (0);

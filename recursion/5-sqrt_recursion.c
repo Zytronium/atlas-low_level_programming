@@ -6,7 +6,7 @@
  * @n: input number to get the natural square root of
  * Return: natural square root of @n
  */
-int _sqrt_recursion(int n)
+int _sqrt_recursion(long int n)
 {
 	if (n == 1)
 		return (1);
