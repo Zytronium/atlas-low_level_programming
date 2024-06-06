@@ -24,7 +24,6 @@ int _sqrt_part_two(int n, int m)
 	if (m * m == n)
 		return (m);
 	if (m * m > n)
-		return (_sqrt_part_two(n, m - 1));
-	else
-		return (-1);
+		return (_sqrt_part_two(n, --m));
+	return (-1);
 }
