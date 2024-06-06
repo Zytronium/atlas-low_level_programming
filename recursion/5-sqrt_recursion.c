@@ -7,6 +7,27 @@
  */
 int _sqrt_recursion(int n)
 {
-	/*skipping, just 4 now*/
-	return (0);
+	if (n == 1)
+		return (1);
+	return _sqrt_part_two(n, n / 2);
+}
+
+/**
+ *
+ */
+int _sqrt_part_two(int n, int m)
+{
+	switch (m * m)
+	{
+	case n:
+		return (m);
+		break;
+
+	case (< n):
+		return _sqrt_part_two(n, m - 1);
+		break;
+
+	case (> n):
+		return (-1);
+	}
 }
