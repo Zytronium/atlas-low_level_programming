@@ -3,7 +3,7 @@
  * _sqrt_recursion - gets the natural square root of a number @n.
  *
  * @n: input number to get the natural square root of
- * Return: 0
+ * Return: natural square root of @n
  */
 int _sqrt_recursion(int n)
 {
@@ -13,7 +13,11 @@ int _sqrt_recursion(int n)
 }
 
 /**
- *
+ * _sqrt_part_two - second function to find the square root of a number
+ * @n: number to find sqrt of
+ * @m: helper parameter to guess and check.
+ * Return: the natural square root of a number
+ * If it is a decimal, the number will not be found, so it returns -1
  */
 int _sqrt_part_two(int n, int m)
 {
