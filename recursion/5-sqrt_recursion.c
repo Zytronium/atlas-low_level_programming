@@ -12,7 +12,7 @@ int _sqrt_recursion(int n)
 		return (-1);
 	if (n == 1)
 		return (1);
-	return (int) ((_sqrt_part_two((float) n, (float) n / 2)));
+	return ((int)(_sqrt_part_two((float) n, (float) n / 2)));
 }
 
 /**
