@@ -10,9 +10,8 @@ int prime_helper(int n, int guess)
 {
 	if (!(n % guess))
 		return (0);
-	float sqrt_n = n / 2;
 
-	if((float) guess > sqrt_n)
+	if(guess > n / 2)
 		return (1);
 	return (prime_helper(n, guess + 1));
 }
@@ -28,5 +27,7 @@ int is_prime_number(int n)
 {
 	if (n < 2)
 		return (0);
+	if (n == 2)
+		return (1);
 	return (prime_helper(n, 2));
 }
