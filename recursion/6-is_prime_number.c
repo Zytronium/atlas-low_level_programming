@@ -26,7 +26,7 @@ int prime_helper(int n, int guess)
  */
 int is_prime_number(int n)
 {
-//	if (_sqrt_recursion(n) == -1)
-//		return (1);
+	if (n < 2)
+		return (0);
 	return (prime_helper(n, 2));
 }
