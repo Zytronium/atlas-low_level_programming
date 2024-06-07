@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.28)
-project(atlas-low_level_programming C)
+project("Atlas Low Level Programming" C)
 
 set(CMAKE_C_STANDARD 90)
 

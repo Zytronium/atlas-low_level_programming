@@ -23,6 +23,42 @@
 //Value Computed by CMake
 ._SOURCE_DIR:STATIC=C:/Users/Owner/CLionProjects/atlas-low_level_programming/recursion
 
+//Value Computed by CMake
+Atlas Low Level Programming_BINARY_DIR:STATIC=C:/Users/Owner/CLionProjects/atlas-low_level_programming/recursion/cmake-build-debug
+
+//Value Computed by CMake
+Atlas Low Level Programming_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Atlas Low Level Programming_SOURCE_DIR:STATIC=C:/Users/Owner/CLionProjects/atlas-low_level_programming/recursion
+
+//Value Computed by CMake
+Atlas-Low_Level_Programming_BINARY_DIR:STATIC=C:/Users/Owner/CLionProjects/atlas-low_level_programming/recursion/cmake-build-debug
+
+//Value Computed by CMake
+Atlas-Low_Level_Programming_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Atlas-Low_Level_Programming_SOURCE_DIR:STATIC=C:/Users/Owner/CLionProjects/atlas-low_level_programming/recursion
+
+//Value Computed by CMake
+AtlasLowLevelProgramming_BINARY_DIR:STATIC=C:/Users/Owner/CLionProjects/atlas-low_level_programming/recursion/cmake-build-debug
+
+//Value Computed by CMake
+AtlasLowLevelProgramming_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+AtlasLowLevelProgramming_SOURCE_DIR:STATIC=C:/Users/Owner/CLionProjects/atlas-low_level_programming/recursion
+
+//Value Computed by CMake
+Atlas_BINARY_DIR:STATIC=C:/Users/Owner/CLionProjects/atlas-low_level_programming/recursion/cmake-build-debug
+
+//Value Computed by CMake
+Atlas_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Atlas_SOURCE_DIR:STATIC=C:/Users/Owner/CLionProjects/atlas-low_level_programming/recursion
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=C:/Users/Owner/AppData/Local/Programs/CLion/bin/mingw/bin/addr2line.exe
 
@@ -174,7 +210,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=.
+CMAKE_PROJECT_NAME:STATIC=Atlas Low Level Programming
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/Users/Owner/AppData/Local/Programs/CLion/bin/mingw/bin/ranlib.exe
@@ -258,6 +294,15 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Value Computed by CMake
+atlas-low_level_programming_BINARY_DIR:STATIC=C:/Users/Owner/CLionProjects/atlas-low_level_programming/recursion/cmake-build-debug
+
+//Value Computed by CMake
+atlas-low_level_programming_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+atlas-low_level_programming_SOURCE_DIR:STATIC=C:/Users/Owner/CLionProjects/atlas-low_level_programming/recursion
 
 
 ########################

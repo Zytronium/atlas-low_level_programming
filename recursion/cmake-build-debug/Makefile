@@ -116,24 +116,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named recursion
+# Target rules for targets named atlas-low_level_programming
 
 # Build rule for target.
-recursion: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 recursion
-.PHONY : recursion
+atlas-low_level_programming: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 atlas-low_level_programming
+.PHONY : atlas-low_level_programming
 
 # fast build rule for target.
-recursion/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/build
-.PHONY : recursion/fast
+atlas-low_level_programming/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/build
+.PHONY : atlas-low_level_programming/fast
 
 1-print_rev_recursion.obj: 1-print_rev_recursion.c.obj
 .PHONY : 1-print_rev_recursion.obj
 
 # target to build an object file
 1-print_rev_recursion.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/1-print_rev_recursion.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/1-print_rev_recursion.c.obj
 .PHONY : 1-print_rev_recursion.c.obj
 
 1-print_rev_recursion.i: 1-print_rev_recursion.c.i
@@ -141,7 +141,7 @@ recursion/fast:
 
 # target to preprocess a source file
 1-print_rev_recursion.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/1-print_rev_recursion.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/1-print_rev_recursion.c.i
 .PHONY : 1-print_rev_recursion.c.i
 
 1-print_rev_recursion.s: 1-print_rev_recursion.c.s
@@ -149,7 +149,7 @@ recursion/fast:
 
 # target to generate assembly for a file
 1-print_rev_recursion.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/1-print_rev_recursion.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/1-print_rev_recursion.c.s
 .PHONY : 1-print_rev_recursion.c.s
 
 2-strlen_recursion.obj: 2-strlen_recursion.c.obj
@@ -157,7 +157,7 @@ recursion/fast:
 
 # target to build an object file
 2-strlen_recursion.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/2-strlen_recursion.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/2-strlen_recursion.c.obj
 .PHONY : 2-strlen_recursion.c.obj
 
 2-strlen_recursion.i: 2-strlen_recursion.c.i
@@ -165,7 +165,7 @@ recursion/fast:
 
 # target to preprocess a source file
 2-strlen_recursion.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/2-strlen_recursion.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/2-strlen_recursion.c.i
 .PHONY : 2-strlen_recursion.c.i
 
 2-strlen_recursion.s: 2-strlen_recursion.c.s
@@ -173,7 +173,7 @@ recursion/fast:
 
 # target to generate assembly for a file
 2-strlen_recursion.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/2-strlen_recursion.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/2-strlen_recursion.c.s
 .PHONY : 2-strlen_recursion.c.s
 
 3-factorial.obj: 3-factorial.c.obj
@@ -181,7 +181,7 @@ recursion/fast:
 
 # target to build an object file
 3-factorial.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/3-factorial.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/3-factorial.c.obj
 .PHONY : 3-factorial.c.obj
 
 3-factorial.i: 3-factorial.c.i
@@ -189,7 +189,7 @@ recursion/fast:
 
 # target to preprocess a source file
 3-factorial.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/3-factorial.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/3-factorial.c.i
 .PHONY : 3-factorial.c.i
 
 3-factorial.s: 3-factorial.c.s
@@ -197,7 +197,7 @@ recursion/fast:
 
 # target to generate assembly for a file
 3-factorial.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/3-factorial.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/3-factorial.c.s
 .PHONY : 3-factorial.c.s
 
 4-pow_recursion.obj: 4-pow_recursion.c.obj
@@ -205,7 +205,7 @@ recursion/fast:
 
 # target to build an object file
 4-pow_recursion.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/4-pow_recursion.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/4-pow_recursion.c.obj
 .PHONY : 4-pow_recursion.c.obj
 
 4-pow_recursion.i: 4-pow_recursion.c.i
@@ -213,7 +213,7 @@ recursion/fast:
 
 # target to preprocess a source file
 4-pow_recursion.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/4-pow_recursion.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/4-pow_recursion.c.i
 .PHONY : 4-pow_recursion.c.i
 
 4-pow_recursion.s: 4-pow_recursion.c.s
@@ -221,7 +221,7 @@ recursion/fast:
 
 # target to generate assembly for a file
 4-pow_recursion.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/4-pow_recursion.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/4-pow_recursion.c.s
 .PHONY : 4-pow_recursion.c.s
 
 5-sqrt_recursion.obj: 5-sqrt_recursion.c.obj
@@ -229,7 +229,7 @@ recursion/fast:
 
 # target to build an object file
 5-sqrt_recursion.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/5-sqrt_recursion.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/5-sqrt_recursion.c.obj
 .PHONY : 5-sqrt_recursion.c.obj
 
 5-sqrt_recursion.i: 5-sqrt_recursion.c.i
@@ -237,7 +237,7 @@ recursion/fast:
 
 # target to preprocess a source file
 5-sqrt_recursion.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/5-sqrt_recursion.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/5-sqrt_recursion.c.i
 .PHONY : 5-sqrt_recursion.c.i
 
 5-sqrt_recursion.s: 5-sqrt_recursion.c.s
@@ -245,7 +245,7 @@ recursion/fast:
 
 # target to generate assembly for a file
 5-sqrt_recursion.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/5-sqrt_recursion.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/5-sqrt_recursion.c.s
 .PHONY : 5-sqrt_recursion.c.s
 
 6-is_prime_number.obj: 6-is_prime_number.c.obj
@@ -253,7 +253,7 @@ recursion/fast:
 
 # target to build an object file
 6-is_prime_number.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/6-is_prime_number.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/6-is_prime_number.c.obj
 .PHONY : 6-is_prime_number.c.obj
 
 6-is_prime_number.i: 6-is_prime_number.c.i
@@ -261,7 +261,7 @@ recursion/fast:
 
 # target to preprocess a source file
 6-is_prime_number.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/6-is_prime_number.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/6-is_prime_number.c.i
 .PHONY : 6-is_prime_number.c.i
 
 6-is_prime_number.s: 6-is_prime_number.c.s
@@ -269,7 +269,7 @@ recursion/fast:
 
 # target to generate assembly for a file
 6-is_prime_number.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/6-is_prime_number.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/6-is_prime_number.c.s
 .PHONY : 6-is_prime_number.c.s
 
 _putchar.obj: _putchar.c.obj
@@ -277,7 +277,7 @@ _putchar.obj: _putchar.c.obj
 
 # target to build an object file
 _putchar.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/_putchar.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/_putchar.c.obj
 .PHONY : _putchar.c.obj
 
 _putchar.i: _putchar.c.i
@@ -285,7 +285,7 @@ _putchar.i: _putchar.c.i
 
 # target to preprocess a source file
 _putchar.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/_putchar.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/_putchar.c.i
 .PHONY : _putchar.c.i
 
 _putchar.s: _putchar.c.s
@@ -293,7 +293,7 @@ _putchar.s: _putchar.c.s
 
 # target to generate assembly for a file
 _putchar.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/_putchar.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/_putchar.c.s
 .PHONY : _putchar.c.s
 
 main.obj: main.c.obj
@@ -301,7 +301,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -309,7 +309,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -317,7 +317,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\recursion.dir\build.make CMakeFiles/recursion.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low_level_programming.dir\build.make CMakeFiles/atlas-low_level_programming.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -328,7 +328,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... recursion
+	@echo ... atlas-low_level_programming
 	@echo ... 1-print_rev_recursion.obj
 	@echo ... 1-print_rev_recursion.i
 	@echo ... 1-print_rev_recursion.s
