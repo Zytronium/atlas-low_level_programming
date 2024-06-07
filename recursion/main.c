@@ -9,7 +9,7 @@
 int main(void)
 {
 	int r;
-
+	printf("%d\n", _sqrt_recursion(17));
 	r = is_prime_number(1);
 	printf("%d\n", r);
 	r = is_prime_number(1024);
