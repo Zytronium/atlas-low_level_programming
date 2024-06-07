@@ -2,3 +2,5 @@
 !/recursion/cmake-build-debug/
 !/recursion/CMakeLists.txt
 !/.idea/
+!/.idea/
+!/.vscode/
