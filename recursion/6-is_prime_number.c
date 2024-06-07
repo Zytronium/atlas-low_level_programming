@@ -1,6 +1,11 @@
 #include "main.h"
 
-
+/**
+ * prime_helper - helper function for recursively checking if a number is prime.
+ * @n: number to check if its prime
+ * @guess: number to check if its a multiple of n
+ * Return: 1 if prime, 0 if not.
+ */
 int prime_helper(int n, int guess)
 {
 	if (!(guess % n))
