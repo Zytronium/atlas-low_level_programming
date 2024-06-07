@@ -11,8 +11,9 @@
 void repeat_print_surprise(int repeat)
 {
 	char surprise[25] = "Never Gonna Give You Up!\n";
+	int i;
 
-	for (int i = 0; i < repeat; ++i)
+	for (i = 0; i < repeat; ++i)
 	{
 		for (int j = 0; j < 25; j++)
 		{

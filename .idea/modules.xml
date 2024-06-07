@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/atlas-low_level_programming.iml" filepath="$PROJECT_DIR$/.idea/atlas-low_level_programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/atlas-low_level_programming2.iml" filepath="$PROJECT_DIR$/.idea/atlas-low_level_programming2.iml" />
     </modules>
   </component>
 </project>
