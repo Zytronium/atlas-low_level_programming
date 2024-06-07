@@ -9,7 +9,7 @@
 int main(void)
 {
 	int r;
-	printf("%f\n", _sqrt_part_two((float) 17, (float) 17/2));
+
 	r = is_prime_number(1);
 	printf("%d\n", r);
 	r = is_prime_number(1024);
