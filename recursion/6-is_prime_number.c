@@ -12,7 +12,7 @@ int prime_helper(int n, int guess)
 		return (0);
 	float sqrt_n = _sqrt_part_two((float) n, (float) n / 2);
 
-	if((float) guess > sqrt_n)
+	if((float) guess >= sqrt_n)
 		return (1);
 	return (prime_helper(n, guess + 1));
 }
