@@ -2,7 +2,7 @@
 
 /**
  * _sqrt_recursion - gets the natural square root of a number @n.
- *
+ * holy Home Depot rough AI deathbot, it WORKS!?!?!1
  * @n: input number to get the natural square root of
  * Return: natural square root of @n
  */
@@ -29,7 +29,7 @@ float _sqrt_part_two(float n, float m)
 	if (n < 0)
 		return (-1);
 	if (m > 46340)
-		return ((_sqrt_part_two(n, 2 * ((_sqrt_part_two(n, m / 2 / 2))))));
+		return ((_sqrt_part_two(n, 2 * ((_sqrt_part_two(n, m / 4))))));
 	if ((m * m) > n)
 		return (_sqrt_part_two(n, --m));
 	return (-1);
