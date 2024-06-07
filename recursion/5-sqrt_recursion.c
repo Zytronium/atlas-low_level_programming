@@ -6,13 +6,13 @@
  * @n: input number to get the natural square root of
  * Return: natural square root of @n
  */
-int _sqrt_recursion(long int n)
+int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
 	if (n == 1)
 		return (1);
-	return ((int) (_sqrt_part_two((long int) n, (long int) n / 2)));
+	return ((_sqrt_part_two(n, n / 2)));
 }
 
 /**
@@ -22,7 +22,7 @@ int _sqrt_recursion(long int n)
  * Return: the natural square root of a number
  * If it is a decimal, the number will not be found, so it returns -1
  */
-long int _sqrt_part_two(long int n, long int m)
+int _sqrt_part_two(int n, int m)
 {
 	if (m * m == n)
 		return (m);
