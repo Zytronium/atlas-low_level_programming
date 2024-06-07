@@ -12,7 +12,7 @@ int _sqrt_recursion(int n)
 		return (-1);
 	if (n == 1)
 		return (1);
-	return ((_sqrt_part_two(n, n / 2)));
+	return (int) ((_sqrt_part_two((float) n, (float) n / 2)));
 }
 
 /**
@@ -22,13 +22,15 @@ int _sqrt_recursion(int n)
  * Return: the natural square root of a number
  * If it is a decimal, the number will not be found, so it returns -1
  */
-int _sqrt_part_two(int n, int m)
+float _sqrt_part_two(float n, float m)
 {
 	if (m * m == n)
 		return (m);
 	if (n < 0)
 		return (-1);
-	if (m * m > n)
+	if (m > 46340)
+		return 2 * ((_sqrt_part_two(n, n / 2 / 2)));
+	if ((m * m) > n)
 		return (_sqrt_part_two(n, --m));
 	return (-1);
 }

@@ -10,7 +10,7 @@ int main(void)
 {
 	int r;
 
-	r = _sqrt_recursion(-16);
+	r = _sqrt_recursion(16777216);
 	printf("%d\n", r);
 	return (0);
 }
