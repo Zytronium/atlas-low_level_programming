@@ -1,3 +1,0 @@
-C:/Users/Owner/CLionProjects/atlas-low_level_programming/recursion/cmake-build-debug/CMakeFiles/atlas-low_level_programming.dir
-C:/Users/Owner/CLionProjects/atlas-low_level_programming/recursion/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Owner/CLionProjects/atlas-low_level_programming/recursion/cmake-build-debug/CMakeFiles/rebuild_cache.dir

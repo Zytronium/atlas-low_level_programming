@@ -1,3 +1,0 @@
-C:\Users\Owner\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\atlas-low_level_programming.dir/objects.a
-C:\Users\Owner\AppData\Local\Programs\CLion\bin\mingw\bin\ar.exe qc CMakeFiles\atlas-low_level_programming.dir/objects.a @CMakeFiles\atlas-low_level_programming.dir\objects1.rsp
-C:\Users\Owner\AppData\Local\Programs\CLion\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\atlas-low_level_programming.dir/objects.a -Wl,--no-whole-archive -o atlas-low_level_programming.exe -Wl,--out-implib,libatlas-low_level_programming.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\atlas-low_level_programming.dir\linkLibs.rsp

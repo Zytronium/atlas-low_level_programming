@@ -1,3 +1,0 @@
-C:\Users\Owner\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\recursion.dir/objects.a
-C:\Users\Owner\AppData\Local\Programs\CLion\bin\mingw\bin\ar.exe qc CMakeFiles\recursion.dir/objects.a @CMakeFiles\recursion.dir\objects1.rsp
-C:\Users\Owner\AppData\Local\Programs\CLion\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\recursion.dir/objects.a -Wl,--no-whole-archive -o recursion.exe -Wl,--out-implib,librecursion.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\recursion.dir\linkLibs.rsp
