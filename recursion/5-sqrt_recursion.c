@@ -28,8 +28,8 @@ float _sqrt_part_two(float n, float m)
 		return (m);
 	if (n < 0)
 		return (-1);
-	if (m > 46340)
-		return ((_sqrt_part_two(n, 2 * ((_sqrt_part_two(n, m / 4))))));
+	if (m > 46340) /*I might not need this, but I won't bother changing it*/
+		return (_sqrt_part_two(n, 2 * ((_sqrt_part_two(n, m / 4))))); /*I definitely need this though*/
 	if ((m * m) > n)
 		return (_sqrt_part_two(n, --m));
 	return (-1);
