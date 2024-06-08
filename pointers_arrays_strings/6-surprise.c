@@ -11,11 +11,11 @@
 void repeat_print_surprise(int repeat)
 {
 	char surprise[25] = "Never Gonna Give You Up!\n";
-	int i;
+	int i, j;
 
 	for (i = 0; i < repeat; ++i)
 	{
-		for (int j = 0; j < 25; j++)
+		for (j = 0; j < 25; j++)
 		{
 			_putchar(surprise[j]);
 		}
