@@ -1,7 +1,3 @@
-//
-// Created by daste on 6/7/2024.
-//
-
 #ifndef main_h
 #define main_h
 
@@ -26,4 +22,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
-#endif //main_h
+#endif

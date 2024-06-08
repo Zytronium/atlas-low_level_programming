@@ -4,7 +4,7 @@
  * file 6 was skipped, so I made this joke to fill in
  * the gap between task 5 and 6 (files 5 and 7).
  *
- * @repeat: number of time to repeat printing the surprise
+ * @repeat: number of times to repeat printing the surprise
  *
  * Return: 0
  */
