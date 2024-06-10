@@ -1,6 +1,29 @@
 #include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
+
+/**
+ * has_error - check for non-number characters in the string.
+ * If any of the supplied numbers have non-number characters in them,
+ * Print "Error" with a newline, and return 1.
+ *
+ * @number: character array to be checked if it's all numbers
+ *
+ * Return: 0 if it's all numbers; 1 if not.
+ */
+int has_error(char *number)
+{
+	int i;
+
+	for (i = 0; i < strlen(number); i++)
+	{
+		if (number[i] > '9' || number[i] < '0')
+			return (1);
+	}
+
+	return (0);
+}
 
 /**
  * main - adds positive numbers and prints the result followed by a new line
@@ -23,14 +46,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		/*
-		 * If any of the supplied numbers to add are not zero, but
-		 * atoi(that argument) is zero (which means atoi gave an error,
-		 * which means there was a non-number character (besides + or - signs)
-		 * in the string), or if any of the numbers starts with '-', then:
-		 * Print "Error" with a newline, and return 1.
-		 */
-		if ((atoi(argv[i]) == 0 && argv[i][0] != '0') || argv[i][0] == '-')
+		if (has_error(argv[i]))
 		{
 			printf("Error\n");
 			return (1);
