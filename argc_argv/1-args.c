@@ -8,7 +8,7 @@
  * @argv: arguments supplied to main, including the name of the program
  *
  * Return: 0 on success
-*/
+ */
 int main(int argc, char *argv[])
 {
 	(void) argv;
