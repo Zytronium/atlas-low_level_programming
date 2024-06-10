@@ -47,9 +47,14 @@ int main(int argc, char *argv[])
 		}
 
 		sum += atoi(argv[i]);
+		if ((int) sum < 0) /*int overflow*/
+		{
+			printf("Error: Int overflow detected\n");
+			return (1);
+		}
 	}
 
-	printf("%d\n", sum);
+	printf("%u\n", sum);
 
 	return (0);
 }
