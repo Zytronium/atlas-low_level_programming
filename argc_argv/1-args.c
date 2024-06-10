@@ -4,8 +4,8 @@
 /**
 * main - entry point
  *
- * @argc:
- * @argv:
+ * @argc: the number of arguments supplied to argv[]
+ * @argv: arguments supplied to main, including the name of the program
  *
  * Return: 0 on success
 */
