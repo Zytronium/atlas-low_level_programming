@@ -14,7 +14,7 @@
  */
 int has_error(char *number)
 {
-	int i;
+	unsigned int i;
 
 	for (i = 0; i < strlen(number); i++)
 	{
@@ -35,7 +35,7 @@ int has_error(char *number)
 */
 int main(int argc, char *argv[])
 {
-	unsigned int i;
+	int i;
 	unsigned int sum = 0;
 
 	if (argc < 3)
