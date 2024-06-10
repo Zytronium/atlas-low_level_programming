@@ -1,6 +1,6 @@
 # atlas low level programming - Atlas School C projects. Lots of low level C stuff.
 Other misc stuff that are not in any of the directories here are just stuff I made for fun or testing.
-If you are reading this and are another student and are here so you can copy and cheat, here's a good video I uploaded you should watch: https://www.youtube.com/watch?v=pyoURHR-g4U ;-)
+If you are reading this and are another student and are here, so you can copy and cheat, here's a good video I uploaded you should watch: https://www.youtube.com/watch?v=pyoURHR-g4U ;-)
 
 # Projects:
 - PP1000
@@ -11,7 +11,7 @@ If you are reading this and are another student and are here so you can copy and
   - [C - Pointers, arrays and strings](https://github.com/Zytronium/atlas-low_level_programming/tree/main/pointers_arrays_strings1)
     - [Pointers, arrays and strings](https://github.com/Zytronium/atlas-low_level_programming/tree/main/pointers_arrays_strings1)
     - [More pointers, arrays and strings](https://github.com/Zytronium/atlas-low_level_programming/tree/main/pointers_arrays_strings2)
-    - [Even more pointers, arrays and strings](https://github.com/Zytronium/atlas-low_level_programming/tree/main/pointers_arrays_strings)
+    - [Even more pointers, arrays and strings](https://github.com/Zytronium/atlas-low_level_programming/tree/main/pointers_arrays_strings3)
 - PP1100
   - [C - Recursion](https://github.com/Zytronium/atlas-low_level_programming/tree/main/recursion)
   - [C - Static libraries](https://github.com/Zytronium/atlas-low_level_programming/tree/main/static_libraries)
