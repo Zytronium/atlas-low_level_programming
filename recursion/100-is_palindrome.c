@@ -67,5 +67,5 @@ int is_palindrome(char *s)
  * 	str_len--;
  * }
  * return (1);
- *}
+ * }
  */
