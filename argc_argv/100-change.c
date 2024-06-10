@@ -18,8 +18,10 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	int cents = atoi(argv[1]);
+	int cents;
 	int coins = 0;
+
+	cents = atoi(argv[1]);
 
 	if (cents < 0)
 		cents = 0;
