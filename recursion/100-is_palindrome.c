@@ -50,22 +50,22 @@ int is_palindrome(char *s)
  * to help with making it recursive
  */
 /*
- * int is_palindrome_iteration(char *s)
- * {
- * int str_len = 0;
- * int j;
+ *int is_palindrome_iteration(char *s)
+ *{
+ *int str_len = 0;
+ *int j;
  *
- * while (s[str_len] != '\0')
- * {
- * 	str_len++;
- * }
+ *while (s[str_len] != '\0')
+ *{
+ *	str_len++;
+ *}
  *
- * for (j = 0; j < str_len; j++)
- * {
- * 	if (s[j] != s[str_len])
- * 		return (0);
- * 	str_len--;
- * }
- * return (1);
- * }
+ *for (j = 0; j < str_len; j++)
+ *{
+ *	if (s[j] != s[str_len])
+ *		return (0);
+ *	str_len--;
+ *}
+ *return (1);
+ *}
  */
