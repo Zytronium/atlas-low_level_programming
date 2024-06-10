@@ -22,7 +22,7 @@ int _strlen_recursion(char *s)
  * @string: string provided
  * @index1: index of character to check if its equal to the character at index2
  * @index2: index of character to check if its equal to the character at index1
- * Return:
+ * Return: 1 if true 0 if false
  */
 int palindrome_helper(char *string, int index1, int index2)
 {
@@ -48,8 +48,8 @@ int is_palindrome(char *s)
 /**
  * is_palindrome_iteration - visualization of this function but iterative
  * to help with making it recursive
- */
-/*
+ *
+ *
  *int is_palindrome_iteration(char *s)
  *{
  *int str_len = 0;
