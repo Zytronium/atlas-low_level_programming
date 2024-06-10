@@ -35,7 +35,7 @@ int has_error(char *number)
 */
 int main(int argc, char *argv[])
 {
-	int i;
+	unsigned int i;
 	unsigned int sum = 0;
 
 	if (argc < 3)
