@@ -31,7 +31,6 @@ int palindrome_helper(char *string, int index1, int index2)
 	if (index1 <= index2 + 1 && index1 >= index2 - 1)
 		return (1);
 	return palindrome_helper(string, index1 + 1, index2 - 1);
-
 }
 
 /**
@@ -43,8 +42,9 @@ int palindrome_helper(char *string, int index1, int index2)
 */
 int is_palindrome(char *s)
 {
-	return (palindrome_helper(s, 0, _strlen_recursion(s)));
+	return (palindrome_helper(s, 0, _strlen_recursion(s) - 1));
 }
+
 /**
  * is_palindrome_iteration - visualization of this function but iterative
  * to help with making it recursive
