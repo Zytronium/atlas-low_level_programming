@@ -14,6 +14,9 @@ If you are reading this and are another student and are here so you can copy and
     - [Even more pointers, arrays and strings](https://github.com/Zytronium/atlas-low_level_programming/tree/main/pointers_arrays_strings)
 - PP1100
   - [C - Recursion](https://github.com/Zytronium/atlas-low_level_programming/tree/main/recursion)
-  - [C - Static libraries]()
-  - [C - argc, argv]()
+  - [C - Static libraries](https://github.com/Zytronium/atlas-low_level_programming/tree/main/static_libraries)
+  - [C - argc, argv](https://github.com/Zytronium/atlas-low_level_programming/tree/main/argc_argv)
+  - [C - malloc, free]()
+  - [C - More malloc, free]()
+  - [C - Preprocessor]()
 - `{...}`
