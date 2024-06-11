@@ -1,8 +1,28 @@
 #include "main.h"
 
+int while_loop_helper(char *str, int i, char c)
+{
+	if (str[i] != c)
+	{
+		i = (while_loop_helper(str, i + 1, c));
+	}
+	return (i);
+}
+
+/**
+ * wildcmp - helper function that compares two strings and returns
+ * whether they are equal or not
+ *
+ * @s1: string to compare to s2
+ * @s2: string to compare to s1
+ * @i1: index for string1
+ * @i2: index for string2
+ *
+ * Return: 1 if both strings are equal, 2 if not.
+*/
 int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 {
-	if (s1[i1] == '\0')
+	/*if (s1[i1] == '\0')
 	{
 		_putchar('\\');
 		_putchar('0');
@@ -20,8 +40,7 @@ int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 	else
 		_putchar(s2[i2]);
 
-	_putchar('\n');
-
+	_putchar('\n');*/
 
 	if ((!s1[i1] || !s2[i2]) && s2[i2] != '*')
 	{
@@ -33,26 +52,36 @@ int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 
 	if (s2[i2] == '*')
 	{
-		if (s1[i1] == '\0' && s2[i2 + 1] == '\0')
+		i2 = while_loop_helper(s2, i2,'*');
+		i1 = while_loop_helper(s1, i1, s2[i2 + 1]);
+
+		if (!s1[i1] && !s2[i2 + 1]){
+			_putchar('\n');
 			return (1);
+		}
+		if (!s1[i1]){
+			_putchar('\n');
+			return (0);
+		}
 		return wildcmp_helper(s1, s2, i1, i2 + 1);
+
 		/*if (s2[i2 + 1] == '*')
 			return wildcmp_helper(s1, s2, i1, i2 + 1);
 		if (s1[i1 + 1] == s2[i2 + 1])
 			return wildcmp_helper(s1, s2, i1 + 1, i2 + 1);
 		return wildcmp_helper(s1, s2, i1 + 1, i2);*/
 	}
-	if (s2[i2 - 1] == '*')
+	/*if (s2[i2 - 1] == '*')
 	{
 		if (s1[i1] == s2[i2])
 			return wildcmp_helper(s1, s2, i1 + 1, i2 + 1);
 		return wildcmp_helper(s1, s2, i1 + 1, i2);
-	}
+	}*/
 
-	/*if (s1[i1] != s2[i2] && s2[i2] != '*') {
+	if (s1[i1] != s2[i2] && s2[i2] != '*') {
 		_putchar('\n');
 		return (0);
-	}*/
+	}
 
 	return wildcmp_helper(s1, s2, i1 + 1, i2 + 1);
 	/*DONE(?): allow any string of ANY LENGTH to be in place of this single '*' char*/
