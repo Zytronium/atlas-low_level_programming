@@ -96,7 +96,7 @@ int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 		printf("s1[i1]: %c\n", s1[i1]);
 		printf("s2[i2]: %c\n\n", s2[i2]);*/
 
-		if (s2[i2 + 1] && s2[i2 + 1] != s1[i1 +1])
+		if (!s2[i2 + 1] && s2[i2 + 1] != s1[i1 +1])
 		{
 			/*_putchar('\n');*/
 			return (0);
