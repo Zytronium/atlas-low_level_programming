@@ -28,6 +28,21 @@ int while_loop_helper(char *str, int i, char c, int equals)
 }
 
 /**
+ * is_all_stars - helper function to check if string is all '*'s
+ * @str: string
+ * @i: index
+ * Return: true or false
+ */
+int is_all_stars(char *str, int i)
+{
+	if (str[i] == '\0')
+		return (1);
+	if (str[i] != '*')
+		return (0);
+	return (is_all_stars(str, i + 1));
+}
+
+/**
  * wildcmp_helper - helper function that compares two strings and returns
  * whether they are equal or not
  *
@@ -60,7 +75,8 @@ int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 		_putchar(s2[i2]);
 
 	_putchar('\n');*/
-
+	/*if (is_all_stars(s2, i2))
+		return (1);*/
 	if ((!s1[i1] || !s2[i2]) && s2[i2] != '*')
 	{
 		/*_putchar('\n');*/
@@ -145,6 +161,7 @@ int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 */
 int wildcmp(char *s1, char *s2)
 {
-	/*_putchar('\n');*/
+	if (is_all_stars(s2, 0))
+		return (1);
 	return (wildcmp_helper(s1, s2, 0, 0));
 }
