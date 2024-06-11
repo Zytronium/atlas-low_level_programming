@@ -1,5 +1,11 @@
 #include "main.h"
-
+/**
+ * while_loop_helper - helper function for a while loop replacement lol
+ * @str: string
+ * @i: index
+ * @c: character to look for
+ * @equals: determine if we are looking for a match or absence of @c
+ */
 int while_loop_helper(char *str, int i, char c, int equals)
 {
 	if (equals)
@@ -112,8 +118,6 @@ int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 			return wildcmp_helper(s1, s2, i1 + 1, i2 + 1);
 		return wildcmp_helper(s1, s2, i1 + 1, i2);
 	}*/
-
-
 
 	return wildcmp_helper(s1, s2, i1 + 1, i2 + 1);
 	/*DONE(?): allow any string of ANY LENGTH to be in place of this single '*' char*/
