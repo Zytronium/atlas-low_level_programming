@@ -5,6 +5,7 @@
  * @i: index
  * @c: character to look for
  * @equals: determine if we are looking for a match or absence of @c
+ * Return: index to set something to
  */
 int while_loop_helper(char *str, int i, char c, int equals)
 {
