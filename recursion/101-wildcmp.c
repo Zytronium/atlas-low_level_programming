@@ -60,7 +60,7 @@ int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 	{
 		if (s2[i2 + 1] == '*')
 			return (0);
-		return eturn (1);
+		return (1);
 	}
 	if (s2[i2] == '*')
 	{
