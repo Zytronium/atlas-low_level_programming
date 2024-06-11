@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - checks the code
+ * main - check the code
  *
  * Return: Always 0.
  */
@@ -10,23 +10,29 @@ int main(void)
 {
 	int r;
 
-	r = is_prime_number(1);
+	r = wildcmp("main.c", "*.c");
 	printf("%d\n", r);
-	r = is_prime_number(1024);
+	r = wildcmp("main.c", "m*a*i*n*.*c*");
 	printf("%d\n", r);
-	r = is_prime_number(16);
+	r = wildcmp("main.c", "main.c");
 	printf("%d\n", r);
-	r = is_prime_number(17);
+	r = wildcmp("main.c", "m*c");
 	printf("%d\n", r);
-	r = is_prime_number(25);
+	r = wildcmp("main.c", "ma********************************c");
 	printf("%d\n", r);
-	r = is_prime_number(-1);
+	r = wildcmp("main.c", "*");
 	printf("%d\n", r);
-	r = is_prime_number(113);
+	r = wildcmp("main.c", "***");
 	printf("%d\n", r);
-	r = is_prime_number(7919);
+	r = wildcmp("main.c", "m.*c");
 	printf("%d\n", r);
-	r = is_prime_number(2);
+	r = wildcmp("main.c", "**.*c");
+	printf("%d\n", r);
+	r = wildcmp("main-main.c", "ma*in.c");
+	printf("%d\n", r);
+	r = wildcmp("main", "main*d");
+	printf("%d\n", r);
+	r = wildcmp("abc", "*b");
 	printf("%d\n", r);
 	return (0);
 }
