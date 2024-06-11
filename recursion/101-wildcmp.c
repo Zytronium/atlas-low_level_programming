@@ -23,24 +23,33 @@ int wildcmp_helper(char *s1, char *s2, int index1, int index2)
 	_putchar('\n');
 
 
-	if (s2[index2] == s1[index1] && s1[index1] == '\0') {
+	if (s1[index1] == '\0') {
 		_putchar('\n');
+		if (s1[index1] != s2[index2])
+			return (0);
 		return (1);
 	}
 
-	if (s2[index2] == '*' && s1[index1] != '\0')
+	if (s2[index2] == '*')
 	{
-		if (s2[index2 + 1] == '*')
+		return wildcmp_helper(s1, s2, index1, index2 + 1);
+		/*if (s2[index2 + 1] == '*')
 			return wildcmp_helper(s1, s2, index1, index2 + 1);
 		if (s1[index1 + 1] == s2[index2 + 1])
+			return wildcmp_helper(s1, s2, index1 + 1, index2 + 1);
+		return wildcmp_helper(s1, s2, index1 + 1, index2);*/
+	}
+	if (s2[index2 - 1] == '*')
+	{
+		if (s1[index1] == s2[index2])
 			return wildcmp_helper(s1, s2, index1 + 1, index2 + 1);
 		return wildcmp_helper(s1, s2, index1 + 1, index2);
 	}
 
-	if (s1[index1] != s2[index2] && s2[index2] != '*') {
+	/*if (s1[index1] != s2[index2] && s2[index2] != '*') {
 		_putchar('\n');
 		return (0);
-	}
+	}*/
 
 	return wildcmp_helper(s1, s2, index1 + 1, index2 + 1);
 	/*DONE(?): allow any string of ANY LENGTH to be in place of this single '*' char*/
