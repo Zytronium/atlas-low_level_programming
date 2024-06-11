@@ -17,5 +17,6 @@ int palindrome_helper(char *string, int index1, int index2);
 int wildcmp(char *s1, char *s2);
 int wildcmp_helper(char *s1, char *s2, int index1, int index2);
 int while_loop_helper(char *str, int i, char c, int equals);
+int is_all_stars(char *str, int i);
 
 #endif
