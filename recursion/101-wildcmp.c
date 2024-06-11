@@ -26,7 +26,7 @@ int while_loop_helper(char *str, int i, char c, int equals)
 }
 
 /**
- * wildcmp - helper function that compares two strings and returns
+ * wildcmp_helper - helper function that compares two strings and returns
  * whether they are equal or not
  *
  * @s1: string to compare to s2
