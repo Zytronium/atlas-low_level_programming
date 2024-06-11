@@ -2,7 +2,7 @@
 
 int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 {
-	/*if (s1[i1] == '\0')
+	if (s1[i1] == '\0')
 	{
 		_putchar('\\');
 		_putchar('0');
@@ -20,7 +20,7 @@ int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 	else
 		_putchar(s2[i2]);
 
-	_putchar('\n');*/
+	_putchar('\n');
 
 
 	if ((!s1[i1] || !s2[i2]) && s2[i2] != '*')
@@ -33,6 +33,8 @@ int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 
 	if (s2[i2] == '*')
 	{
+		if (s1[i1] == '\0' && s2[i2 + 1] == '\0')
+			return (1);
 		return wildcmp_helper(s1, s2, i1, i2 + 1);
 		/*if (s2[i2 + 1] == '*')
 			return wildcmp_helper(s1, s2, i1, i2 + 1);
