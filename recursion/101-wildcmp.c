@@ -68,7 +68,6 @@ int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 	_putchar('\n');
 	_putchar('\n');
 
-
 	for (j = 0; s2[j] != '\0'; j++)
 	{
 		_putchar(s2[j]);
