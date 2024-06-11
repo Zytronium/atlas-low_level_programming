@@ -88,7 +88,7 @@ int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 			return (1);
 		}
 
-		i2 = while_loop_helper(s2, i2,'*', 0);
+		i2 = while_loop_helper(s2, i2,'*', 0) - 1;
 		i1 = while_loop_helper(s1, i1, s2[i2 + 1], 1);
 
 		/*printf("i1: %d\n", i1);
