@@ -56,7 +56,6 @@ int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 			return (1);
 		return (0);
 	}
-
 	if (s1[i1] != s2[i2] && s2[i2] != '*')
 	{
 		if (s2[i2 + 1] == '*')
@@ -64,7 +63,6 @@ int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 		else
 			return (1);
 	}
-
 	if (s2[i2] == '*')
 	{
 		if (!s2[i2 + 1])
@@ -81,7 +79,7 @@ int wildcmp_helper(char *s1, char *s2, int i1, int i2)
  *
  * @s1: string to compare to s2
  * @s2: string to compare to s1
- * Return: 1 if both strings are equal, 2 if not.
+ * Return: 1 if both strings are equal, 2 if not
 */
 int wildcmp(char *s1, char *s2)
 {
