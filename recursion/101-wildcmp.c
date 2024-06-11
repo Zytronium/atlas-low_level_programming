@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * while_loop_helper - helper function for a while loop replacement lol
  * @str: string
@@ -9,6 +10,7 @@
  */
 int while_loop_helper(char *str, int i, char c, int equals)
 {
+	/*printf("i: %d\n", i);*/
 	if (equals)
 	{
 		if (str[i] != c)
@@ -21,7 +23,7 @@ int while_loop_helper(char *str, int i, char c, int equals)
 		{
 			i = (while_loop_helper(str, i + 1, c, equals));
 		}
-
+	/*_putchar('\n');*/
 	return (i);
 }
 
@@ -62,14 +64,12 @@ int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 	if ((!s1[i1] || !s2[i2]) && s2[i2] != '*')
 	{
 		/*_putchar('\n');*/
-		/*if (s1[i1] == s2[i2])*/
+		if (s1[i1] == s2[i2])
 			return (1);
-		/*return (30);*/
+		return (0);
 	}
 
 	if (s1[i1] != s2[i2] && s2[i2] != '*') {
-		/*_putchar('\n');
-		_putchar(s2[i2]);*/
 		return (0);
 	}
 	/*_putchar('\n');
@@ -87,12 +87,19 @@ int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 			/*_putchar('\n');*/
 			return (1);
 		}
+
 		i2 = while_loop_helper(s2, i2,'*', 0);
 		i1 = while_loop_helper(s1, i1, s2[i2 + 1], 1);
-		if (!s2[i2 + 1])
+
+		/*printf("i1: %d\n", i1);
+		printf("i2: %d\n\n", i2);
+		printf("s1[i1]: %c\n", s1[i1]);
+		printf("s2[i2]: %c\n\n", s2[i2]);*/
+
+		if (s2[i2 + 1] && s2[i2 + 1] != s1[i1 +1])
 		{
 			/*_putchar('\n');*/
-			return (1);
+			return (0);
 		}
 
 		if (!s1[i1] && !s2[i2 + 1])
@@ -119,7 +126,6 @@ int wildcmp_helper(char *s1, char *s2, int i1, int i2)
 			return wildcmp_helper(s1, s2, i1 + 1, i2 + 1);
 		return wildcmp_helper(s1, s2, i1 + 1, i2);
 	}*/
-
 	return wildcmp_helper(s1, s2, i1 + 1, i2 + 1);
 	/*DONE(?): allow any string of ANY LENGTH to be in place of this single '*' char*/
 	/*
