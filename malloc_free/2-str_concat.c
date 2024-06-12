@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 
 	while (s1[str1Len])
 	{
-		str1Len++
+		str1Len++;
 	}
 
 	while (s2[str2Len])
