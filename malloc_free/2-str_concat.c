@@ -37,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i <= newStrLen; i++)
 	{
-		if (i <= str1Len)
+		if (i < str1Len)
 			newStr[i] = s1[i];
 		else newStr[i] = s2[i - str1Len];
 	}
