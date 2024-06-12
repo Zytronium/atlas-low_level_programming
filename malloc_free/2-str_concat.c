@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 
-/*
+/**
  * str_concat - concatenates 2 strings and returns the result
  *
  * @s1: string to have another string added to it
@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (i <= str1Len)
 			newStr[i] = s1[i];
-		else newStr[i] = s2[i - str2Len];
+		else newStr[i] = s2[i - str1Len - 1];
 	}
 
 	return (newStr);
