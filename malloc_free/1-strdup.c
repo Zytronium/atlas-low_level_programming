@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * _strdup - descr.
+ * _strdup - returns a copy of a string.
  *
- * @str:
+ * @str: string to copy
  *
- * Return: 0
+ * Return: NULL if failed, else pointer to first character in a copied string
  */
 char *_strdup(char *str)
 {
