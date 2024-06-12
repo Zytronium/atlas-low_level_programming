@@ -2,6 +2,8 @@
 /**
  * _strdup - descr.
  *
+ * @str:
+ *
  * Return: 0
  */
 char *_strdup(char *str)
