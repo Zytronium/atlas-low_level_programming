@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (!str1Len && !str2Len && !newStrLen)
 	{
-		*newStr[0] = "\0";
+		newStr[0] = '\0';
 		return (newStr);
 	}
 
