@@ -15,7 +15,7 @@ char *_strdup(char *str)
 	int i;
 
 	while (str[strLen])
-		strLen++
+		strLen++;
 
 	newStr = malloc(sizeof(char) * strLen);
 
@@ -27,5 +27,5 @@ char *_strdup(char *str)
 		newStr[i] = str[i];
 	}
 
-	return (newSt);
+	return (newStr);
 }
