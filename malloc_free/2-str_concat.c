@@ -39,7 +39,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (i <= str1Len)
 			newStr[i] = s1[i];
-		else newStr = s2[i - str1Len];
+		else newStr[i] = s2[i - str1Len];
 	}
 
 	return (newStr);
