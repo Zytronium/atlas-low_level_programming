@@ -14,9 +14,6 @@ char *str_concat(char *s1, char *s2)
 	char *newStr;
 	int str1Len = 0, str2Len = 0, newStrLen, i;
 
-	if (!s1 || !s2)
-		return (NULL);
-
 	while (s1[str1Len])
 	{
 		str1Len++;
@@ -32,12 +29,15 @@ char *str_concat(char *s1, char *s2)
 
 	newStr = malloc(sizeof(char) * newStrLen);
 
-	if (!newStr)
-		return (NULL);
+	if (!str1Len && !str2Len && !newStrLen)
+	{
+		newStr[0] = "\0";
+		return (newStr);
+	}
 
 	for (i = 0; i <= newStrLen; i++)
 	{
-		if (i < str1Len)
+		if (i <= str1Len)
 			newStr[i] = s1[i];
 		else newStr[i] = s2[i - str1Len];
 	}
