@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 		str2Len++;
 	}
 
-	newStrLen = str2Len + str1Len
+	newStrLen = str2Len + str1Len;
 
 	if (str1Len == -1)
 		newStrLen++;
