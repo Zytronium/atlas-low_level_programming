@@ -27,19 +27,14 @@ char *str_concat(char *s1, char *s2)
 
 	newStrLen = str2Len + str1Len;
 
-	if (str1Len == -1)
-		newStrLen++;
-
-	if (str2Len == -1)
-		newStrLen++;
-
 	newStr = malloc(sizeof(char) * newStrLen);
 
 	for (i = 0; i <= newStrLen; i++)
 	{
 		if (i <= str1Len)
 			newStr[i] = s1[i];
-		else newStr[i] = s2[i - str1Len - 1];
+		else
+			newStr[i] = s2[i - str1Len - 1];
 	}
 
 	return (newStr);
