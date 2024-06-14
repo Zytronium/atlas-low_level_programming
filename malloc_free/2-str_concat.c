@@ -52,7 +52,7 @@ char *str_concat(char *s1, char *s2)
 		}
 	}
 
-	newStrLen = str2Len + str1Len;
+	newStrLen = str1Len + str2Len - 1;
 	if (newStrLen <= 0)
 		newStrLen = 1;
 
