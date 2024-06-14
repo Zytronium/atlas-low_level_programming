@@ -70,9 +70,9 @@ char *str_concat(char *s1, char *s2)
 				newStr[i] = '\0';
 	}
 
-	if (str1 != NULL && str1 != s1)
+	if (s1 != NULL && str1 != s1)
 		free(str1);
-	if (str2 != NULL && str2 != s2)
+	if (s2 != NULL && str2 != s2)
 		free(str2);
 
 	return (newStr);
