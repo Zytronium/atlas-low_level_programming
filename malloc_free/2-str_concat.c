@@ -58,11 +58,20 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (i <= str1Len && str1Len > 0)
 			newStr[i] = str1[i];
-		else if (str2Len > 0)
+		else
+			if (str2Len > 0)
+		{
+			if (str1Len == 0)
+				newStr[i] = str2[i - str1Len];
+			else
 				newStr[i] = str2[i - str1Len - 1];
+		}
 			else
 				newStr[i] = '\0';
 	}
+
+	free(str1);
+	free(str2);
 
 	return (newStr);
 }
