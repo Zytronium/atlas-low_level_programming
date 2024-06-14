@@ -12,7 +12,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *newStr, *str1, *str2;
-	int str1Len = 0, str2Len = 0, newStrLen, i;
+	int str1Len = -1, str2Len = 0, newStrLen, i;
 
 	if (s1 == NULL)
 	{
@@ -26,7 +26,6 @@ char *str_concat(char *s1, char *s2)
 			str1Len++;
 		}
 		str1 = malloc(sizeof(char) * str1Len);
-		str1Len--;
 		for (i = 0; s1[i]; i++)
 		{
 			str1[i] = s1[i];
@@ -56,7 +55,7 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i <= newStrLen; i++)
 	{
-		if (i <= str1Len && str1Len > 0)
+		if (i <= str1Len && str1Len >= 0)
 			newStr[i] = str1[i];
 		else
 			if (str2Len > 0)
