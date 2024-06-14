@@ -11,7 +11,7 @@ int main(void)
 {
 	char *s;
 
-	s = str_concat("best ", "school");
+	s = str_concat("best ", NULL);
 	if (s == NULL)
 	{
 		printf("failed\n");

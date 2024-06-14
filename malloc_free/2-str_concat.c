@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * str_concat - concatenates 2 strings and returns the result
@@ -16,7 +16,14 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		str1 = malloc(sizeof(char) * 1);
+		str1 = malloc(sizeof(char));
+
+		if  (str1 == NULL)
+		{
+			free(str1);
+			return (NULL);
+		}
+
 		str1[0] = '\0';
 	}
 	else
@@ -28,6 +35,13 @@ char *str_concat(char *s1, char *s2)
 		}
 		str1Len--;
 		str1 = malloc(sizeof(char) * str1Len);
+
+		if  (str1 == NULL)
+		{
+			free(str1);
+			return (NULL);
+		}
+
 		for (i = 0; s1[i]; i++)
 		{
 			str1[i] = s1[i];
@@ -35,7 +49,15 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s2 == NULL)
 	{
-		str2 = malloc(sizeof(char) * 1);
+		str2 = malloc(sizeof(char));
+
+		if  (str2 == NULL)
+		{
+			free(str1);
+			free(str2);
+			return (NULL);
+		}
+
 		str2[0] = '\0';
 	}
 	else
@@ -45,11 +67,20 @@ char *str_concat(char *s1, char *s2)
 			str2Len++;
 		}
 		str2 = malloc(sizeof(char) * str2Len);
+
+		if  (str2 == NULL)
+		{
+			free(str1);
+			free(str2);
+			return (NULL);
+		}
+
 		for (i = 0; s2[i]; i++)
 		{
 			str2[i] = s2[i];
 		}
 	}
+
 
 	newStrLen = str1Len + str2Len;
 	if (newStrLen <= 0)
@@ -73,5 +104,7 @@ char *str_concat(char *s1, char *s2)
 			newStr[i] = '\0';
 	}
 
+	free(str1);
+	free(str2);
 	return (newStr);
 }

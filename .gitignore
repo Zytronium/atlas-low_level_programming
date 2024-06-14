@@ -1,4 +1,6 @@
 !/.vscode/
 !/recursion/cmake-build-debug/
 !/recursion/CMakeLists.txt
+!/.idea/!/cmake-build-debug/
+!/.dist/
 !/.idea/
