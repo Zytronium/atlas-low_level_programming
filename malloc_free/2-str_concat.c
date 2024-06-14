@@ -70,5 +70,10 @@ char *str_concat(char *s1, char *s2)
 				newStr[i] = '\0';
 	}
 
+	if (str1)
+		free(str1);
+	if (str2)
+		free(str2);
+
 	return (newStr);
 }
