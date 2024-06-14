@@ -26,8 +26,8 @@ char *str_concat(char *s1, char *s2)
 		{
 			str1Len++;
 		}
-		str1 = malloc(sizeof(char) * str1Len);
 		str1Len--;
+		str1 = malloc(sizeof(char) * str1Len);
 		for (i = 0; s1[i]; i++)
 		{
 			str1[i] = s1[i];
@@ -52,7 +52,7 @@ char *str_concat(char *s1, char *s2)
 		}
 	}
 
-	newStrLen = str1Len + str2Len - 1;
+	newStrLen = str1Len + str2Len;
 	if (newStrLen <= 0)
 		newStrLen = 1;
 
