@@ -11,100 +11,46 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *newStr, *str1, *str2;
-	int str1Len = -1, str2Len = 0, newStrLen, i;
+	char *newStr;
+	int str1Len = 0, str2Len = 0, newStrLen, i;
 
-	if (s1 == NULL)
+	if (s1 != NULL)
 	{
-		str1 = malloc(sizeof(char));
-
-		if  (str1 == NULL)
-		{
-			free(str1);
-			return (NULL);
-		}
-
-		str1[0] = '\0';
-	}
-	else
-	{
-		str1Len++;
 		while (s1[str1Len])
 		{
 			str1Len++;
 		}
-		str1 = malloc(sizeof(char) * str1Len);
-		str1Len--;
-
-		if  (str1 == NULL)
-		{
-			free(str1);
-			return (NULL);
-		}
-
-		for (i = 0; s1[i]; i++)
-		{
-			str1[i] = s1[i];
-		}
-	}
-	if (s2 == NULL)
-	{
-		str2 = malloc(sizeof(char));
-
-		if  (str2 == NULL)
-		{
-			free(str1);
-			free(str2);
-			return (NULL);
-		}
-
-		str2[0] = '\0';
 	}
 	else
+		s1 = "";
+	if (s2 != NULL)
 	{
 		while (s2[str2Len])
 		{
 			str2Len++;
 		}
-		str2 = malloc(sizeof(char) * str2Len);
-
-		if  (str2 == NULL)
-		{
-			free(str1);
-			free(str2);
-			return (NULL);
-		}
-
-		for (i = 0; s2[i]; i++)
-		{
-			str2[i] = s2[i];
-		}
 	}
-
+	else
+		s2 = "";
 
 	newStrLen = str1Len + str2Len;
-	if (newStrLen <= 0)
-		newStrLen = 1;
 
-	newStr = malloc(sizeof(char) * newStrLen);
+	newStr = malloc(sizeof(char) * newStrLen + 1);
+	if (newStr == NULL)
+		return (NULL);
 
-	for (i = 0; i <= newStrLen; i++)
+	for (i = 0; i <= newStrLen + 1; i++)
 	{
-		if (i <= str1Len && str1Len >= 0)
-			newStr[i] = str1[i];
+		if (i < str1Len && str1Len > 0)
+			newStr[i] = s1[i];
 		else
-			if (str2Len > 0)
+			if (i >= str1Len)
 			{
-				if (str1Len == 0)
-					newStr[i] = str2[i - str1Len];
-				else
-					newStr[i] = str2[i - str1Len - 1];
+				newStr[i] = s2[i - str1Len];
 			}
 		else
 			newStr[i] = '\0';
 	}
 
-	free(str1);
-	free(str2);
 	return (newStr);
 }
