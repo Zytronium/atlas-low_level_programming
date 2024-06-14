@@ -52,6 +52,8 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	newStrLen = str2Len + str1Len;
+	if (newStrLen <= 0)
+		newStrLen = 1;
 
 	newStr = malloc(sizeof(char) * newStrLen);
 
@@ -67,8 +69,8 @@ char *str_concat(char *s1, char *s2)
 				else
 					newStr[i] = str2[i - str1Len - 1];
 			}
-			else
-				newStr[i] = '\0';
+		else
+			newStr[i] = '\0';
 	}
 
 	return (newStr);
