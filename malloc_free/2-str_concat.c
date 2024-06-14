@@ -44,8 +44,8 @@ char *str_concat(char *s1, char *s2)
 		{
 			str2Len++;
 		}
-		str2Len++;
 		str2 = malloc(sizeof(char) * str2Len);
+		str2Len++;
 		for (i = 0; s2[i]; i++)
 		{
 			str2[i] = s2[i];
