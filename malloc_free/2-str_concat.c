@@ -60,20 +60,15 @@ char *str_concat(char *s1, char *s2)
 			newStr[i] = str1[i];
 		else
 			if (str2Len > 0)
-		{
-			if (str1Len == 0)
-				newStr[i] = str2[i - str1Len];
-			else
-				newStr[i] = str2[i - str1Len - 1];
-		}
+			{
+				if (str1Len == 0)
+					newStr[i] = str2[i - str1Len];
+				else
+					newStr[i] = str2[i - str1Len - 1];
+			}
 			else
 				newStr[i] = '\0';
 	}
-
-	if (s1 != NULL && str1 != s1)
-		free(str1);
-	if (s2 != NULL && str2 != s2)
-		free(str2);
 
 	return (newStr);
 }
