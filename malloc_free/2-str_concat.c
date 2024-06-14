@@ -52,10 +52,10 @@ char *str_concat(char *s1, char *s2)
 	}
 
 	newStrLen = str2Len + str1Len;
-	if (newStrLen <= 0)
-		newStrLen = 1;
+	if (newStrLen <= 1)
+		newStrLen = 2;
 
-	newStr = malloc(sizeof(char) * newStrLen);
+	newStr = malloc(sizeof(char) * newStrLen - 1);
 
 	for (i = 0; i <= newStrLen; i++)
 	{
