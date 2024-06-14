@@ -55,9 +55,11 @@ void playFreeBirdUponFreeingMallocedBird(char *s)
 	scanf("\n");
 }
 
+/*
 int main(void)
 {
 	playFreeBirdUponFreeingMallocedBird("solo");
 
 	return (0);
 }
+*/
