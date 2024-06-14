@@ -40,22 +40,24 @@ char *str_concat(char *s1, char *s2)
 	}
 	else
 	{
-		while (s2[str2Len]) {
+		while (s2[str2Len])
+		{
 			{
 				str2Len++;
 			}
 			str2 = malloc(sizeof(char) * str2Len);
-			for (i = 0; s2[i]; i++) {
+			for (i = 0; s2[i]; i++)
+			{
 				str2[i] = s2[i];
 			}
 		}
 	}
 
 	newStrLen = str2Len + str1Len;
-	if (newStrLen < 3)
-		newStrLen = 3;
+	if (newStrLen <= 0)
+		newStrLen = 1;
 
-	newStr = malloc(sizeof(char) * newStrLen - 2);
+	newStr = malloc(sizeof(char) * newStrLen);
 
 	for (i = 0; i <= newStrLen; i++)
 	{
