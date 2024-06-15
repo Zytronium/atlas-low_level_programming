@@ -6,6 +6,8 @@
  *
  * @grid: pointer to the grid
  * @h: height index so far
+ *
+ * Return: nothing
  */
 void free_grid(int **grid, int h)
 {
