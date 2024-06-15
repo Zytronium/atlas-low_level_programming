@@ -4,7 +4,7 @@
 /**
  * alloc_grid - creates a 2-D grid of integers, all 0.
  * The numbers in this grid can be edited later, outside of the function
- * (well, they CAN be edited inside the function too, they they're not)
+ * (well, they CAN be edited inside the function too, but they're not)
  *
  * @width: width of the grid
  * @height: height of the grid
@@ -20,12 +20,13 @@ int **alloc_grid(int width, int height)
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	grid = malloc((sizeof(int) * height) * (sizeof(int) * width));
+	grid = malloc(sizeof(int *) * height);
 
-	for (y = 0; y <= height; y++)
+	for (y = 0; y < height; y++)
 	{
-		for (x = 0; x <= width; x++)
-			grid[x][y] = 0;
+		grid[y] = malloc(sizeof(int) * width);
+		for (x = 0; x < width; x++)
+			grid[y][x] = 0;
 	}
 
 	return (grid);
