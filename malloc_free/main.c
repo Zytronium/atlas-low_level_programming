@@ -47,7 +47,7 @@ int main(void)
 	grid[0][3] = 98;
 	grid[3][4] = 402;
 	print_grid(grid, 6, 4);
-	free_grid(grid, 4);
+	free_grid(NULL, 4);
 	return (0);
 	/*switch ((!strcmp(argv[1], "NULL") * 10) + (!strcmp(argv[2], "NULL"))) { // basically 2 bits of binary code, which can either be 00, 01, 10, or 11
 		case 0:

@@ -11,6 +11,8 @@
  */
 void _free_grid(int **grid, int h)
 {
+	if (grid == NULL)
+		return;
 	if (h >= 0)
 	{
 		free(grid[h]);
