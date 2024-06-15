@@ -7,7 +7,7 @@
  * @s1: string to have another string added to it
  * @s2: string to be added to the other string
  *
- * Return: new string that's equal to s1 plus s2
+ * Return: new string that's equal to s1 plus s2, or NULL if malloc fails
  */
 char *str_concat(char *s1, char *s2)
 {
