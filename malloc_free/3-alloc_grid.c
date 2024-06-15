@@ -9,12 +9,12 @@
  *
  * Return: nothing
  */
-void free_grid(int **grid, int h)
+void _free_grid(int **grid, int h)
 {
 	if (h >= 0)
 	{
 		free(grid[h]);
-		free_grid(grid, h - 1);
+		_free_grid(grid, h - 1);
 	}
 	else
 		free(grid);
@@ -48,7 +48,7 @@ int **alloc_grid(int width, int height)
 		grid[y] = malloc(sizeof(int) * width);
 		if (grid[y] == NULL)
 		{
-			free_grid(grid, y - 1);
+			_free_grid(grid, y - 1);
 			return (NULL);
 		}
 		for (x = 0; x < width; x++)
