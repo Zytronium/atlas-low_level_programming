@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free_grid - recursively free all of the grid that has been allocated so far
+ * _free_grid - recursively free all of the grid that has been allocated so far
  *
  * @grid: pointer to the grid
  * @h: height index so far

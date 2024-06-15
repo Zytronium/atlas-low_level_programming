@@ -5,7 +5,7 @@
  * free_grid - recursively free all of the grid that has been allocated
  *
  * @grid: pointer to the grid
- * @h: height index so far
+ * @height: height index so far
  *
  * Return: nothing
  */
