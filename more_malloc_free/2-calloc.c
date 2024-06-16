@@ -27,7 +27,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	ptrArr = array;
 
-	while (i < nmemb)
+	while (i < size * nmemb)
 	{
 		ptrArr[i] = 0;
 		i++;
