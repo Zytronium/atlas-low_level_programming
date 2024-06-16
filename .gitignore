@@ -4,3 +4,8 @@
 !/.idea/!/cmake-build-debug/
 !/.dist/
 !/.idea/
+!/cmake-build-debug/
+!/cmake-build-debug/CMakeFiles/
+!/cmake-build-debug/CMakeFiles/clion-Debug-log.txt
+/cmake-build-debug/CMakeFiles/clion-Debug-log.txt
+/.idea/dictionaries/Owner.xml
