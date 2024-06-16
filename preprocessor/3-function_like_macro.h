@@ -1,6 +1,6 @@
-#ifndef A
-#define A 'a'
+#ifndef ABS
+#define ABS(x) (((x) >= 0) ? (x) : (-x))
 
 int main(void);
 
-#endif /* oops, wrong file */
+#endif
