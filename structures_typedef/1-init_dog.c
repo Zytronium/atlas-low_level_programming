@@ -4,7 +4,7 @@
 /**
  * init_dog - initiates the dog
  *
- * @dog: dog struct
+ * @d: dog struct
  * @name: dogs name
  * @age: dogs age
  * @owner: dogs owner
