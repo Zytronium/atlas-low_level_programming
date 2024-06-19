@@ -1,8 +1,8 @@
 #include "dog.h"
 #include <stdio.h>
 
-/*
- * print_dog - descr
+/**
+ * print_dog - prints the values of each property/element of the provided dog
  *
  * @d: dog to print
  *
@@ -10,9 +10,11 @@
  */
 void print_dog(struct dog *d)
 {
-	/*
-	 * check for nulls
-	 * loop
-	 * printf "%s: %s", [name or age or owner], [d.name/d.age/d.owner]
-	 */
+
+	if (d != NULL)
+	{
+		printf("Name: %s\n", (d->name == NULL) ? "(nil)" : d->name);
+		printf("Age: %f\n", d->age);
+		printf("Owner: %s\n", (d->owner == NULL) ? "(nil)" : d->owner);
+	}
 }
