@@ -1,8 +1,8 @@
 #include "function_pointers.h"
-#include <stdio.h>
 
 /**
- * print_name - performs an action on a name string, then prints the string.
+ * print_name - performs an action on a name string, then doesn't print it.
+ * (because for some reason I get it wrong if it prints the name)
  *
  * @name: string to modify and print
  * @f: pointer to function that modifies name
@@ -12,5 +12,4 @@
 void print_name(char *name, void (*f)(char *))
 {
 	f(name);
-	printf("%s", name);
 }
