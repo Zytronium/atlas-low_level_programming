@@ -24,7 +24,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (new_name == NULL || new_owner == NULL || my_dog == NULL)
 		return (NULL);
 
-	init_dog(my_dog, strcpy(new_name, name), age, strcpy(new_owner, owner));
+	my_dog->name = name;
+	my_dog->age = age;
+	my_dog->owner = owner;
 
 	free(new_name);
 	free(new_owner);
