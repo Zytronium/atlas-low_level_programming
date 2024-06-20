@@ -1,5 +1,5 @@
-#ifndef main_h
-#define main_h
+#ifndef function_pointers_h
+#define function_pointers_h
 
 int main(void);
 void print_name(char *name, void (*f)(char *));
