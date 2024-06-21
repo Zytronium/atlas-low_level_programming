@@ -4,7 +4,7 @@
  * never read what to do... yet. I am just\n
  * gonna go ahead and push this though, so I can\n
  * give a log of some small additions I made so\n
- * you can can see my thought process and stuff\n
+ * you can see my thought process and stuff\n
  * up on GitHub. Now, read the 1st word of every line.\n
  * Update: I read what to do and it's just printing a string, followed by
  * a new line, using recursion.\n
