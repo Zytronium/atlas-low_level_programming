@@ -13,7 +13,7 @@ typedef struct op
 	int (*f)(int a, int b);
 } op_t;
 
-int main(int argc, char **argv);
+int main(int argc, char *argv[]);
 
 int op_add(int a, int b);
 int op_sub(int a, int b);
