@@ -42,5 +42,5 @@ uploaded that you should watch: https://www.youtube.com/watch?v=pyoURHR-g4U ;-)
   - [C - Search Algorithms]()
   - [C - Binary Trees]()
 
-[^1]: * <sup><sub>: _As of the most recent readme update, this is where I am. Nothing below here exists yet._</sub></sup>
+[^1]: \* <sup><sub>: _As of the most recent readme update, this is where I am. Nothing below here exists yet._</sub></sup>
 - - -
