@@ -25,7 +25,7 @@ uploaded that you should watch: https://www.youtube.com/watch?v=pyoURHR-g4U ;-)
   - [C - More malloc, free](https://github.com/Zytronium/atlas-low_level_programming/tree/main/more_malloc_free)
   - [C - Preprocessor](https://github.com/Zytronium/atlas-low_level_programming/tree/main/preprocessor)
   - [C - Structures, typedef](https://github.com/Zytronium/atlas-low_level_programming/tree/main/structures_typedef)
-  - [C - Function pointers](https://github.com/Zytronium/atlas-low_level_programming/tree/main/function_pointers) [^*]
+  - [C - Function pointers](https://github.com/Zytronium/atlas-low_level_programming/tree/main/function_pointers) *[^1]
   - [C - Variadic functions](https://github.com/Zytronium/atlas-low_level_programming/tree/main/variadic_functions)
 - ### `PP1200`
   - [C - printf]()
@@ -42,5 +42,5 @@ uploaded that you should watch: https://www.youtube.com/watch?v=pyoURHR-g4U ;-)
   - [C - Search Algorithms]()
   - [C - Binary Trees]()
 
-[^*]: <sup><sub>_As of the most recent readme update, this is where I am. Nothing below here exists yet_</sub></sup>
+[^1]: * <sup><sub>: _As of the most recent readme update, this is where I am. Nothing below here exists yet._</sub></sup>
 - - -
