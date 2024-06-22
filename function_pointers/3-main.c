@@ -13,17 +13,17 @@ int main(int argc, char *argv[])
 	int num1;
 	int num2;
 
-	printf("0");
+	putchar('0');
 
 	operator = argv[3];
 	num1 = atoi(argv[2]);
 	num2 = atoi(argv[4]);
 
-	printf("a");
+	putchar('a');
 
 	if (argc != 4)
 	{
-		printf("Error\n");
+		printf("Error\n98");
 		exit(98);
 	}
 
@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 
 	if (get_op_func(operator) == NULL)
 	{
-		printf("Error\n");
+		printf("Error\n99");
 		exit(99);
 	}
 
@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 
 	if (num2 == 0 && (operator[0] == '/' || operator[0] == '%'))
 	{
-		printf("Error\n");
+		printf("Error\n100");
 		exit(100);
 	}
 
