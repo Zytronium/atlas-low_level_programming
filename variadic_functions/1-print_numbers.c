@@ -22,7 +22,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 		else
 			if (i == n - 1)
-				printf("\n");
+				_putchar('\n');
 		i++;
 	}
 	va_end(args);
