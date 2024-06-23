@@ -12,4 +12,5 @@ add_executable(atlas-low-level-programming
         misc/test_is_pos.c
         variadic_functions/1-print_numbers.c
         variadic_functions/0-sum_them_all.c
-        variadic_functions/2-print_strings.c)
+        variadic_functions/2-print_strings.c
+        variadic_functions/3-print_all.c)
