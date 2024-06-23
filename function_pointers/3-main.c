@@ -5,6 +5,9 @@
 /**
  * main - entry point | prints result
  *
+ * @argc: number of arguments supplied, including the program name
+ * @argv: array of strings, which are the arguments supplied
+ *
  * Return: Always 0
  */
 int main(int argc, char *argv[])
