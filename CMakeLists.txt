@@ -10,4 +10,6 @@ add_executable(atlas-low-level-programming
         function_pointers/3-calc.h
         function_pointers/_putchar.c
         misc/test_is_pos.c
-        variadic_functions/1-print_numbers.c)
+        variadic_functions/1-print_numbers.c
+        variadic_functions/0-sum_them_all.c
+        variadic_functions/2-print_strings.c)
