@@ -8,4 +8,6 @@ add_executable(atlas-low-level-programming
         function_pointers/3-main.c
         function_pointers/3-get_op_func.c
         function_pointers/3-calc.h
-        function_pointers/_putchar.c)
+        function_pointers/_putchar.c
+        misc/test_is_pos.c
+        variadic_functions/1-print_numbers.c)
