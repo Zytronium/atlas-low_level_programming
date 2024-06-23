@@ -2,7 +2,7 @@
 Lots of low level C stuff.
 
 ---
-Other misc stuff that are not in any of the directories here are just stuff I made for fun or testing.
+Everything in the misc directory is just stuff I made for fun or testing.
 If you are reading this and are another student, and are here to copy and cheat, here's a good video I
 uploaded that you should watch: https://www.youtube.com/watch?v=pyoURHR-g4U ;-)
 
