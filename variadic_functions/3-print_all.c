@@ -12,32 +12,34 @@ void print_all(const char * const format, ...)
 {
 //	char formats[5] = "cifs";
 	va_list args;
-	int i = 0, j = 0;
+	int i = 0, j = 0, n = strlen(format);
 
-	while (i < strlen(format))
+	va_start(args, format);
+	while (i < n)
 	{
 		switch (format[j]) {
 			case 'c':
-				//char
+				printf("%c", va_arg(args, char));
 				j++;
 				break;
 			case 'i':
-				//integer
+				printf("%d", va_arg(args, int));
 				j++;
 				break;
 			case 'f':
-				//float
+				printf("%f", va_arg(args, float));
 				j++;
 				break;
 			case 's':
-				//string
+				printf("%s", va_arg(args, char *));
 				j++;
 				break;
 			default:
-				//do not increment format index
 				break;
 		}
 		i++;
 	}
+	va_end(args);
+
 	printf("\n");
 }
