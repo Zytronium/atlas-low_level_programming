@@ -11,31 +11,29 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	int i = 0, j = 0, n = strlen(format);
+	int i = 0, n = strlen(format);
 
 	va_start(args, format);
 	while (i < n)
 	{
-		char f = format[i];
-
-		switch (f) {
+		switch (format[i])
+		{
 			case 'c':
-				printf("%c", va_arg(args, char));
-				j++;
+				printf("%c", va_arg(args, int));
 				break;
 			case 'i':
 				printf("%d", va_arg(args, int));
-				j++;
 				break;
 			case 'f':
-				printf("%f", va_arg(args, float));
-				j++;
+				printf("%f", va_arg(args, double));
 				break;
 			case 's':
-				if (va_arg(args, char *) == NULL)
-					printf("(nil)");
-				printf("%s", va_arg(args, char *));
-				j++;
+				char *str;
+
+				str = va_arg(args, char *);
+				if (str == NULL)
+					str = "(nil)";
+				printf("%s", str);
 				break;
 			default:
 				break;
@@ -46,15 +44,4 @@ void print_all(const char * const format, ...)
 	va_end(args);
 
 	printf("\n");
-}
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	print_all("ceis", 'B', 3, "stSchool");
-	return (0);
 }
