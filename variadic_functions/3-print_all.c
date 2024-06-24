@@ -11,8 +11,16 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	int i = 0, n = strlen(format);
+	int i = 0, n =0, m = 0;
+	char frmt;
 
+	while (format[m])
+	{
+		frmt = format[m];
+		if (frmt == 'c' || frmt == 'i' || frmt == 'f' || frmt == 's')
+			n++;
+		m++;
+	}
 	va_start(args, format);
 	while (i < n)
 	{
@@ -37,10 +45,8 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
-
 		i++;
 	}
 	va_end(args);
-
 	printf("\n");
 }
