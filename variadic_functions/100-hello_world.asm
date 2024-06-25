@@ -3,9 +3,9 @@ section.data:
     len equ $ - msg
 
 section.text:
-    global _start:
+    global main
 
-    start:
+    main:
     MOV RAX, 1
     MOV RDI, 1
     MOV RSI, msg
