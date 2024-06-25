@@ -26,9 +26,9 @@ uploaded that you should watch: https://www.youtube.com/watch?v=pyoURHR-g4U ;-)
   - [C - Preprocessor](https://github.com/Zytronium/atlas-low_level_programming/tree/main/preprocessor)
   - [C - Structures, typedef](https://github.com/Zytronium/atlas-low_level_programming/tree/main/structures_typedef)
   - [C - Function pointers](https://github.com/Zytronium/atlas-low_level_programming/tree/main/function_pointers)
-  - [C - Variadic functions](https://github.com/Zytronium/atlas-low_level_programming/tree/main/variadic_functions) *[^1]
+  - [C - Variadic functions](https://github.com/Zytronium/atlas-low_level_programming/tree/main/variadic_functions)
 - ### `PP1200`
-  - [C - printf]()
+  - [C - printf](https://github.com/Zytronium/printf) *[^1]
   - [C - Singly linked lists]()
   - [C - More singly linked lists]()
   - [C - Bit manipulation]() (hmm... you mean like bitwise operations?)
