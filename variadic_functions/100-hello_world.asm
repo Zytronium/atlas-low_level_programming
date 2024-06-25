@@ -1,8 +1,8 @@
-section.data:
+data:
     msg: db 'Hello, World', 0xA
     len equ $ - msg
 
-section.text:
+text:
     global main
 
     main:
