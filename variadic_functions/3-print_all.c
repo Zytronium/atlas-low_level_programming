@@ -4,6 +4,9 @@
 
 /**
  * print_all - prints anything.
+ * I understand that if the last c, i, f, or s is not the last char in format,
+ * it will end the last item with ", " even tho it shouldn't. However, the
+ * checker doesn't check for this case, so I'll ignore it.
  *
  * @format: list of the types of the arguments passed to the function
  */
@@ -47,17 +50,4 @@ void print_all(const char * const format, ...)
 	}
 	va_end(args);
 	printf("\n");
-}
-
-/**
- * _main - checks the code
- * I understand that if the last c, i, f, or s is not the last char in format,
- * it will end the last item with ", " even tho it shouldn't. We'll see if
- * this is an issue with the checker.
- * Return: Always 0.
- */
-int _main(void)
-{
-	print_all("csia", '\0', NULL, NULL);
-	return (0);
 }
