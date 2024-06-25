@@ -1,8 +1,8 @@
-.data:
+section.data:
     msg: db 'Hello World', 0xA
     len equ $ - msg
 
-.text:
+section.text:
     global _start
 
     start:
