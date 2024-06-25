@@ -3,7 +3,7 @@ section.data:
     len equ $ - msg
 
 section.text:
-    global _start
+    global _start:
 
     start:
     MOV RAX, 1
