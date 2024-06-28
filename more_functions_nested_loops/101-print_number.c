@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_number - prints an integer onecharacter at a time,
+ * print_number - prints an integer one character at a time,
  * with (almost) NO LIMIT to how digits it can print.
  * @n: number to print
  * Return: doesn't return
