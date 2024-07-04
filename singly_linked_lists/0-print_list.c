@@ -10,7 +10,7 @@
 size_t print_list(const list_t *h)
 {
 	int i;
-	list_t *node = h;
+	const list_t *node = h;
 
 	for (i = 0; node != NULL; i++)
 	{
