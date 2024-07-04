@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
+#include "0-print_list.c"
 
 /**
  * main - checks the code
