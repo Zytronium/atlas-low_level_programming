@@ -11,4 +11,5 @@ add_executable(atlas-low-level-programming
         variadic_functions/3-print_all.c
         singly_linked_lists/2-add_node.c
         singly_linked_lists/0-print_list.c
-        ../../../../1-list_len.c)
+        ../../../../1-list_len.c
+        singly_linked_lists/3-add_node_end.c)
