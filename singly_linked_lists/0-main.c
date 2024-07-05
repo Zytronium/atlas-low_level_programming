@@ -11,10 +11,9 @@
  */
 int main(void)
 {
-	list_t node1 = {"World", 5, NULL};
 	list_t *head;
 
-	head = &node1;
+	head = NULL;
 	add_node(&head, "Alexandro");
 	add_node(&head, "Asaia");
 	add_node(&head, "Augustin");
