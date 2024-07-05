@@ -1,5 +1,8 @@
 #include <stdlib.h>
 #include "lists.h"
+#include "2-add_node.c"
+#include "0-print_list.c"
+#include "_putchar.c"
 
 /**
  * main - check the code
@@ -9,6 +12,10 @@
 int main(void)
 {
 	list_t *head;
+
+	_putchar(':');
+	_putchar('D');
+	_putchar('\n');
 
 	head = NULL;
 	add_node(&head, "Alexandro");
@@ -39,6 +46,12 @@ int main(void)
 	add_node(&head, "Tasneem");
 	add_node(&head, "William");
 	add_node(&head, "Zee");
+	_putchar(':');
+	_putchar(')');
+	_putchar('\n');
 	print_list(head);
+	_putchar(':');
+	_putchar('0');
+	_putchar('\n');
 	return (0);
 }
