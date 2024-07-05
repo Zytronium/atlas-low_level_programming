@@ -55,6 +55,23 @@
 }
 
 /**
+ * tail_node - finds the last (non-NULL) node of a list
+ *
+ * @head: the head or starting node of the search
+ *
+ * Return: the last node of a list
+ */
+list_t tail_node(list_t **head)
+{
+	list_t *nxt = head[0]->next;
+
+	if (nxt == NULL)
+		return *(head[0]);
+
+	return (tail_node(&nxt));
+}
+
+/**
  * _strlen - Gets the length of a string.
  * @str: String to find the length of.
  * Return: The length of the string (as an unsigned int).
