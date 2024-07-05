@@ -9,6 +9,7 @@
 void free_list(list_t *head)
 {
 	list_t *nxt;
+
 	if (head != NULL)
 	{
 		nxt = head->next;
