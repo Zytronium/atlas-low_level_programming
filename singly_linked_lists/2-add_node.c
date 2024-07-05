@@ -57,7 +57,7 @@ list_t *add_node(list_t **head, const char *str)
 /**
  * _strlen - Gets the length of a string.
  * @str: string to find the length of.
- * return: the length of the string (as an unsigned int).
+ * Return: the length of the string (as an unsigned int).
  */
 unsigned int _strlen(const char *str)
 {
