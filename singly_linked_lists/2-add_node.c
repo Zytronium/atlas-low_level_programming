@@ -20,7 +20,6 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 
 	temp = malloc(sizeof(list_t));
-
 	if (temp == NULL)
 		return (NULL);
 
@@ -36,44 +35,31 @@ list_t *add_node(list_t **head, const char *str)
 		temp->len = 0;
 		temp->next = NULL;
 	}
-
 	newNode = malloc(sizeof(list_t));
-
 	if (newNode == NULL)
 	{
 		free(temp->str);
 		free(temp);
 		return (NULL);
 	}
-
 	newNode->str = strdup(str);
 	newNode->len = _strlen(str);
 	newNode->next = temp;
-
-	if (!headIsNull)
-	{
-		head[0]->str = strdup(newNode->str);
-		head[0]->len = newNode->len;
-		head[0]->next = newNode->next;
-	}
-	else
-	{
+	if (headIsNull)
 		*head = malloc(sizeof(list_t));
 
-		head[0]->str = strdup(newNode->str);
-		head[0]->len = newNode->len;
-		head[0]->next = NULL;
-	}
-
+	head[0]->str = strdup(newNode->str);
+	head[0]->len = newNode->len;
+	head[0]->next = !headIsNull ? newNode->next : NULL;
 	return (newNode);
 }
 
 /**
- * _strlen Gets the length of a string.
+ * _strlen - Gets the length of a string.
  * @str: string to find the length of.
  * @return the length of the string (as an unsigned int).
  */
-unsigned int _strlen(const char * str)
+unsigned int _strlen(const char *str)
 {
 	int i = 0;
 

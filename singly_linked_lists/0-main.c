@@ -5,7 +5,7 @@
 #include "_putchar.c"
 
 /**
- * main - check the code
+ * main - checks the code
  *
  * Return: Always 0.
  */
@@ -14,6 +14,7 @@ int main(void)
 	list_t *head;
 
 	head = NULL;
+
 	add_node(&head, "Alexandro");
 	add_node(&head, "Asaia");
 	add_node(&head, "Augustin");
@@ -42,12 +43,6 @@ int main(void)
 	add_node(&head, "Tasneem");
 	add_node(&head, "William");
 	add_node(&head, "Zee");
-	_putchar(':');
-	_putchar(')');
-	_putchar('\n');
 	print_list(head);
-	_putchar('(');
-	_putchar(':');
-	_putchar('\n');
 	return (0);
 }
