@@ -11,11 +11,8 @@
  */
 int main(void)
 {
+	list_t node1 = {"World", 5, NULL};
 	list_t *head;
-
-	_putchar(':');
-	_putchar('D');
-	_putchar('\n');
 
 	head = NULL;
 	add_node(&head, "Alexandro");
@@ -50,8 +47,8 @@ int main(void)
 	_putchar(')');
 	_putchar('\n');
 	print_list(head);
+	_putchar('(');
 	_putchar(':');
-	_putchar('0');
 	_putchar('\n');
 	return (0);
 }
