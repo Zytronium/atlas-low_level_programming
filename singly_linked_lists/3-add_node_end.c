@@ -12,8 +12,7 @@
  */
  list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *newNode;
-	list_t *temp;
+	list_t *newNode, *temp, *tail = tail_node(head);
 	int headIsNull = *head == NULL;
 
 	if (str == NULL)
@@ -45,12 +44,13 @@
 	newNode->str = strdup(str);
 	newNode->len = _strlen(str);
 	newNode->next = temp;
+	tail = tail_node(head);
 	if (headIsNull)
 		*head = malloc(sizeof(list_t));
 
-	head[0]->str = strdup(newNode->str);
-	head[0]->len = newNode->len;
-	head[0]->next = !headIsNull ? newNode->next : NULL;
+	tail->str = strdup(newNode->str);
+	tail->len = newNode->len;
+	tail->next = !headIsNull ? newNode->next : NULL;
 	return (newNode);
 }
 
@@ -59,14 +59,14 @@
  *
  * @head: the head or starting node of the search
  *
- * Return: the last node of a list
+ * Return: pointer to the last node of a list
  */
-list_t tail_node(list_t **head)
+list_t *tail_node(list_t **head)
 {
 	list_t *nxt = head[0]->next;
 
 	if (nxt == NULL)
-		return *(head[0]);
+		return (head[0]);
 
 	return (tail_node(&nxt));
 }
@@ -81,9 +81,7 @@ unsigned int _strlen(const char * str)
 	int i = 0;
 
 	while (str[i] != '\0')
-	{
 		i++;
-	}
 
 	return (i);
 }
