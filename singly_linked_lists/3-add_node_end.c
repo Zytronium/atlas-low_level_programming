@@ -40,7 +40,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		head[0]->len = newNode->len;
 		head[0]->next = newNode->next;
 
-		if (head[0]->str == NULL)
+		if (*head == NULL || head[0]->str == NULL)
 		{
 			free(newNode->str);
 			free(newNode);
@@ -69,7 +69,7 @@ list_t *tail_node(list_t *head)
 	if (head->next == NULL)
 		return (head);
 
-	return tail_node(head->next);
+	return (tail_node(head->next));
 }
 
 /**
@@ -77,7 +77,7 @@ list_t *tail_node(list_t *head)
  * @str: String to find the length of.
  * Return: The length of the string (as an unsigned int).
  */
-unsigned int _strlen(const char * str)
+unsigned int _strlen(const char *str)
 {
 	int i = 0;
 
