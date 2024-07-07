@@ -4,12 +4,9 @@ project(atlas-low-level-programming C)
 set(CMAKE_C_STANDARD 90)
 
 add_executable(atlas-low-level-programming
-        function_pointers/_putchar.c
-        variadic_functions/1-print_numbers.c
-        variadic_functions/0-sum_them_all.c
-        variadic_functions/2-print_strings.c
-        variadic_functions/3-print_all.c
+        singly_linked_lists/_putchar.c
         singly_linked_lists/2-add_node.c
         singly_linked_lists/0-print_list.c
-        ../../../../1-list_len.c
-        singly_linked_lists/3-add_node_end.c)
+        singly_linked_lists/3-add_node_end.c
+        singly_linked_lists/1-list_len.c
+        singly_linked_lists/lists.h)
