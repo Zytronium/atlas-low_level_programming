@@ -10,47 +10,33 @@
  *
  * Return: address of the new node, or NULL if it failed
  */
- list_t *add_node_end(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *newNode, *temp, *tail = tail_node(head);
+	list_t *newNode;
 	int headIsNull = *head == NULL;
 
 	if (str == NULL)
 		return (NULL);
 
-	temp = malloc(sizeof(list_t));
-	if (temp == NULL)
+	newNode = malloc(sizeof(list_t));
+
+	if (newNode == NULL)
 		return (NULL);
 
-	if (!headIsNull)
-	{
-		temp->str = strdup(head[0]->str);
-		temp->len = head[0]->len;
-		temp->next = head[0]->next;
-	}
-	else
-	{
-		temp->str = NULL;
-		temp->len = 0;
-		temp->next = NULL;
-	}
-	newNode = malloc(sizeof(list_t));
-	if (newNode == NULL)
-	{
-		free(temp->str);
-		free(temp);
-		return (NULL);
-	}
 	newNode->str = strdup(str);
 	newNode->len = _strlen(str);
-	newNode->next = temp;
-	tail = tail_node(head);
-	if (headIsNull)
-		*head = malloc(sizeof(list_t));
+	newNode->next = NULL;
 
-	tail->str = strdup(newNode->str);
-	tail->len = newNode->len;
-	tail->next = !headIsNull ? newNode->next : NULL;
+	if (headIsNull)
+	{
+		*head = malloc(sizeof(list_t));
+		head[0]->str = strdup(newNode->str);
+		head[0]->len = newNode->len;
+		head[0]->next = newNode->next;
+	}
+	else
+		tail_node(*head)->next = newNode;
+
 	return (newNode);
 }
 
@@ -61,14 +47,15 @@
  *
  * Return: pointer to the last node of a list
  */
-list_t *tail_node(list_t **head)
+list_t *tail_node(list_t *head)
 {
-	list_t *nxt = head[0]->next;
+	if (head == NULL)
+		return (NULL);
 
-	if (nxt == NULL)
-		return (head[0]);
+	if (head->next == NULL)
+		return (head);
 
-	return (tail_node(&nxt));
+	return tail_node(head->next);
 }
 
 /**
