@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 /**
- * add_node - adds a new node to the beginning of a listint_t list
+ * add_nodeint - adds a new node to the beginning of a listint_t list
  *
  * @head: the pointer to the head of the listint_t list
- * @str: string to copy into the value of the new node
+ * @n: integer to copy into the value of the new node
  *
  * Return: address of the new node, or NULL if it failed
  */
