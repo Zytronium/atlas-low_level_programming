@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <string.h>
 #include <stdlib.h>
 
 /**
@@ -48,21 +47,4 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	head[0]->next = !headIsNull ? newNode->next : NULL;
 
 	return (newNode);
-}
-
-/**
- * _strlen - Gets the length of a string.
- * @str: string to find the length of.
- * Return: the length of the string (as an unsigned int).
- */
-unsigned int _strlen(const char *str)
-{
-	int i = 0;
-
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-
-	return (i);
 }
