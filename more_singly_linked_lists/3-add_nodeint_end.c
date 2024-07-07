@@ -30,7 +30,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 }
 
 /**
- * tail_node_int_int - finds the last (non-NULL) node of a list
+ * tail_node_int - finds the last (non-NULL) node of a list
  *
  * @head: the head or starting node of the search
  *
