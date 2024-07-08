@@ -2,20 +2,25 @@
 #include <stdlib.h>
 
 /**
- * pop_listint - deletes the head of a list, sets the next node to the head,
- * and returns the data of the deleted node
+ * pop_listint - Deletes the head of a list, sets the head to
+ * the next node, and returns the data of the deleted node.
  *
- * @param head: the head of the list
+ * @head: The head of the list
  *
- * Return: data of the deleted node
+ * Return: Data of the deleted node,
+ * or 0 if the list is empty
  */
 int pop_listint(listint_t **head)
 {
-	int data = head[0]->n;
-	listint_t *new_head = head[0]->next;
+	int data;
 
-	free(*head);
-	*head = new_head;
+	if (head == NULL)
+		return (0);
+
+	data = head[0]->n;
+	**head = *head[0]->next;
+
+	free(head[0]->next);
 
 	return (data);
 }
