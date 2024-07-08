@@ -20,6 +20,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		if (newNode == NULL || newNode->next == NULL)
 			return (NULL);
 
+		/*
+		 * note to self:
+		 * probably need to create a temporary node here
+		 */
 		newNode = newNode->next;
 		i++;
 	}
