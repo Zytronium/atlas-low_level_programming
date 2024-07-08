@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * sum_listint - calculates the sum of a list of ints
  *
- * @param1: descr.
+ * @head: first node of the listint_t linked list
  *
- * Return: 0
+ * Return: sum of the list of ints
  */
 int sum_listint(listint_t *head)
 {
