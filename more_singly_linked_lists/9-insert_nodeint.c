@@ -13,27 +13,34 @@
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *newNode = *head, *tempNode;
+	listint_t *currentNode = *head, *tempNode;
 	unsigned int i = 0;
-
-	while (i < idx || (idx == 0 && i == 0))
-	{
-		if (newNode == NULL || newNode->next == NULL)
-			return (NULL);
-
-		newNode = newNode->next;
-		i++;
-	}
-	
 	tempNode = malloc(sizeof(listint_t));
 
-	if (tempNode == NULL)
-		return (NULL);
 
-	tempNode = newNode;
+	while (i <= idx)
+	{
+		if (currentNode == NULL || currentNode->next == NULL || tempNode == NULL)
+			return (NULL);
 
-	tempNode->n = n;
-	tempNode->next = newNode->next;
+		currentNode = currentNode->next;
 
-	return (newNode);
+		if (i == idx){
+			tempNode->n = n;
+			printf("The new tempNode: %d", tempNode->n );
+			tempNode->next = currentNode;
+			printf("The new nextNode: %d", tempNode->next->n );
+			currentNode = tempNode;
+			currentNode->next = tempNode->next;
+			printf("The new currentNode: %d", currentNode->n );
+			printf("The next new currentNode: %d", currentNode->next->n );
+			printf("this gets used right!");
+		}
+		printf("\ni: %d\n\n", i);
+		print_listint(*head);
+		printf("\n\n\n");
+
+		i++;
+}
+	return (currentNode);
 }
