@@ -9,4 +9,5 @@ add_executable(atlas-low-level-programming
         more_singly_linked_lists/0-print_listint.c
         more_singly_linked_lists/3-add_nodeint_end.c
         more_singly_linked_lists/6-pop_listint.c
-        more_singly_linked_lists/7-get_nodeint.c)
+        more_singly_linked_lists/7-get_nodeint.c
+        more_singly_linked_lists/8-sum_listint.c)
