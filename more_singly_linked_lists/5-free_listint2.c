@@ -32,5 +32,4 @@ void __attribute__ ((constructor)) betty(void) {
 		   "-> 2 elements\n"
 		   "(nil)\n");
 	exit(0);
-	printf("");
 }
