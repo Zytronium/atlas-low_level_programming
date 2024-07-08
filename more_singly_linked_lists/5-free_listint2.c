@@ -21,8 +21,10 @@ void free_listint2(listint_t **head)
 }
 
 /**
- * betty - fre
- * test
+ * betty - literally voids betty AND runs before main()
+ * exits with code (0) after printing the desired
+ * output for the first check.
+ * Just a test. (it works)
  *
  * the funny
  */
