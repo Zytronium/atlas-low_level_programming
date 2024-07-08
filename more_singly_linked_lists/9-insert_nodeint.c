@@ -27,12 +27,16 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		*tempNode = _add_nodeint(head, n);
 		return (tempNode);
 	}
-		
 
 	while (i <= idx)
 	{
 		if (i < idx)
+		{
+			if (currentNode->next == NULL)
+				return (NULL);
+
 			currentNode = currentNode->next;
+		}
 		
 		if (i == idx)
 		{
@@ -40,7 +44,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			tempNode->next = currentNode->next;
 			currentNode->next = tempNode;
 		}
-		
+
 		i++;
 	}
 
@@ -48,12 +52,12 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 }
 
 /**
- * add_nodeint - adds a new node to the beginning of a listint_t list
+ * _add_nodeint - adds a new node to the beginning of a listint_t list
  *
  * @head: the pointer to the head of the listint_t list
  * @n: integer to copy into the value of the new node
  *
- * Return: address of the new node, or NULL if it failed
+ * Return: The new node.
  */
 listint_t _add_nodeint(listint_t **head, const int n)
 {
