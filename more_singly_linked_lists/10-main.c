@@ -26,6 +26,9 @@ int main(void)
     delete_nodeint_at_index(&head, 5);
     print_listint(head);
     printf("-----------------\n");
+    delete_nodeint_at_index(&head, 9);
+    print_listint(head);
+    printf("-----------------\n");
     delete_nodeint_at_index(&head, 0);
     print_listint(head);
     printf("-----------------\n");
