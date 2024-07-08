@@ -9,15 +9,10 @@
  */
 int main(void)
 {
-	int n;
+	listint_t *head;
 
-	n = pop_listint(NULL);
-	printf("- %d\n", n);
-	print_listint(NULL);
-	n = pop_listint(NULL);
-	printf("- %d\n", n);
-	print_listint(NULL);
-	free_listint2(NULL);
-	printf("%p\n", NULL);
+	head = NULL;
+
+	pop_listint(&head);
 	return (0);
 }
