@@ -15,7 +15,7 @@ unsigned int binary_to_uint(const char *b)
 	int i;
 	char bit;
 
-	if (b == NULL)
+	if (b == (void *)0) /*didn't feel like importing the entire stdlib for NULL*/
 		return (0);
 
 	while (b[size] != '\0')
