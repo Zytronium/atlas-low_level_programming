@@ -30,9 +30,48 @@ unsigned int binary_to_uint(const char *b)
 		else
 			return (0);
 
-		result += bit * xPowY(2, ((i - (int) size) * - 1) - 1);
+		result += bit * xPowY(2, ((i - (int) size) * -1) - 1);
 	}
+
 	return (result);
+
+	/*
+	* t
+	* e
+	* s
+	* t
+	* 
+	* f
+	* o
+	* r
+	*
+	* i
+	* f
+	*
+	* b
+	* e
+	* t
+	* t
+	* y
+	*
+	* c
+	* h
+	* e
+	* c
+	* k
+	* s
+	*
+	* c
+	* o
+	* m
+	* m
+	* e
+	* n
+	* t
+	* s
+	* 
+	* when checking if a function is over 40 lines of code or over 80 characters long in a line.
+	*/
 }
 
 /**
