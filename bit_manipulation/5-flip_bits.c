@@ -9,11 +9,13 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int count = 0, i;
+	unsigned int count = 0, nXORm = n ^ m;
 
-	for (i = 1; n ^ m; i++)
+	while (nXORm)
 	{
-		(count += ((unsigned long int) (n ^ m) >>= (unsigned long int) i) & 1);
+		count += (nXORm & 1);
+		nXORm >>= 1;
 	}
+
 	return (count);
 }
