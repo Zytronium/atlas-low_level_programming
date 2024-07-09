@@ -8,7 +8,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int max = (unsigned long int) 1 << (sizeof(unsigned long int) * 8 - 1);
+	unsigned long int m = (unsigned long)1 << (sizeof(unsigned long) * 8 - 1);
 	int started = 0;
 
 	if (n == 0)
@@ -17,18 +17,18 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	while (max > 0)
+	while (m > 0)
 	{
-		if (max <= n)
+		if (m <= n)
 		{
-			n -= max;
+			n -= m;
 			printf("1");
 			started = 1;
 		}
 		else if (started)
 			printf("0");
 
-		max >>= 1;
+		m >>= 1;
 	}
 	
 }
