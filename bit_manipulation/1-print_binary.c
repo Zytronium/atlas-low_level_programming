@@ -9,7 +9,14 @@
 void print_binary(unsigned long int n)
 {
 	unsigned long int max = 1;
+	int started = 0;
 
+	if (n == 0)
+	{
+		printf("0");
+		return;
+	}
+	
 	while (max < n)
 	{
 		max <<= 1;
@@ -23,10 +30,14 @@ void print_binary(unsigned long int n)
 		{
 			n -= max;
 			printf("1");
+			started = 1;
 		}
-		else
+		else if (started)
+		{
 			printf("0");
+		}
 
 		max >>= 1;
 	}
+	
 }
