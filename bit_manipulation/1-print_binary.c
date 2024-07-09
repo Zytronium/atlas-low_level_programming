@@ -18,9 +18,9 @@ void print_binary(unsigned long int n)
 		/*i++;*/
 	}
 
-	while ((unsigned long int) max > 1)
+	while ((unsigned long int) max > 0)
 	{
-		if ((unsigned long int) max >= n)
+		if ((unsigned long int) max <= n)
 		{
 		
 			printf("1");
