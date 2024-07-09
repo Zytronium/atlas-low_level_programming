@@ -17,13 +17,6 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	/*while (max < n)
-	{
-		max <<= 1;
-		if (max >= n)
-			break;
-	}*/
-
 	while (max > 0)
 	{
 		if (max <= n)
