@@ -17,7 +17,7 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int charsRead, printedChars = 0, fileDesc;
+	int charsRead, fileDesc;
 	char *contents;
 
 	contents = malloc(sizeof(char) * letters + 1);
@@ -37,9 +37,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	contents[charsRead + 1] = '\0';
 
-	printedChars = write(STDOUT_FILENO, contents, charsRead);
-
-	close(fileDesc);
-
-	return (printedChars);
+	return (write(STDOUT_FILENO, contents, charsRead));
 }
