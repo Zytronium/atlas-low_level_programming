@@ -80,12 +80,12 @@ clean: CMakeFiles/atlas-low-level-programming.dir/clean
 CMakeFiles/atlas-low-level-programming.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\daste\CLionProjects\atlas-low_level_programming\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target atlas-low-level-programming"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\daste\CLionProjects\atlas-low_level_programming\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target atlas-low-level-programming"
 .PHONY : CMakeFiles/atlas-low-level-programming.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/atlas-low-level-programming.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\daste\CLionProjects\atlas-low_level_programming\cmake-build-debug\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\daste\CLionProjects\atlas-low_level_programming\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/atlas-low-level-programming.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\daste\CLionProjects\atlas-low_level_programming\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/atlas-low-level-programming.dir/rule

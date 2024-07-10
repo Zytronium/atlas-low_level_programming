@@ -85,19 +85,7 @@
 		<Unit filename="C:/Users/daste/CLionProjects/atlas-low_level_programming/doubly_linked_lists/0-print_dlistint.c">
 			<Option target="atlas-low-level-programming"/>
 		</Unit>
-		<Unit filename="C:/Users/daste/CLionProjects/atlas-low_level_programming/file_io/0-main.c">
-			<Option target="atlas-low-level-programming"/>
-		</Unit>
-		<Unit filename="C:/Users/daste/CLionProjects/atlas-low_level_programming/file_io/0-read_textfile.c">
-			<Option target="atlas-low-level-programming"/>
-		</Unit>
-		<Unit filename="C:/Users/daste/CLionProjects/atlas-low_level_programming/file_io/1-create_file.c">
-			<Option target="atlas-low-level-programming"/>
-		</Unit>
-		<Unit filename="C:/Users/daste/CLionProjects/atlas-low_level_programming/file_io/2-append_text_to_file.c">
-			<Option target="atlas-low-level-programming"/>
-		</Unit>
-		<Unit filename="C:/Users/daste/CLionProjects/atlas-low_level_programming/file_io/main.h">
+		<Unit filename="C:/Users/daste/CLionProjects/atlas-low_level_programming/doubly_linked_lists/main.c">
 			<Option target="atlas-low-level-programming"/>
 		</Unit>
 		<Unit filename="C:/Users/daste/CLionProjects/atlas-low_level_programming/CMakeLists.txt">
