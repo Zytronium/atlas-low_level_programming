@@ -8,4 +8,5 @@ add_executable(atlas-low-level-programming
         file_io/0-read_textfile.c
         file_io/0-read_textfile.c
         file_io/0-main.c
-        file_io/1-create_file.c)
+        file_io/1-create_file.c
+        file_io/2-append_text_to_file.c)
