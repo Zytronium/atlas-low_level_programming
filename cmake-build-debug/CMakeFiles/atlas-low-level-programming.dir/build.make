@@ -110,11 +110,26 @@ CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/1-dlistint_len.c.
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/1-dlistint_len.c.s"
 	C:\Users\daste\AppData\Local\Programs\CLion\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\daste\CLionProjects\atlas-low_level_programming\doubly_linked_lists\1-dlistint_len.c -o CMakeFiles\atlas-low-level-programming.dir\doubly_linked_lists\1-dlistint_len.c.s
 
+CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.obj: CMakeFiles/atlas-low-level-programming.dir/flags.make
+CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.obj: C:/Users/daste/CLionProjects/atlas-low_level_programming/doubly_linked_lists/2-add_dnodeint.c
+CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.obj: CMakeFiles/atlas-low-level-programming.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\daste\CLionProjects\atlas-low_level_programming\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.obj"
+	C:\Users\daste\AppData\Local\Programs\CLion\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.obj -MF CMakeFiles\atlas-low-level-programming.dir\doubly_linked_lists\2-add_dnodeint.c.obj.d -o CMakeFiles\atlas-low-level-programming.dir\doubly_linked_lists\2-add_dnodeint.c.obj -c C:\Users\daste\CLionProjects\atlas-low_level_programming\doubly_linked_lists\2-add_dnodeint.c
+
+CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.i"
+	C:\Users\daste\AppData\Local\Programs\CLion\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\daste\CLionProjects\atlas-low_level_programming\doubly_linked_lists\2-add_dnodeint.c > CMakeFiles\atlas-low-level-programming.dir\doubly_linked_lists\2-add_dnodeint.c.i
+
+CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.s"
+	C:\Users\daste\AppData\Local\Programs\CLion\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\daste\CLionProjects\atlas-low_level_programming\doubly_linked_lists\2-add_dnodeint.c -o CMakeFiles\atlas-low-level-programming.dir\doubly_linked_lists\2-add_dnodeint.c.s
+
 # Object files for target atlas-low-level-programming
 atlas__low__level__programming_OBJECTS = \
 "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/0-print_dlistint.c.obj" \
 "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/main.c.obj" \
-"CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/1-dlistint_len.c.obj"
+"CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/1-dlistint_len.c.obj" \
+"CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.obj"
 
 # External object files for target atlas-low-level-programming
 atlas__low__level__programming_EXTERNAL_OBJECTS =
@@ -122,11 +137,12 @@ atlas__low__level__programming_EXTERNAL_OBJECTS =
 atlas-low-level-programming.exe: CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/0-print_dlistint.c.obj
 atlas-low-level-programming.exe: CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/main.c.obj
 atlas-low-level-programming.exe: CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/1-dlistint_len.c.obj
+atlas-low-level-programming.exe: CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.obj
 atlas-low-level-programming.exe: CMakeFiles/atlas-low-level-programming.dir/build.make
 atlas-low-level-programming.exe: CMakeFiles/atlas-low-level-programming.dir/linkLibs.rsp
 atlas-low-level-programming.exe: CMakeFiles/atlas-low-level-programming.dir/objects1.rsp
 atlas-low-level-programming.exe: CMakeFiles/atlas-low-level-programming.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\daste\CLionProjects\atlas-low_level_programming\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable atlas-low-level-programming.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\daste\CLionProjects\atlas-low_level_programming\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable atlas-low-level-programming.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\atlas-low-level-programming.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

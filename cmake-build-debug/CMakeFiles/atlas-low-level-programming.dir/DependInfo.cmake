@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/daste/CLionProjects/atlas-low_level_programming/doubly_linked_lists/0-print_dlistint.c" "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/0-print_dlistint.c.obj" "gcc" "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/0-print_dlistint.c.obj.d"
   "C:/Users/daste/CLionProjects/atlas-low_level_programming/doubly_linked_lists/1-dlistint_len.c" "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/1-dlistint_len.c.obj" "gcc" "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/1-dlistint_len.c.obj.d"
+  "C:/Users/daste/CLionProjects/atlas-low_level_programming/doubly_linked_lists/2-add_dnodeint.c" "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.obj" "gcc" "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.obj.d"
   "C:/Users/daste/CLionProjects/atlas-low_level_programming/doubly_linked_lists/main.c" "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/main.c.obj" "gcc" "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/main.c.obj.d"
   )
 

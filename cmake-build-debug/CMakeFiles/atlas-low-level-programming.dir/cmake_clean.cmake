@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/0-print_dlistint.c.obj.d"
   "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/1-dlistint_len.c.obj"
   "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/1-dlistint_len.c.obj.d"
+  "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.obj"
+  "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.obj.d"
   "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/main.c.obj"
   "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/main.c.obj.d"
   "atlas-low-level-programming.exe"

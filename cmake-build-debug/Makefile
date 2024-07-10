@@ -176,6 +176,30 @@ doubly_linked_lists/1-dlistint_len.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/1-dlistint_len.c.s
 .PHONY : doubly_linked_lists/1-dlistint_len.c.s
 
+doubly_linked_lists/2-add_dnodeint.obj: doubly_linked_lists/2-add_dnodeint.c.obj
+.PHONY : doubly_linked_lists/2-add_dnodeint.obj
+
+# target to build an object file
+doubly_linked_lists/2-add_dnodeint.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.obj
+.PHONY : doubly_linked_lists/2-add_dnodeint.c.obj
+
+doubly_linked_lists/2-add_dnodeint.i: doubly_linked_lists/2-add_dnodeint.c.i
+.PHONY : doubly_linked_lists/2-add_dnodeint.i
+
+# target to preprocess a source file
+doubly_linked_lists/2-add_dnodeint.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.i
+.PHONY : doubly_linked_lists/2-add_dnodeint.c.i
+
+doubly_linked_lists/2-add_dnodeint.s: doubly_linked_lists/2-add_dnodeint.c.s
+.PHONY : doubly_linked_lists/2-add_dnodeint.s
+
+# target to generate assembly for a file
+doubly_linked_lists/2-add_dnodeint.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/2-add_dnodeint.c.s
+.PHONY : doubly_linked_lists/2-add_dnodeint.c.s
+
 doubly_linked_lists/main.obj: doubly_linked_lists/main.c.obj
 .PHONY : doubly_linked_lists/main.obj
 
@@ -215,6 +239,9 @@ help:
 	@echo ... doubly_linked_lists/1-dlistint_len.obj
 	@echo ... doubly_linked_lists/1-dlistint_len.i
 	@echo ... doubly_linked_lists/1-dlistint_len.s
+	@echo ... doubly_linked_lists/2-add_dnodeint.obj
+	@echo ... doubly_linked_lists/2-add_dnodeint.i
+	@echo ... doubly_linked_lists/2-add_dnodeint.s
 	@echo ... doubly_linked_lists/main.obj
 	@echo ... doubly_linked_lists/main.i
 	@echo ... doubly_linked_lists/main.s

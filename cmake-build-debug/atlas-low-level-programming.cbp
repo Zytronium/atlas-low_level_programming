@@ -88,6 +88,9 @@
 		<Unit filename="C:/Users/daste/CLionProjects/atlas-low_level_programming/doubly_linked_lists/1-dlistint_len.c">
 			<Option target="atlas-low-level-programming"/>
 		</Unit>
+		<Unit filename="C:/Users/daste/CLionProjects/atlas-low_level_programming/doubly_linked_lists/2-add_dnodeint.c">
+			<Option target="atlas-low-level-programming"/>
+		</Unit>
 		<Unit filename="C:/Users/daste/CLionProjects/atlas-low_level_programming/doubly_linked_lists/main.c">
 			<Option target="atlas-low-level-programming"/>
 		</Unit>
