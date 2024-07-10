@@ -4,7 +4,7 @@
 /**
  * main - entry point
  */
-void main(void)
+int main(void)
 {
 
 }
