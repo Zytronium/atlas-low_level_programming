@@ -1,4 +1,5 @@
 #include "main.h"
+#include <sys/stat.h>
 
 /**
  * create_file - creates a file.
@@ -11,8 +12,20 @@
  */
 int create_file(const char *filename, char *text_content)
 {
+	int fileDesc = open(filename, O_RDWR | O_CREAT, S_IRUSR | S_IWUSR);
 
-	return (01);
+	if (filename == NULL || fileDesc == -1)
+		return (-1);
+
+	if (text_content != NULL && write(STDOUT_FILENO, text_content, strlen(text_content)) == -1)
+	{
+		close(fileDesc);
+		return (-1);
+	}
+
+	close(fileDesc);
+
+	return (1);
 }
 /*
  * The created file must have these permissions: rw-------.
