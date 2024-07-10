@@ -1,7 +1,8 @@
 # bit manipulation
+You're Being A Little Bit Manipulative...
 
 ---
-Bit manipulation is the maniupulation of the bits of a number in order to change it's value.
+Bit manipulation is the manipulation of the bits of a number in order to change it's value.
 
 For evample, think of each bit, 1 or 0, as true or false. Now, what's 0 | 1? (0 OR 1) think of it as an if statement. If (0 || 1) or If (0 == 1 || 1 == 1). We all know that or means at least one is true. so 0 | 1 = 1. Now let's do larger numbers. 5 or 18. in base2 (binary) is `0 0101` and 18 in base2 is `1 0010` (removing the leading zero's).
 

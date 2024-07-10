@@ -32,11 +32,11 @@ uploaded that you should watch: https://www.youtube.com/watch?v=pyoURHR-g4U ;-)
   - [C - Singly linked lists](https://github.com/Zytronium/atlas-low_level_programming/tree/main/singly_linked_lists)
   - [C - More singly linked lists](https://github.com/Zytronium/atlas-low_level_programming/tree/main/more_singly_linked_lists)
   - [C - Bit manipulation](https://github.com/Zytronium/atlas-low_level_programming/tree/main/bit_manipulation) (That's a bit manipulative, don't you think?)
-  - [C - File I/O](https://github.com/Zytronium/atlas-low_level_programming/tree/main/file_io) (good thing it's not Shell I/O task number 7. There's only 4 tasks including task 0) *[^1]
+  - [C - File I/O](https://github.com/Zytronium/atlas-low_level_programming/tree/main/file_io) (Good thing it's not Shell I/O task number 7. There's only 4 tasks including task 0.) *[^1]
 - ### `PP1300`
   - [C - Doubly linked lists]()
   - [C - Hash tables]()
-  - [C - Simple shell]() (but not I/O task number 7. ... Right?)
+  - [C - Simple shell]() (But not I/O task number 7. ... Right?)
   - [C - Stacks, Queues - LIFO, FIFO]()
   - [C - Sorting algorithms & Big O]()
   - [C - Search Algorithms]()
