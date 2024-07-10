@@ -28,12 +28,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	fileDesc = open(filename, O_RDONLY);
 
 	if (fileDesc == -1)
+	{
+		close(fileDesc);
 		return (0);
+	}
 
 	charsRead = read(fileDesc, contents, letters);
 
 	if (charsRead <= 0)
+	{
+		close(fileDesc);
 		return (0);
+	}
 
 	contents[charsRead + 1] = '\0';
 
