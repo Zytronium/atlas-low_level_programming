@@ -11,16 +11,18 @@
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *newNode = malloc(sizeof(dlistint_t));
+	dlistint_t *tempNode = malloc(sizeof(dlistint_t)); /* malloc tempNode */
 
 	/* again, I am assuming that h is the real head of the list */
-	if (newNode == NULL)
+	if (tempNode == NULL) /* malloc fail check */
 		return (NULL);
 
-	newNode->n = n;
-	newNode->next = *head;
-	newNode->prev = NULL;
-	head[0]->prev = newNode;
+	/*create new node and swap it with head (I got seg fault otherwise)*/
+	tempNode = *head; /* clone head node into tempNode. */
+	head[0]->n = n; /*set head's data to the given data (n)*/
+	head[0]->next = tempNode; /*set head's next ptr to tempNode*/
+	head[0]->prev = NULL; /*set head's prev ptr to null*/
+	tempNode->prev = *head; /*make sure old head (tempNode) prev ptr is new head*/
 
-	return (newNode);
+	return (*head); /*return ptr to new head*/
 }
