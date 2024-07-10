@@ -9,4 +9,4 @@ fi
 echo
 ./testRun
 echo
-rm testRun
+#rm testRun
