@@ -18,7 +18,7 @@ are slightly more complex because they must update both pointers.
 
 If you add a pointer to the head and tail nodes, well, I don't even know what
 you'd call that. You should probably avoid doing that, as that would consume
-even more memory and you'd have to add these pointers every time you add an
+even more memory, and you'd have to add these pointers every time you add an
 item to the list, when you can probably just keep track of the head and tail
 nodes elsewhere, or just by iterating until you get to a null element.
 
