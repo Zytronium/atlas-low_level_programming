@@ -17,10 +17,12 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int charsRead, charsPrinted = 0, fileDesc;
-	char *contents = "";
+	int charsRead, fileDesc;
+	char *contents;
 
-	if (filename == NULL)
+	contents = malloc(sizeof(char) * letters + 1);
+
+	if (filename == NULL || contents == NULL)
 		return (0);
 
 	fileDesc = open(filename, O_RDONLY);
@@ -33,7 +35,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (charsRead <= 0)
 		return (0);
 
-	charsPrinted = dprintf(STDOUT_FILENO, "%s", contents);
-
-	return (charsPrinted);
+	return (dprintf(STDOUT_FILENO, "%s", contents));
 }
