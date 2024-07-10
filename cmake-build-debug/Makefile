@@ -128,6 +128,30 @@ atlas-low-level-programming/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/build
 .PHONY : atlas-low-level-programming/fast
 
+file_io/0-main.obj: file_io/0-main.c.obj
+.PHONY : file_io/0-main.obj
+
+# target to build an object file
+file_io/0-main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/file_io/0-main.c.obj
+.PHONY : file_io/0-main.c.obj
+
+file_io/0-main.i: file_io/0-main.c.i
+.PHONY : file_io/0-main.i
+
+# target to preprocess a source file
+file_io/0-main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/file_io/0-main.c.i
+.PHONY : file_io/0-main.c.i
+
+file_io/0-main.s: file_io/0-main.c.s
+.PHONY : file_io/0-main.s
+
+# target to generate assembly for a file
+file_io/0-main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/file_io/0-main.c.s
+.PHONY : file_io/0-main.c.s
+
 file_io/0-read_textfile.obj: file_io/0-read_textfile.c.obj
 .PHONY : file_io/0-read_textfile.obj
 
@@ -152,6 +176,54 @@ file_io/0-read_textfile.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/file_io/0-read_textfile.c.s
 .PHONY : file_io/0-read_textfile.c.s
 
+file_io/1-create_file.obj: file_io/1-create_file.c.obj
+.PHONY : file_io/1-create_file.obj
+
+# target to build an object file
+file_io/1-create_file.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/file_io/1-create_file.c.obj
+.PHONY : file_io/1-create_file.c.obj
+
+file_io/1-create_file.i: file_io/1-create_file.c.i
+.PHONY : file_io/1-create_file.i
+
+# target to preprocess a source file
+file_io/1-create_file.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/file_io/1-create_file.c.i
+.PHONY : file_io/1-create_file.c.i
+
+file_io/1-create_file.s: file_io/1-create_file.c.s
+.PHONY : file_io/1-create_file.s
+
+# target to generate assembly for a file
+file_io/1-create_file.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/file_io/1-create_file.c.s
+.PHONY : file_io/1-create_file.c.s
+
+file_io/2-append_text_to_file.obj: file_io/2-append_text_to_file.c.obj
+.PHONY : file_io/2-append_text_to_file.obj
+
+# target to build an object file
+file_io/2-append_text_to_file.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/file_io/2-append_text_to_file.c.obj
+.PHONY : file_io/2-append_text_to_file.c.obj
+
+file_io/2-append_text_to_file.i: file_io/2-append_text_to_file.c.i
+.PHONY : file_io/2-append_text_to_file.i
+
+# target to preprocess a source file
+file_io/2-append_text_to_file.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/file_io/2-append_text_to_file.c.i
+.PHONY : file_io/2-append_text_to_file.c.i
+
+file_io/2-append_text_to_file.s: file_io/2-append_text_to_file.c.s
+.PHONY : file_io/2-append_text_to_file.s
+
+# target to generate assembly for a file
+file_io/2-append_text_to_file.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/file_io/2-append_text_to_file.c.s
+.PHONY : file_io/2-append_text_to_file.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -161,9 +233,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... atlas-low-level-programming
+	@echo ... file_io/0-main.obj
+	@echo ... file_io/0-main.i
+	@echo ... file_io/0-main.s
 	@echo ... file_io/0-read_textfile.obj
 	@echo ... file_io/0-read_textfile.i
 	@echo ... file_io/0-read_textfile.s
+	@echo ... file_io/1-create_file.obj
+	@echo ... file_io/1-create_file.i
+	@echo ... file_io/1-create_file.s
+	@echo ... file_io/2-append_text_to_file.obj
+	@echo ... file_io/2-append_text_to_file.i
+	@echo ... file_io/2-append_text_to_file.s
 .PHONY : help
 
 

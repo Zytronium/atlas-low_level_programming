@@ -1,12 +1,12 @@
-!/.vscode/
-!/recursion/cmake-build-debug/
-!/recursion/CMakeLists.txt
-!/.idea/!/cmake-build-debug/
-!/.dist/
-!/.idea/
-!/cmake-build-debug/
-!/cmake-build-debug/CMakeFiles/
-!/cmake-build-debug/CMakeFiles/clion-Debug-log.txt
+/.vscode/
+/recursion/cmake-build-debug/
+/recursion/CMakeLists.txt
+/.idea/!/cmake-build-debug/
+/.dist/
+/.idea/
+/cmake-build-debug/
+/cmake-build-debug/CMakeFiles/
+/cmake-build-debug/CMakeFiles/clion-Debug-log.txt
 /cmake-build-debug/CMakeFiles/clion-Debug-log.txt
 /.idea/dictionaries/Owner.xml
 /.idea/.name
@@ -54,3 +54,4 @@
 /cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-c00bb620d6e601817c05.json
 /cmake-build-debug/.cmake/api/v1/reply/index-2024-07-08T04-37-53-0448.json
 /cmake-build-debug/.cmake/api/v1/reply/target-atlas-low-level-programming-Debug-46d2b61c57ebaee3c44e.json
+/cmake-build-debug/CMakeFiles/atlas-low-level-programming.dir/
