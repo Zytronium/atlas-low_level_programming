@@ -128,6 +128,30 @@ atlas-low-level-programming/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/build
 .PHONY : atlas-low-level-programming/fast
 
+doubly_linked_lists/0-print_dlistint.obj: doubly_linked_lists/0-print_dlistint.c.obj
+.PHONY : doubly_linked_lists/0-print_dlistint.obj
+
+# target to build an object file
+doubly_linked_lists/0-print_dlistint.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/0-print_dlistint.c.obj
+.PHONY : doubly_linked_lists/0-print_dlistint.c.obj
+
+doubly_linked_lists/0-print_dlistint.i: doubly_linked_lists/0-print_dlistint.c.i
+.PHONY : doubly_linked_lists/0-print_dlistint.i
+
+# target to preprocess a source file
+doubly_linked_lists/0-print_dlistint.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/0-print_dlistint.c.i
+.PHONY : doubly_linked_lists/0-print_dlistint.c.i
+
+doubly_linked_lists/0-print_dlistint.s: doubly_linked_lists/0-print_dlistint.c.s
+.PHONY : doubly_linked_lists/0-print_dlistint.s
+
+# target to generate assembly for a file
+doubly_linked_lists/0-print_dlistint.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/0-print_dlistint.c.s
+.PHONY : doubly_linked_lists/0-print_dlistint.c.s
+
 file_io/0-main.obj: file_io/0-main.c.obj
 .PHONY : file_io/0-main.obj
 
@@ -233,6 +257,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... atlas-low-level-programming
+	@echo ... doubly_linked_lists/0-print_dlistint.obj
+	@echo ... doubly_linked_lists/0-print_dlistint.i
+	@echo ... doubly_linked_lists/0-print_dlistint.s
 	@echo ... file_io/0-main.obj
 	@echo ... file_io/0-main.i
 	@echo ... file_io/0-main.s

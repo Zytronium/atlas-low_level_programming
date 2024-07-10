@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/0-print_dlistint.c.obj"
+  "CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/0-print_dlistint.c.obj.d"
   "CMakeFiles/atlas-low-level-programming.dir/file_io/0-main.c.obj"
   "CMakeFiles/atlas-low-level-programming.dir/file_io/0-main.c.obj.d"
   "CMakeFiles/atlas-low-level-programming.dir/file_io/0-read_textfile.c.obj"

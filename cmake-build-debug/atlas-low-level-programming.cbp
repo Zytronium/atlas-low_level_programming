@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/daste/CLionProjects/atlas-low_level_programming/doubly_linked_lists/0-print_dlistint.c">
+			<Option target="atlas-low-level-programming"/>
+		</Unit>
 		<Unit filename="C:/Users/daste/CLionProjects/atlas-low_level_programming/file_io/0-main.c">
 			<Option target="atlas-low-level-programming"/>
 		</Unit>
