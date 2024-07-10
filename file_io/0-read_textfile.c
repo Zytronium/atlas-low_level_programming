@@ -33,7 +33,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (charsRead <= 0)
 		return (0);
 
-	charsPrinted = dprintf(fileDesc, "%s", contents);
+	charsPrinted = dprintf(STDOUT_FILENO, "%s", contents);
 
 	return (charsPrinted);
 }
