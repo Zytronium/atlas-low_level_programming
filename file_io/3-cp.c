@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * func - entry point
+ * main - entry point
  */
-void func(void)
+void main(void)
 {
 
 }
