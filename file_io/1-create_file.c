@@ -1,41 +1,23 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
 
 /**
- * read_textfile - Reads a file and prints it to the POSIX standard output
+ * create_file - creates a file.
  *
- * @filename: the name of the file to read
- * @letters: the number of letters to read & print
+ * @filename: the name of the file to create
+ * @text_content: content to write into the newly created file, null terminated
  *
- * Return: the actual number of letters it could read & print successfully,
- * or 0 if: file cannot be opened or read,
- * filename is NULL,
- * or write doesn't work write (misspelling intended)
+ * Return: 1 on success, or -1 on failure
+ * (file can not be created, file can not be written, write “fails”, etc…)
  */
-ssize_t read_textfile(const char *filename, size_t letters)
+int create_file(const char *filename, char *text_content)
 {
-	int charsRead, fileDesc;
-	char *contents;
 
-	contents = malloc(sizeof(char) * letters + 1);
-
-	if (filename == NULL || contents == NULL)
-		return (0);
-
-	fileDesc = open(filename, O_RDONLY);
-
-	if (fileDesc == -1)
-		return (0);
-
-	charsRead = read(fileDesc, contents, letters);
-
-	if (charsRead <= 0)
-		return (0);
-
-	contents[charsRead + 1] = '\0';
-
-	return (write(STDOUT_FILENO, contents, charsRead));
+	return (01);
 }
+/*
+ * The created file must have these permissions: rw-------.
+ * If the file already exists, do not change the permissions.
+ * if the file already exists, truncate it
+ * if filename is NULL return -1
+ * if text_content is NULL create an empty file
+*/

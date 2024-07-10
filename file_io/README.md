@@ -1,4 +1,5 @@
 # Readme File I/O
 
 ---
-wip
+File I/O is basically messing with files.
+Creating, reading, writing, opening and closing files.

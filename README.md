@@ -30,9 +30,9 @@ uploaded that you should watch: https://www.youtube.com/watch?v=pyoURHR-g4U ;-)
 - ### `PP1200`
   - [C - printf](https://github.com/Zytronium/printf)
   - [C - Singly linked lists](https://github.com/Zytronium/atlas-low_level_programming/tree/main/singly_linked_lists)
-  - [C - More singly linked lists](https://github.com/Zytronium/atlas-low_level_programming/tree/main/more_singly_linked_lists) *[^1]
-  - [C - Bit manipulation]() (hmm... you mean like bitwise operations?)
-  - [C -File I/O]() (good thing it's not Shell I/O task number 7)
+  - [C - More singly linked lists](https://github.com/Zytronium/atlas-low_level_programming/tree/main/more_singly_linked_lists)
+  - [C - Bit manipulation](https://github.com/Zytronium/atlas-low_level_programming/tree/main/bit_manipulation) (hmm... you mean like bitwise operations?)
+  - [C -File I/O](https://github.com/Zytronium/atlas-low_level_programming/tree/main/file_io) (good thing it's not Shell I/O task number 7) *[^1]
 - ### `PP1300`
   - [C - Doubly linked lists]()
   - [C - Hash tables]()
