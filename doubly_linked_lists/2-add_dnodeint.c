@@ -14,7 +14,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	dlistint_t *tempNode = malloc(sizeof(dlistint_t)); /* malloc tempNode */
 
 	/* again, I am assuming that h is the real head of the list */
-	if (tempNode == NULL) /* malloc fail check */
+	if (tempNode == NULL || *head == NULL) /* malloc fail check */
 		return (NULL);
 
 	/*create new node and swap it with head (I got seg fault otherwise)*/
