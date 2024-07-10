@@ -18,7 +18,8 @@ int create_file(const char *filename, char *text_content)
 	if (filename == NULL || fileDesc == -1)
 		return (-1);
 
-	if (text_content != NULL && write(STDOUT_FILENO, text_content, strlen(text_content)) == -1)
+	if (text_content != NULL &&
+	write(fileDesc, text_content, strlen(text_content)) == -1)
 	{
 		close(fileDesc);
 		return (-1);
