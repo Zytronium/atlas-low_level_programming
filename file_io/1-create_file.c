@@ -1,7 +1,6 @@
 #include "main.h"
 #include <sys/stat.h>
 #include <string.h>
-int betty(void);
 
 /**
  * create_file - creates a file.
