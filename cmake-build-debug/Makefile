@@ -152,6 +152,30 @@ doubly_linked_lists/0-print_dlistint.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/0-print_dlistint.c.s
 .PHONY : doubly_linked_lists/0-print_dlistint.c.s
 
+doubly_linked_lists/1-dlistint_len.obj: doubly_linked_lists/1-dlistint_len.c.obj
+.PHONY : doubly_linked_lists/1-dlistint_len.obj
+
+# target to build an object file
+doubly_linked_lists/1-dlistint_len.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/1-dlistint_len.c.obj
+.PHONY : doubly_linked_lists/1-dlistint_len.c.obj
+
+doubly_linked_lists/1-dlistint_len.i: doubly_linked_lists/1-dlistint_len.c.i
+.PHONY : doubly_linked_lists/1-dlistint_len.i
+
+# target to preprocess a source file
+doubly_linked_lists/1-dlistint_len.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/1-dlistint_len.c.i
+.PHONY : doubly_linked_lists/1-dlistint_len.c.i
+
+doubly_linked_lists/1-dlistint_len.s: doubly_linked_lists/1-dlistint_len.c.s
+.PHONY : doubly_linked_lists/1-dlistint_len.s
+
+# target to generate assembly for a file
+doubly_linked_lists/1-dlistint_len.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/doubly_linked_lists/1-dlistint_len.c.s
+.PHONY : doubly_linked_lists/1-dlistint_len.c.s
+
 doubly_linked_lists/main.obj: doubly_linked_lists/main.c.obj
 .PHONY : doubly_linked_lists/main.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... doubly_linked_lists/0-print_dlistint.obj
 	@echo ... doubly_linked_lists/0-print_dlistint.i
 	@echo ... doubly_linked_lists/0-print_dlistint.s
+	@echo ... doubly_linked_lists/1-dlistint_len.obj
+	@echo ... doubly_linked_lists/1-dlistint_len.i
+	@echo ... doubly_linked_lists/1-dlistint_len.s
 	@echo ... doubly_linked_lists/main.obj
 	@echo ... doubly_linked_lists/main.i
 	@echo ... doubly_linked_lists/main.s
