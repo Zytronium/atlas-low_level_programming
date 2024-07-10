@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
-#include <nmsupp.h>
 
 /**
  * read_textfile - Reads a file and prints it to the POSIX standard output
