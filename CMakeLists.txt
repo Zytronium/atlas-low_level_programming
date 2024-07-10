@@ -4,11 +4,6 @@ project(atlas-low-level-programming C)
 set(CMAKE_C_STANDARD 90)
 
 add_executable(atlas-low-level-programming
-        more_singly_linked_lists/5-free_listint2.c
-        more_singly_linked_lists/main.c
-        more_singly_linked_lists/0-print_listint.c
-        more_singly_linked_lists/3-add_nodeint_end.c
-        more_singly_linked_lists/6-pop_listint.c
-        more_singly_linked_lists/7-get_nodeint.c
-        more_singly_linked_lists/8-sum_listint.c
-        more_singly_linked_lists/9-insert_nodeint.c)
+        file_io/main.h
+        file_io/0-read_textfile.c
+        file_io/0-read_textfile.c)

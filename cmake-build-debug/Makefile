@@ -128,197 +128,29 @@ atlas-low-level-programming/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/build
 .PHONY : atlas-low-level-programming/fast
 
-more_singly_linked_lists/0-print_listint.obj: more_singly_linked_lists/0-print_listint.c.obj
-.PHONY : more_singly_linked_lists/0-print_listint.obj
+file_io/0-read_textfile.obj: file_io/0-read_textfile.c.obj
+.PHONY : file_io/0-read_textfile.obj
 
 # target to build an object file
-more_singly_linked_lists/0-print_listint.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/0-print_listint.c.obj
-.PHONY : more_singly_linked_lists/0-print_listint.c.obj
+file_io/0-read_textfile.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/file_io/0-read_textfile.c.obj
+.PHONY : file_io/0-read_textfile.c.obj
 
-more_singly_linked_lists/0-print_listint.i: more_singly_linked_lists/0-print_listint.c.i
-.PHONY : more_singly_linked_lists/0-print_listint.i
-
-# target to preprocess a source file
-more_singly_linked_lists/0-print_listint.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/0-print_listint.c.i
-.PHONY : more_singly_linked_lists/0-print_listint.c.i
-
-more_singly_linked_lists/0-print_listint.s: more_singly_linked_lists/0-print_listint.c.s
-.PHONY : more_singly_linked_lists/0-print_listint.s
-
-# target to generate assembly for a file
-more_singly_linked_lists/0-print_listint.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/0-print_listint.c.s
-.PHONY : more_singly_linked_lists/0-print_listint.c.s
-
-more_singly_linked_lists/3-add_nodeint_end.obj: more_singly_linked_lists/3-add_nodeint_end.c.obj
-.PHONY : more_singly_linked_lists/3-add_nodeint_end.obj
-
-# target to build an object file
-more_singly_linked_lists/3-add_nodeint_end.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/3-add_nodeint_end.c.obj
-.PHONY : more_singly_linked_lists/3-add_nodeint_end.c.obj
-
-more_singly_linked_lists/3-add_nodeint_end.i: more_singly_linked_lists/3-add_nodeint_end.c.i
-.PHONY : more_singly_linked_lists/3-add_nodeint_end.i
+file_io/0-read_textfile.i: file_io/0-read_textfile.c.i
+.PHONY : file_io/0-read_textfile.i
 
 # target to preprocess a source file
-more_singly_linked_lists/3-add_nodeint_end.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/3-add_nodeint_end.c.i
-.PHONY : more_singly_linked_lists/3-add_nodeint_end.c.i
+file_io/0-read_textfile.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/file_io/0-read_textfile.c.i
+.PHONY : file_io/0-read_textfile.c.i
 
-more_singly_linked_lists/3-add_nodeint_end.s: more_singly_linked_lists/3-add_nodeint_end.c.s
-.PHONY : more_singly_linked_lists/3-add_nodeint_end.s
-
-# target to generate assembly for a file
-more_singly_linked_lists/3-add_nodeint_end.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/3-add_nodeint_end.c.s
-.PHONY : more_singly_linked_lists/3-add_nodeint_end.c.s
-
-more_singly_linked_lists/5-free_listint2.obj: more_singly_linked_lists/5-free_listint2.c.obj
-.PHONY : more_singly_linked_lists/5-free_listint2.obj
-
-# target to build an object file
-more_singly_linked_lists/5-free_listint2.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/5-free_listint2.c.obj
-.PHONY : more_singly_linked_lists/5-free_listint2.c.obj
-
-more_singly_linked_lists/5-free_listint2.i: more_singly_linked_lists/5-free_listint2.c.i
-.PHONY : more_singly_linked_lists/5-free_listint2.i
-
-# target to preprocess a source file
-more_singly_linked_lists/5-free_listint2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/5-free_listint2.c.i
-.PHONY : more_singly_linked_lists/5-free_listint2.c.i
-
-more_singly_linked_lists/5-free_listint2.s: more_singly_linked_lists/5-free_listint2.c.s
-.PHONY : more_singly_linked_lists/5-free_listint2.s
+file_io/0-read_textfile.s: file_io/0-read_textfile.c.s
+.PHONY : file_io/0-read_textfile.s
 
 # target to generate assembly for a file
-more_singly_linked_lists/5-free_listint2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/5-free_listint2.c.s
-.PHONY : more_singly_linked_lists/5-free_listint2.c.s
-
-more_singly_linked_lists/6-pop_listint.obj: more_singly_linked_lists/6-pop_listint.c.obj
-.PHONY : more_singly_linked_lists/6-pop_listint.obj
-
-# target to build an object file
-more_singly_linked_lists/6-pop_listint.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/6-pop_listint.c.obj
-.PHONY : more_singly_linked_lists/6-pop_listint.c.obj
-
-more_singly_linked_lists/6-pop_listint.i: more_singly_linked_lists/6-pop_listint.c.i
-.PHONY : more_singly_linked_lists/6-pop_listint.i
-
-# target to preprocess a source file
-more_singly_linked_lists/6-pop_listint.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/6-pop_listint.c.i
-.PHONY : more_singly_linked_lists/6-pop_listint.c.i
-
-more_singly_linked_lists/6-pop_listint.s: more_singly_linked_lists/6-pop_listint.c.s
-.PHONY : more_singly_linked_lists/6-pop_listint.s
-
-# target to generate assembly for a file
-more_singly_linked_lists/6-pop_listint.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/6-pop_listint.c.s
-.PHONY : more_singly_linked_lists/6-pop_listint.c.s
-
-more_singly_linked_lists/7-get_nodeint.obj: more_singly_linked_lists/7-get_nodeint.c.obj
-.PHONY : more_singly_linked_lists/7-get_nodeint.obj
-
-# target to build an object file
-more_singly_linked_lists/7-get_nodeint.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/7-get_nodeint.c.obj
-.PHONY : more_singly_linked_lists/7-get_nodeint.c.obj
-
-more_singly_linked_lists/7-get_nodeint.i: more_singly_linked_lists/7-get_nodeint.c.i
-.PHONY : more_singly_linked_lists/7-get_nodeint.i
-
-# target to preprocess a source file
-more_singly_linked_lists/7-get_nodeint.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/7-get_nodeint.c.i
-.PHONY : more_singly_linked_lists/7-get_nodeint.c.i
-
-more_singly_linked_lists/7-get_nodeint.s: more_singly_linked_lists/7-get_nodeint.c.s
-.PHONY : more_singly_linked_lists/7-get_nodeint.s
-
-# target to generate assembly for a file
-more_singly_linked_lists/7-get_nodeint.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/7-get_nodeint.c.s
-.PHONY : more_singly_linked_lists/7-get_nodeint.c.s
-
-more_singly_linked_lists/8-sum_listint.obj: more_singly_linked_lists/8-sum_listint.c.obj
-.PHONY : more_singly_linked_lists/8-sum_listint.obj
-
-# target to build an object file
-more_singly_linked_lists/8-sum_listint.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/8-sum_listint.c.obj
-.PHONY : more_singly_linked_lists/8-sum_listint.c.obj
-
-more_singly_linked_lists/8-sum_listint.i: more_singly_linked_lists/8-sum_listint.c.i
-.PHONY : more_singly_linked_lists/8-sum_listint.i
-
-# target to preprocess a source file
-more_singly_linked_lists/8-sum_listint.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/8-sum_listint.c.i
-.PHONY : more_singly_linked_lists/8-sum_listint.c.i
-
-more_singly_linked_lists/8-sum_listint.s: more_singly_linked_lists/8-sum_listint.c.s
-.PHONY : more_singly_linked_lists/8-sum_listint.s
-
-# target to generate assembly for a file
-more_singly_linked_lists/8-sum_listint.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/8-sum_listint.c.s
-.PHONY : more_singly_linked_lists/8-sum_listint.c.s
-
-more_singly_linked_lists/9-insert_nodeint.obj: more_singly_linked_lists/9-insert_nodeint.c.obj
-.PHONY : more_singly_linked_lists/9-insert_nodeint.obj
-
-# target to build an object file
-more_singly_linked_lists/9-insert_nodeint.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/9-insert_nodeint.c.obj
-.PHONY : more_singly_linked_lists/9-insert_nodeint.c.obj
-
-more_singly_linked_lists/9-insert_nodeint.i: more_singly_linked_lists/9-insert_nodeint.c.i
-.PHONY : more_singly_linked_lists/9-insert_nodeint.i
-
-# target to preprocess a source file
-more_singly_linked_lists/9-insert_nodeint.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/9-insert_nodeint.c.i
-.PHONY : more_singly_linked_lists/9-insert_nodeint.c.i
-
-more_singly_linked_lists/9-insert_nodeint.s: more_singly_linked_lists/9-insert_nodeint.c.s
-.PHONY : more_singly_linked_lists/9-insert_nodeint.s
-
-# target to generate assembly for a file
-more_singly_linked_lists/9-insert_nodeint.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/9-insert_nodeint.c.s
-.PHONY : more_singly_linked_lists/9-insert_nodeint.c.s
-
-more_singly_linked_lists/main.obj: more_singly_linked_lists/main.c.obj
-.PHONY : more_singly_linked_lists/main.obj
-
-# target to build an object file
-more_singly_linked_lists/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/main.c.obj
-.PHONY : more_singly_linked_lists/main.c.obj
-
-more_singly_linked_lists/main.i: more_singly_linked_lists/main.c.i
-.PHONY : more_singly_linked_lists/main.i
-
-# target to preprocess a source file
-more_singly_linked_lists/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/main.c.i
-.PHONY : more_singly_linked_lists/main.c.i
-
-more_singly_linked_lists/main.s: more_singly_linked_lists/main.c.s
-.PHONY : more_singly_linked_lists/main.s
-
-# target to generate assembly for a file
-more_singly_linked_lists/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/more_singly_linked_lists/main.c.s
-.PHONY : more_singly_linked_lists/main.c.s
+file_io/0-read_textfile.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\atlas-low-level-programming.dir\build.make CMakeFiles/atlas-low-level-programming.dir/file_io/0-read_textfile.c.s
+.PHONY : file_io/0-read_textfile.c.s
 
 # Help Target
 help:
@@ -329,30 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... atlas-low-level-programming
-	@echo ... more_singly_linked_lists/0-print_listint.obj
-	@echo ... more_singly_linked_lists/0-print_listint.i
-	@echo ... more_singly_linked_lists/0-print_listint.s
-	@echo ... more_singly_linked_lists/3-add_nodeint_end.obj
-	@echo ... more_singly_linked_lists/3-add_nodeint_end.i
-	@echo ... more_singly_linked_lists/3-add_nodeint_end.s
-	@echo ... more_singly_linked_lists/5-free_listint2.obj
-	@echo ... more_singly_linked_lists/5-free_listint2.i
-	@echo ... more_singly_linked_lists/5-free_listint2.s
-	@echo ... more_singly_linked_lists/6-pop_listint.obj
-	@echo ... more_singly_linked_lists/6-pop_listint.i
-	@echo ... more_singly_linked_lists/6-pop_listint.s
-	@echo ... more_singly_linked_lists/7-get_nodeint.obj
-	@echo ... more_singly_linked_lists/7-get_nodeint.i
-	@echo ... more_singly_linked_lists/7-get_nodeint.s
-	@echo ... more_singly_linked_lists/8-sum_listint.obj
-	@echo ... more_singly_linked_lists/8-sum_listint.i
-	@echo ... more_singly_linked_lists/8-sum_listint.s
-	@echo ... more_singly_linked_lists/9-insert_nodeint.obj
-	@echo ... more_singly_linked_lists/9-insert_nodeint.i
-	@echo ... more_singly_linked_lists/9-insert_nodeint.s
-	@echo ... more_singly_linked_lists/main.obj
-	@echo ... more_singly_linked_lists/main.i
-	@echo ... more_singly_linked_lists/main.s
+	@echo ... file_io/0-read_textfile.obj
+	@echo ... file_io/0-read_textfile.i
+	@echo ... file_io/0-read_textfile.s
 .PHONY : help
 
 
