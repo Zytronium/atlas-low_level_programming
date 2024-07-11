@@ -22,26 +22,26 @@
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *newHead = malloc(sizeof(dlistint_t)); /* create newHead */
+	int headIsNull = *head == NULL;
 
 	if (newHead == NULL) /* malloc fail check */
 		return (NULL);
 
-	if (*head == NULL) /* debug print */
-		printf("head is null\t"); /* debug results: head is ALWAYS null */
-
 	newHead->n = n; /* set new head's data to the given data (n) */
-	newHead->prev = NULL; /* set newHead's prev ptr to old head */
-	newHead->next = *oldHead ? oldHead[0]->next : NULL; /* set new head's next prt to old head's old next ptr if it wasn't null, else null */
+	newHead->prev = *oldHead; /* set newHead's prev ptr to old head */
 
-	if (*oldHead != NULL) /* if old head isn't NULL */
-		oldHead[0]->next = newHead; /* set old head's next to new head */
-	else
+	if (headIsNull) /* if old head is NULL, malloc it */
 	{
 		*oldHead = malloc(sizeof(dlistint_t));
-		newHead->next = NULL;
 		**oldHead = *newHead;
 		free(newHead);
 		return (*oldHead);
+	}
+	else
+	{
+		oldHead[0]->next = newHead; /* set old head's next to new head */
+		newHead->prev = *oldHead; /* set newHead's prev ptr to NULL to make it head */
+		newHead->next = oldHead[0]->next ? oldHead[0]->next->next : NULL; /* set new head's next ptr to old head's old next ptr to continue the chain */
 	}
 
 	return (newHead); /*return ptr to new head*/
