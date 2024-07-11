@@ -45,10 +45,9 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	}
 	else
 	{
-		oldHead[0]->next = newHead; /* set old head's next to new head */
 		newHead->prev = *oldHead; /* set newHead's prev ptr to NULL to make it head */
-		newHead->next = oldHead[0]->next ? oldHead[0]->next->next : NULL; /* set new head's next ptr to old head's old next ptr to continue the chain */
-		newHead->n = n;
+		newHead->next = oldHead[0]->next; /* set new head's next ptr to old head's old next ptr to continue the chain */
+		oldHead[0]->next = newHead; /* set old head's next to new head */
 	}
 
 	/*
@@ -56,6 +55,10 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	 * The reason it starts at 0 and ends with the last node when printing is
 	 * because when the head is not null, it sets the previous node to the new
 	 * node's value, overwriting it.
+	 *
+	 * Update: this is the exact same print list bug I've been debugging for
+	 * a couple days on a personal project... It starts printing at the item
+	 * right before the head, and in this case, stops right before the tail.
 	 */
 
 	return (newHead); /*return ptr to new head*/
