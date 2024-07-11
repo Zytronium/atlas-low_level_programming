@@ -36,13 +36,13 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		if (*oldHead == NULL) /* malloc fail check */
 		{
 			free(newHead); /* free everything */
-			return (NULL); /* what does this look like */
+			return (NULL); /* what does this look like it does? */
 		}
 		/* Note: oldHead is a macro for head. */
 		**head = *newHead; /* clone the new node into the head */
 		free(newHead); /* free new node, as it's no longer gonna be used */
 		return (*head); /* return newly created head node */
-	}
+	} /* ^ this is my bug cause most likely */
 	else
 	{
 		newHead->prev = *oldHead; /* set newHead's prev ptr to NULL to make it head */
@@ -50,19 +50,19 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		oldHead[0]->next = newHead; /* set old head's next to new head */
 	}
 
-	/*
-	 * Note: I just had a moment of clarity. I think know what's happening now!
-	 * The reason it starts at 0 and ends with the last node when printing is
-	 * because when the head is not null, it sets the previous node to the new
-	 * node's value, overwriting it.
-	 *
-	 * Update: this is the exact same print list bug I've been debugging for
-	 * a couple days on a personal project... It starts printing at the item
-	 * right before the head, and in this case, stops right before the tail.
-	 *
-	 * Update2: nevermind. It actually just starts at the tail and then prints
-	 * from the head aft that like nothing happened, then crashes.
-	 */
-
 	return (newHead); /*return ptr to new head*/
 }
+
+/*
+ * Note: I just had a moment of clarity. I think know what's happening now!
+ * The reason it starts at 0 and ends with the last node when printing is
+ * because when the head is not null, it sets the previous node to the new
+ * node's value, overwriting it.
+ *
+ * Update: this is the exact same print list bug I've been debugging for
+ * a couple days on a personal project... It starts printing at the item
+ * right before the head, and in this case, stops right before the tail.
+ *
+ * Update2: Nevermind. It actually just starts at the tail and then prints
+ * from the head aft that like nothing happened, then crashes.
+ */
