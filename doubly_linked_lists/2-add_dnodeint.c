@@ -59,6 +59,9 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	 * Update: this is the exact same print list bug I've been debugging for
 	 * a couple days on a personal project... It starts printing at the item
 	 * right before the head, and in this case, stops right before the tail.
+	 *
+	 * Update2: nevermind. It actually just starts at the tail and then prints
+	 * from the head aft that like nothing happened, then crashes.
 	 */
 
 	return (newHead); /*return ptr to new head*/
