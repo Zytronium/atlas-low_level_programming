@@ -32,17 +32,31 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 	if (headIsNull) /* if old head is NULL, malloc it */
 	{
-		*oldHead = malloc(sizeof(dlistint_t));
-		**oldHead = *newHead;
-		free(newHead);
-		return (*oldHead);
+		*oldHead = malloc(sizeof(dlistint_t)); /* malloc old head */
+		if (*oldHead == NULL) /* malloc fail check */
+		{
+			free(newHead); /* free everything */
+			return (NULL); /* what does this look like */
+		}
+		/* Note: oldHead is a macro for head. */
+		**head = *newHead; /* clone the new node into the head */
+		free(newHead); /* free new node, as it's no longer gonna be used */
+		return (*head); /* return newly created head node */
 	}
 	else
 	{
 		oldHead[0]->next = newHead; /* set old head's next to new head */
 		newHead->prev = *oldHead; /* set newHead's prev ptr to NULL to make it head */
 		newHead->next = oldHead[0]->next ? oldHead[0]->next->next : NULL; /* set new head's next ptr to old head's old next ptr to continue the chain */
+		newHead->n = n;
 	}
+
+	/*
+	 * Note: I just had a moment of clarity. I think know what's happening now!
+	 * The reason it starts at 0 and ends with the last node when printing is
+	 * because when the head is not null, it sets the previous node to the new
+	 * node's value, overwriting it.
+	 */
 
 	return (newHead); /*return ptr to new head*/
 }
