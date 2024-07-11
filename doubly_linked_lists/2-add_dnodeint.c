@@ -27,14 +27,22 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		return (NULL);
 
 	if (*head == NULL) /* debug print */
-		printf("head is null"); /* debug results: head is ALWAYS null */
+		printf("head is null\t"); /* debug results: head is ALWAYS null */
 
 	newHead->n = n; /* set new head's data to the given data (n) */
 	newHead->prev = NULL; /* set newHead's prev ptr to old head */
 	newHead->next = *oldHead ? oldHead[0]->next : NULL; /* set new head's next prt to old head's old next ptr if it wasn't null, else null */
 
-	if (*oldHead != NULL) /* set old head's prev to new head if old head wasn't NULL */
-		oldHead[0]->prev = newHead;
+	if (*oldHead != NULL) /* if old head isn't NULL */
+		oldHead[0]->next = newHead; /* set old head's next to new head */
+	else
+	{
+		*oldHead = malloc(sizeof(dlistint_t));
+		newHead->next = NULL;
+		**oldHead = *newHead;
+		free(newHead);
+		return (*oldHead);
+	}
 
 	return (newHead); /*return ptr to new head*/
 }
