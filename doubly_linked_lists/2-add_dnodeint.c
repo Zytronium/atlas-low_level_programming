@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <stdlib.h>
+#include <stdio.h>
 #ifndef oldHead /*it's just a little less confusing this way*/
 #define oldHead head
 /*
@@ -8,6 +8,7 @@
  * which head I'm referring to.
  */
 #endif
+
 /**
  * add_dnodeint - adds a new node at the head a doubly linked list.
  * This assumes that head is correctly set as the true head of the list.
@@ -20,16 +21,22 @@
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *newHead = malloc(sizeof(dlistint_t)); /* malloc newHead */
+	dlistint_t *newHead = malloc(sizeof(dlistint_t)); /* create newHead */
 
-	if (*head == NULL || newHead == NULL) /* head null or malloc fail check */
+	if (newHead == NULL) /* malloc fail check */
 		return (NULL);
 
-	/*create a new node and swap it with head (I got seg fault otherwise)*/
+	if (*head == NULL) /* debug print */
+		printf("head is null"); /* debug results: head is ALWAYS null */
+
 	newHead->n = n; /* set new head's data to the given data (n) */
-	newHead->next = *oldHead; /* set new head's next ptr to old head */
-	newHead->prev = NULL; /* set new head's prev ptr to null to make it the head */
-	oldHead[0]->prev = newHead; /* make sure newHead prev ptr is old head */
+
+	if (*oldHead != NULL && oldHead[0]->next != NULL) /* set new head's next ptr to old head */
+		newHead->next = oldHead[0]->next;
+	else
+		newHead->next = NULL;
+
+	newHead->prev = *oldHead; /* set new head's prev ptr to null to make it the head */
 
 	return (newHead); /*return ptr to new head*/
 }
