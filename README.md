@@ -28,7 +28,7 @@ uploaded that you should watch: https://www.youtube.com/watch?v=pyoURHR-g4U ;-)
   - [C - Function pointers](https://github.com/Zytronium/atlas-low_level_programming/tree/main/function_pointers)
   - [C - Variadic functions](https://github.com/Zytronium/atlas-low_level_programming/tree/main/variadic_functions)
 - ### `PP1200`
-  - [C - printf](https://github.com/Zytronium/printf)
+  - ###### [C - printf](https://github.com/Zytronium/printf)
   - [C - Singly linked lists](https://github.com/Zytronium/atlas-low_level_programming/tree/main/singly_linked_lists)
   - [C - More singly linked lists](https://github.com/Zytronium/atlas-low_level_programming/tree/main/more_singly_linked_lists)
   - [C - Bit manipulation](https://github.com/Zytronium/atlas-low_level_programming/tree/main/bit_manipulation) (That's a bit manipulative, don't you think?)
@@ -36,7 +36,7 @@ uploaded that you should watch: https://www.youtube.com/watch?v=pyoURHR-g4U ;-)
 - ### `PP1300`
   - [C - Doubly linked lists](https://github.com/Zytronium/atlas-low_level_programming/tree/main/doubly_linked_lists) *[^1]
   - [C - Hash tables]()
-  - [C - Simple shell]() (But not I/O task number 7. ... Right?)
+  - ###### [C - Simple shell]() (But not I/O task number 7... Right?)
   - [C - Stacks, Queues - LIFO, FIFO]()
   - [C - Sorting algorithms & Big O]()
   - [C - Search Algorithms]()
