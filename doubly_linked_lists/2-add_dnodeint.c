@@ -73,7 +73,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		else
 		{
 			/* Clone head into temp */
-			tempNode = *head;
+			*tempNode = **head;
 			/* Clone newHead into head */
 			**head = *newHead;
 			/* Clone *temp->next (old head->next) into newHead */
@@ -89,9 +89,9 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 			newHead->prev = head[0]->next->next;
 			/* Set head->next->prev to pnt to head */
 			head[0]->next->prev = *head;
+
 			/*Trust me, it made sense while whiteboarding it. Too hard to explain*/
 			/* why doesn't it work */
-
 		}
 
 	}
