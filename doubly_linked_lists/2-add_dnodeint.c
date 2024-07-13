@@ -47,14 +47,14 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	} /* ^ this is my bug cause most likely */
 	else
 	{
-		if (oldHead[0]->next == NULL)
+		dlistint_t *tempNode = malloc(sizeof(dlistint_t)); /*create temp node*/
+		if (tempNode == NULL) /* malloc fail check */
 		{
-			dlistint_t *tempNode = malloc(sizeof(dlistint_t));
-			if (tempNode == NULL)
-			{
-				free(newHead);
-				return (NULL);
-			}
+			free(newHead); /* free all memory if malloc failed */
+			return (NULL); /* return NULL to indicate failure */
+		}
+		if (oldHead[0]->next == NULL) /*this would only ever be the 2nd node*/
+		{
 			oldHead[0]->prev = newHead; /*move oldHead ahead of newHead*/
 			newHead->next = *oldHead; /*move newHead behind oldHead*/
 
@@ -70,8 +70,30 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 			/*otherwise, it points to itself. I know because I whiteboarded it*/
 			newHead->prev = *head; /*same thing again but reverse*/
 		}
+		else
+		{
+			/* Clone head into temp */
+			tempNode = *head;
+			/* Clone newHead into head */
+			**head = *newHead;
+			/* Clone *temp->next (old head->next) into newHead */
+			*oldHead[0]->next = *tempNode;
+			/* Clone temp into *temp->next */
+			*tempNode->next = *tempNode;
 
-		 /*TODO: WIP CODE; Whiteboarding it all now on campus*/
+			/* Set head->next to pnt to temp->next */
+			oldHead[0]->next = tempNode->next;
+			/* Set head->next->next to pnt to newHead */
+			oldHead[0]->next->next = newHead;
+			/* Set newHead->prev to pnt to head->next(->next?) */
+			newHead->prev = head[0]->next->next;
+			/* Set head->next->prev to pnt to head */
+			head[0]->next->prev = *head;
+			/*Trust me, it made sense while whiteboarding it. Too hard to explain*/
+			/* why doesn't it work */
+
+		}
+
 	}
 
 	return (newHead); /*return ptr to new head*/
