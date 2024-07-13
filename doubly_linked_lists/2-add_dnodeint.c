@@ -28,7 +28,8 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		return (NULL);
 
 	newHead->n = n; /* set new head's data to the given data (n) */
-	newHead->prev = *oldHead; /* set newHead's prev ptr to old head */
+	newHead->prev = NULL; /* set newHead's prev ptr to NULL */
+	newHead->next = NULL; /* set newHead's next ptr to NULL */
 
 	if (headIsNull) /* if old head is NULL, malloc it */
 	{
@@ -38,6 +39,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 			free(newHead); /* free everything */
 			return (NULL); /* what does this look like it does? */
 		}
+
 		/* Note: oldHead is a macro for head. */
 		**head = *newHead; /* clone the new node into the head */
 		free(newHead); /* free new node, as it's no longer gonna be used */
@@ -45,9 +47,31 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	} /* ^ this is my bug cause most likely */
 	else
 	{
-		newHead->prev = *oldHead; /* set newHead's prev ptr to NULL to make it head */
-		newHead->next = oldHead[0]->next; /* set new head's next ptr to old head's old next ptr to continue the chain */
-		oldHead[0]->next = newHead; /* set old head's next to new head */
+		if (oldHead[0]->next == NULL)
+		{
+			dlistint_t *tempNode = malloc(sizeof(dlistint_t));
+			if (tempNode == NULL)
+			{
+				free(newHead);
+				return (NULL);
+			}
+			oldHead[0]->prev = newHead; /*move oldHead ahead of newHead*/
+			newHead->next = *oldHead; /*move newHead behind oldHead*/
+
+			*tempNode = **oldHead; /*clone oldHead properties into tempNode*/
+			**head = *newHead; /*make newHead the head*/
+			/*Note: oldHead is a macro for head*/
+			*newHead = *tempNode; /*clone oldHead's og properties into newHead*/
+
+			/*BEYOND HERE, newHead IS THE OLD HEAD*/
+			free(tempNode); /*delete temp helper node*/
+
+			head[0]->next = newHead; /*set new head.nxt to point to next item*/
+			/*otherwise, it points to itself. I know because I whiteboarded it*/
+			newHead->prev = *head; /*same thing again but reverse*/
+		}
+
+		 /*TODO: WIP CODE; Whiteboarding it all now on campus*/
 	}
 
 	return (newHead); /*return ptr to new head*/
@@ -64,5 +88,5 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
  * right before the head, and in this case, stops right before the tail.
  *
  * Update2: Nevermind. It actually just starts at the tail and then prints
- * from the head aft that like nothing happened, then crashes.
+ * from the head after that like nothing happened, then crashes.
  */
