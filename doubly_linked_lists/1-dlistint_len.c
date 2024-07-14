@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
 
 /**
  * dlistint_len - counts the number of items in a doubly linked dlistint_t list
