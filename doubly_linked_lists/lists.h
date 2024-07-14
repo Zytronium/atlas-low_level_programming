@@ -1,7 +1,13 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+/* ↓ LIBRARIES ↓ */
+
 #include <stdlib.h>
+
+/* ↑ LIBRARIES ↑ */
+
+/* ↓ STRUCTS AND MISC ↓ */
 
 /**
  * struct dlistint_s - doubly linked list
@@ -19,10 +25,22 @@ typedef struct dlistint_s
 	struct dlistint_s *next;
 } dlistint_t;
 
+/* ↑ STRUCTS AND MISC ↑ */
+
+/* ↓ FUNCTIONS ↓ */
+
 size_t print_dlistint(const dlistint_t *h);
+
 size_t dlistint_len(const dlistint_t *h);
+
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
+
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
+
+void free_dlistint(dlistint_t *head);
+
 dlistint_t *tail_node(dlistint_t *head);
+
+/* ↑ FUNCTIONS ↑ */
 
 #endif /* LISTS_H */
