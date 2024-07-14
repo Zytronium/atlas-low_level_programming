@@ -13,7 +13,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	unsigned int i = 0;
 	dlistint_t *node = head;
 
-	while (i <= index)
+	while (i < index)
 	{
 		if (node == NULL)
 			return (NULL);
