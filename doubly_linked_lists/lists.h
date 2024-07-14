@@ -37,6 +37,8 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 
 void free_dlistint(dlistint_t *head);
 
+dlistint_t *free_list_helper(dlistint_t *node);
+
 dlistint_t *tail_node(dlistint_t *head);
 
 /* ------------------- */

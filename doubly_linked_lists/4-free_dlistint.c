@@ -10,7 +10,7 @@
  */
 void free_dlistint(dlistint_t *head)
 {
-	free(bird); /* 🇺🇸 freedom 🇺🇸 */
+	free_list_helper(head);
 }
 
 /**
@@ -21,7 +21,7 @@ void free_dlistint(dlistint_t *head)
  * Returns: the next node in the doubly linked list,
  * or NULL if it was the last one.
  */
-dlistint_t *free_dlistint_node(dlistint_t *node)
+dlistint_t *free_list_helper(dlistint_t *node)
 {
 	dlistint_t *next = NULL;
 
@@ -31,5 +31,7 @@ dlistint_t *free_dlistint_node(dlistint_t *node)
 		free(node);
 	}
 
+	if (next != NULL)
+		free(next);
 	return (next);
 }
