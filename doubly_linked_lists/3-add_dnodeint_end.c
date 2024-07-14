@@ -19,14 +19,14 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	/* create new node at the end of the list */
 	newNode->n = n; /* set newNode's data to the given data (n) */
 	newNode->prev = tailNode; /* place newNode at the end of the list */
-	newNode->next = NULL; /* make newNode the new tail */
+	newNode->next = NULL; /* make newNode new tail by setting nxt ptr to NULL */
 
 	if (*head != NULL)
-		tailNode->next = newNode; /* set the head's prev ptr */
+		tailNode->next = newNode; /* set the tail's prev ptr to new node */
 	else
 		*head = newNode; /* swap newNode with head if this is the 1st node */
 
-	return (newNode); /* return ptr new head */
+	return (newNode); /* return ptr to new node */
 }
 
 /**
