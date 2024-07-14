@@ -26,5 +26,5 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	/* Beyond here, newHead is the OLD head, and *head is the NEW head */
 	head[0]->prev = newHead; /*set the head's prev ptr*/
 
-	return (*head); /* return ptr to new head */
+	return (newHead); /* return new node */
 }
