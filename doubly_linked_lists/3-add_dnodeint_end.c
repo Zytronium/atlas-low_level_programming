@@ -25,9 +25,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	newNode->next = NULL; /* make newNode the new tail */
 
 	if (*head != NULL)
-	{
 		tailNode->next = newNode; /* set the head's prev ptr */
-	}
 	else
 		*head = newNode; /* swap newNode with head if this is the 1st node */
 
