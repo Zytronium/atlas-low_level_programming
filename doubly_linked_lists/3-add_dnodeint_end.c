@@ -10,7 +10,8 @@
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *newNode = malloc(sizeof(dlistint_t)); /* malloc newNode */
+	dlistint_t *newNode = malloc(sizeof(dlistint_t)); /*malloc'ed new node ptr*/
+	dlistint_t *tailNode = tail_node(*head); /* pointer to the last node */
 
 	if (newNode == NULL) /* malloc fail check */
 		return (NULL); /* return null to indicate failure */
@@ -18,14 +19,19 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	/*---------EVERYTHING BELOW IS COPIED FROM LAST TASK----------*/
 					/*---------WIP CODE---------*/
 
-	/* create new node behind the current head */
+	/* create new node at the end of the list */
 	newNode->n = n; /* set newNode's data to the given data (n) */
-	newNode->next = *head; /* make newNode the new head & continue chain */
-	newNode->prev = NULL; /* make newNode the new head */
+	newNode->prev = tailNode; /* place newNode at the end of the list */
+	newNode->next = NULL; /* make newNode the new tail */
 
 	if (*head != NULL)
-		head[0]->prev = newNode; /* set the head's prev ptr */
-	*head = newNode; /* swap newNode with head */
+	{
+		tailNode->prev = newNode; /* set the head's prev ptr */
+		/* TODO: maybe create temp node to swap tailNode with newNode?*/
+//		*tailNode = *newNode;
+	}
+	else
+		*head = newNode; /* swap newNode with head if this is the 1st node */
 
 	return (newNode); /* return ptr new head */
 }
