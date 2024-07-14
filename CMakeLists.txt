@@ -9,4 +9,5 @@ add_executable(atlas-low-level-programming
         doubly_linked_lists/1-dlistint_len.c
         doubly_linked_lists/2-add_dnodeint.c
         doubly_linked_lists/lists.h
-        doubly_linked_lists/3-add_dnodeint_end.c)
+        doubly_linked_lists/3-add_dnodeint_end.c
+        doubly_linked_lists/4-free_dlistint.c)
