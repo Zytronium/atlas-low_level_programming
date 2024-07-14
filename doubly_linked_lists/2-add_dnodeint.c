@@ -18,13 +18,11 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	if (newHead == NULL) /* malloc fail check */
 		return (NULL); /* return null to indicate failure */
 
-	/* create new node at behind the current head */
 	newHead->n = n; /* set newHead's data to the given data (n) */
 	newHead->next = *head; /*make newHead the actual new head & continue chain*/
 	newHead->prev = NULL; /* make newHead the actual new head */
 
-	*head = newHead; /*swap newHead with head*/
-	/* Beyond here, newHead is the OLD head, and *head is the NEW head */
+	*head = newHead; /* swap newHead with head */
 	head[0]->prev = newHead; /*set the head's prev ptr*/
 
 	return (*head); /*return ptr to new head*/
