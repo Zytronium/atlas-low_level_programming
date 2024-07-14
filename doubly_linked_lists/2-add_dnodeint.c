@@ -77,7 +77,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 			/* Clone newHead into head */
 			**head = *newHead;
 			/* Clone *temp->next (old head->next) into newHead */
-			*oldHead[0]->next = *tempNode;
+			*newHead = *tempNode->next;
 			/* Clone temp into *temp->next */
 			*tempNode->next = *tempNode;
 
