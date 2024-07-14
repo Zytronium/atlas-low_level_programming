@@ -5,8 +5,7 @@
 
 #include <stdlib.h>
 
-/* ↑ LIBRARIES ↑ */
-
+/* ------------------- */
 /* ↓ STRUCTS AND MISC ↓ */
 
 /**
@@ -25,8 +24,7 @@ typedef struct dlistint_s
 	struct dlistint_s *next;
 } dlistint_t;
 
-/* ↑ STRUCTS AND MISC ↑ */
-
+/* ------------------- */
 /* ↓ FUNCTIONS ↓ */
 
 size_t print_dlistint(const dlistint_t *h);
@@ -41,6 +39,6 @@ void free_dlistint(dlistint_t *head);
 
 dlistint_t *tail_node(dlistint_t *head);
 
-/* ↑ FUNCTIONS ↑ */
+/* ------------------- */
 
 #endif /* LISTS_H */
