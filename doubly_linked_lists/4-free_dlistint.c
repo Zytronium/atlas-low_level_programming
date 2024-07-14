@@ -14,7 +14,7 @@ void free_dlistint(dlistint_t *head)
 }
 
 /**
- * free_dlistint_node - frees a node in a dlistint_t doubly linked list
+ * free_list_helper - frees a node in a dlistint_t doubly linked list
  *
  * @node: the node to free
  *
