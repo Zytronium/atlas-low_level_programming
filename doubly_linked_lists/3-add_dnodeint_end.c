@@ -16,9 +16,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	if (newNode == NULL) /* malloc fail check */
 		return (NULL); /* return null to indicate failure */
 
-	/*---------EVERYTHING BELOW IS COPIED FROM LAST TASK----------*/
-					/*---------WIP CODE---------*/
-
 	/* create new node at the end of the list */
 	newNode->n = n; /* set newNode's data to the given data (n) */
 	newNode->prev = tailNode; /* place newNode at the end of the list */
