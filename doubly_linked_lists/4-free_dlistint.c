@@ -18,7 +18,7 @@ void free_dlistint(dlistint_t *head)
  *
  * @node: the node to free
  *
- * Returns: the next node in the doubly linked list,
+ * Return: the next node in the doubly linked list,
  * or NULL if it was the last one.
  */
 dlistint_t *free_list_helper(dlistint_t *node)
