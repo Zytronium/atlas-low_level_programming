@@ -10,5 +10,26 @@
  */
 void free_dlistint(dlistint_t *head)
 {
-	free(betty); /* please free me from betty*/
+	free(bird); /* 🇺🇸 freedom 🇺🇸 */
+}
+
+/**
+ * free_dlistint_node - frees a node in a dlistint_t doubly linked list
+ *
+ * @node: the node to free
+ *
+ * Returns: the next node in the doubly linked list,
+ * or NULL if it was the last one.
+ */
+dlistint_t *free_dlistint_node(dlistint_t *node)
+{
+	dlistint_t *next = NULL;
+
+	if (node != NULL)
+	{
+		next = node->next;
+		free(node);
+	}
+
+	return (next);
 }
