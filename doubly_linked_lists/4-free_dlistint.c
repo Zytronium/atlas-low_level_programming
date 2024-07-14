@@ -32,6 +32,6 @@ dlistint_t *free_list_helper(dlistint_t *node)
 	}
 
 	if (next != NULL)
-		free(next);
+		free_list_helper(next);
 	return (next);
 }
