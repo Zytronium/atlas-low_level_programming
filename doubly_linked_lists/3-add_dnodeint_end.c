@@ -29,3 +29,18 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 
 	return (newNode); /* return ptr new head */
 }
+
+/**
+ * tail_node - finds the last node of a list
+ *
+ * @head: the head or starting node of the search
+ *
+ * Return: pointer to the last node of a list
+ */
+dlistint_t *tail_node(dlistint_t *head)
+{
+	if (head == NULL || head->next == NULL)
+		return (head);
+
+	return (tail_node(head->next));
+}
