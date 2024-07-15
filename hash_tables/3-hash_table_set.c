@@ -13,12 +13,23 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
+	hash_node_t *newElement;
 
-	/* check if key is empty or NULL */
+	/* check if key is empty or NULL + malloc fail check */
 	if (key == NULL || key[0] == '\0')
 		return (0);
 
+	newElement = malloc(sizeof(hash_node_t));
+	if (newElement == NULL)
+		return (0);
+
+	/* get index for new element */
 	index = key_index((const unsigned char *) key, ht->size);
+
+	/* initialize new element */
+	newElement->next = NULL;
+	newElement->key = (char *) key;
+	newElement->value = (char *) value;
 
 
 
