@@ -16,8 +16,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index;
 	hash_node_t *newElement, *check;
 
-	/* check if key is empty or NULL */
-	if (key == NULL || key[0] == '\0')
+	/* check if key is empty/NULL or ht is NULL */
+	if (ht == NULL || key == NULL || key[0] == '\0')
 		return (0);
 
 	/* malloc newElement + malloc fail check */
@@ -25,7 +25,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (newElement == NULL)
 		return (0);
 
-	/* get index for new element */
 	index = key_index((const unsigned char *) key, ht->size);
 
 	/* initialize new element */
@@ -33,8 +32,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	newElement->key = strdup(key);
 	newElement->value = strdup(value);
 
-	check = ht->array[index];
 	/* handle collisions */
+	check = ht->array[index];
 	if (check != NULL)
 	{
 		while (check != NULL)
