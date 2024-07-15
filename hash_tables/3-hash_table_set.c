@@ -14,7 +14,7 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	hash_node_t *newElement;
+	hash_node_t *newElement, *check;
 
 	/* check if key is empty or NULL */
 	if (key == NULL || key[0] == '\0')
@@ -33,9 +33,23 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	newElement->key = strdup(key);
 	newElement->value = strdup(value);
 
+	check = ht->array[index];
 	/* handle collisions */
-	if (ht->array[index] != NULL)
-		add_node_at_head(&ht->array[index], newElement);
+	if (check != NULL)
+	{
+		while (check != NULL)
+		{
+			if ((strcmp(check->key, key) == 0))
+			{
+				check->value = strdup(value);
+				free(newElement);
+				break;
+			}
+			check = check->next;
+		}
+		if (check == NULL || strcmp(check->key, key) != 0)
+			add_node_at_head(&ht->array[index], newElement);
+	}
 	else /* place the element in the array at the correct index */
 		ht->array[index] = newElement;
 
