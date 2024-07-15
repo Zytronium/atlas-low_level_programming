@@ -23,7 +23,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
 	/* initialize new node at the given index with the given data (n) */
 	newNode->n = n; /* set data */
 	newNode->next = nodeAtIndex; /* place newNode before the existing node */
-	newNode->prev = (nodeAtIndex->prev) ? : NULL; /* place newNode before existing node */
+	newNode->prev = (nodeAtIndex->prev) ? nodeAtIndex->prev : NULL; /* place newNode before existing node */
 
 	if (newNode->prev != NULL) /* if newNode is not the head, aka idx != 0, */
 		newNode->prev->next = newNode; /* update nxt ptr of the prv node */
