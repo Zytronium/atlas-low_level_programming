@@ -13,7 +13,7 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	hash_node_t *newElement;
+	hash_node_t *newElement, *collidedElement = NULL;
 
 	/* check if key is empty or NULL + malloc fail check */
 	if (key == NULL || key[0] == '\0')
@@ -27,18 +27,24 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((const unsigned char *) key, ht->size);
 
 	/* initialize new element */
-	newElement->next = NULL; /* what is this even for? It's in an array, not linked list */
+	newElement->next = NULL;
 	newElement->key = (char *) key;
 	newElement->value = (char *) value;
 
 	/* handle collisions */
 	if (ht->array[index] == NULL)
 	{
-		index = 1; /* add the new element to the beginning of the list */
-		while (ht->array[index] == NULL) /* iterate until theres no collision */
-			index++;
+		collidedElement = ht->array[index];
+		/* iterate until theres no collision */
+		while (collidedElement->next != NULL)
+			collidedElement = collidedElement->next;
+		/* when this loop is over, collidedElement will be the tail node */
+
+		/* add element to the end of the linked list at this idx*/
+		collidedElement->next = newElement;
 	}
-	ht->array[index] = newElement;
+	else /* place the element in the array at the correct index */
+		ht->array[index] = newElement;
 
 	return (1);
 }
