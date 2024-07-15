@@ -24,7 +24,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
 	newNode->n = n; /* set data */
 	newNode->next = nodeAtIndex; /* place newNode before the existing node */
 	newNode->prev = nodeAtIndex->prev; /* place newNode before existing node */
-	nodeAtIndex->prev->next = newNode; /* update nxt ptr of node before existing node before given index */
+
+	newNode->prev->next = newNode; /* update nxt ptr of node before existing node before given index */
 	nodeAtIndex->prev = newNode;/*place the node previously here after newNode*/
 
 	return (newNode);
