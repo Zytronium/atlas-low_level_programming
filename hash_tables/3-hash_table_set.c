@@ -33,11 +33,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	newElement->key = strdup(key);
 	newElement->value = strdup(value);
 
-	/* handle collisions */
-	if (ht->array[index] != NULL)
-		add_node_at_head(&ht->array[index], newElement);
-	else /* place the element in the array at the correct index */
-		ht->array[index] = newElement;
+	/* place the element in the array at the correct index */
+	add_node_at_head(&ht->array[index], newElement);
+	/* presumably, this also handles collisions */
 
 	return (1);
 }
@@ -73,6 +71,7 @@ hash_node_t *add_node_at_head(hash_node_t **head, hash_node_t *node)
 		temp->value = NULL;
 		temp->next = NULL;
 	}
+
 	newNode = malloc(sizeof(hash_node_t));
 	if (newNode == NULL)
 	{
@@ -82,8 +81,10 @@ hash_node_t *add_node_at_head(hash_node_t **head, hash_node_t *node)
 		free(newNode);
 		return (NULL);
 	}
+
 	newNode = node;
 	newNode->next = temp;
 	*head = newNode;
+
 	return (newNode);
 }
