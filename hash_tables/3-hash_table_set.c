@@ -32,9 +32,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	newElement->value = (char *) value;
 
 	/* handle collisions */
-	while (ht->array[index] == NULL)
-		index++;
-
+	if (ht->array[index] == NULL)
+	{
+		index = 1; /* add the new element to the beginning of the list */
+		while (ht->array[index] == NULL) /* iterate until theres no collision */
+			index++;
+	}
 	ht->array[index] = newElement;
 
 	return (1);
