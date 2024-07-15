@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * hash_table_set -  adds an element to the hash table
+ * hash_table_set - adds an element to the hash table
  *
  * @ht: hash table you want to add or update the key/value to
  * @key: non-empty key string
