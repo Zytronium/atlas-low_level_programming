@@ -31,11 +31,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	newElement->key = (char *) key;
 	newElement->value = (char *) value;
 
-	/* put the element into the hash table at the right place */
-	if (ht->array[index] != NULL) /* check for collision */
-	{} /* handle collision */
-	else
-		ht->array[index] = newElement;
+	/* handle collisions */
+	while (ht->array[index] == NULL)
+		index++;
+
+	ht->array[index] = newElement;
 
 	return (1);
 }
