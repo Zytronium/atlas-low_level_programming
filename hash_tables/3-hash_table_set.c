@@ -12,5 +12,15 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
+	unsigned long int index;
 
+	/* check if key is empty or NULL */
+	if (key == NULL || key[0] == '\0')
+		return (0);
+
+	index = key_index((const unsigned char *) key, ht->size);
+
+
+
+	return (1);
 }
