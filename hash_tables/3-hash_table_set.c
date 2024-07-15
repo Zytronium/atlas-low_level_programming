@@ -30,7 +30,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	/* initialize new element */
 	newElement->next = NULL;
-	newElement->key = (char *) key;
+	newElement->key = strdup(key);
 	newElement->value = strdup(value);
 
 	/* handle collisions */
