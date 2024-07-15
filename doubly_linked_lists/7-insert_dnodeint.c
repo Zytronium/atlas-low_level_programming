@@ -12,9 +12,9 @@
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	/*node right before this node*/
+	/* node right before this node */
 	dlistint_t *nodeBeforeIndex = get_dnodeint_at_index(*h, idx - 1);
-	/*existing node at given index*/
+	/* existing node at given index */
 	dlistint_t *nodeAtIndex = get_dnodeint_at_index(*h, idx);
 	/* new node to add */
 	dlistint_t *newNode = malloc(sizeof(dlistint_t));
