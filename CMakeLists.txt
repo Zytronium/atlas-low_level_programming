@@ -8,4 +8,5 @@ add_executable(atlas-low-level-programming
         hash_tables/_putchar.c
         hash_tables/main.c
         hash_tables/0-hash_table_create.c
+        hash_tables/1-djb2.c
 )
