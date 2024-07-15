@@ -17,6 +17,10 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	if (node == NULL)
 		return (-1); /* indicate failure */
 
+	/* set new head to next node if this node is the current head */
+	if (node->prev == NULL)
+		*head = node->next;
+
 	/* set previous node's next ptr to point to the next node (to skip this) */
 	if (node->prev != NULL)
 		node->prev->next = node->next;
