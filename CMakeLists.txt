@@ -10,4 +10,5 @@ add_executable(atlas-low-level-programming
         hash_tables/1-djb2.c
         hash_tables/2-key_index.c
         hash_tables/3-hash_table_set.c
+        hash_tables/4-hash_table_get.c
 )

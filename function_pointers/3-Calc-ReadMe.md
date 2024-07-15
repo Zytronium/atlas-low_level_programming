@@ -60,7 +60,7 @@ This file should contain the 5 following functions (not more):
 ---
 ### **3-get_op_func.c**
 
-This file should contain the function that selects the correct function to perform the operation asked by the user. You’re not allowed to declare any other function.
+This file should contain the function that selects the correct function to perform the operation asked by the user. You're not allowed to declare any other function.
 
 
 - Prototype: `int (*get_op_func(char *s))(int, int);`
