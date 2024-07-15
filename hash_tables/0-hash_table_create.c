@@ -2,13 +2,15 @@
 #include <stdlib.h>
 
 /**
- * main - descr
+ * hash_table_create - creates a new hash_table_t hash table
  *
- * @param1:
+ * @size: size of the array
  *
- * Return: 0 (success)
+ * Return: pointer to the newly created hash table
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	return (EXIT_SUCCESS);
+	hash_table_t *newHashTable;
+
+	return (newHashTable);
 }
