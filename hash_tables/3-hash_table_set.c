@@ -34,7 +34,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	newElement->value = strdup(value);
 
 	/* handle collisions */
-	if (ht->array[index] == NULL)
+	if (ht->array[index] != NULL)
 	{
 		collidedElement = ht->array[index];
 		/* iterate until theres no collision */
