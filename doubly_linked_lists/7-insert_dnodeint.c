@@ -13,30 +13,40 @@
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
 {
+	dlistint_t *nodeBeforeIndex = get_dnodeint_at_index(*head, idx - 1); /*node right before this node*/
 	dlistint_t *nodeAtIndex = get_dnodeint_at_index(*head, idx); /*existing node at given index*/
 	dlistint_t *newNode = malloc(sizeof(dlistint_t)); /* new node to add */
+	int nodeIsTail = (nodeBeforeIndex != NULL && nodeAtIndex == NULL);
 
-	/* malloc fail check, plus check if node at given index exists*/
-	if (newNode == NULL || nodeAtIndex == NULL)
+	/* malloc fail check, plus check if given index is out of bounds */
+	if (newNode == NULL || (!nodeAtIndex && !nodeIsTail))
 		return (NULL); /* return null to indicate failure */
 
 	/* initialize new node at the given index with the given data (n) */
 	newNode->n = n; /* set data */
 	newNode->next = nodeAtIndex; /* place newNode before the existing node */
-	newNode->prev = (nodeAtIndex->prev) ? nodeAtIndex->prev : NULL; /* place newNode before existing node */
+
+	if (nodeIsTail) /* place newNode before existing node */
+		newNode->prev = nodeBeforeIndex;
+	else /* place newNode before existing node */
+		newNode->prev = (nodeAtIndex->prev) ? nodeAtIndex->prev : NULL;
 
 	if (newNode->prev != NULL) /* if newNode is not the head, aka idx != 0, */
 		newNode->prev->next = newNode; /* update nxt ptr of the prv node */
 	else /* else, if nodeAtIndex/newNode is the head, */
 		*head = newNode; /* update list head to point to this */
 
-	nodeAtIndex->prev = newNode;/*place the node previously here after newNode*/
+	if (!nodeIsTail)
+		nodeAtIndex->prev = newNode;/*place the node previously here after newNode*/
 
 	return (newNode);
 }
 
 /**
- * get_dnodeint_at_index - gets the node at the given index
+ * get_dnodeint_at_index - gets the node at the given index.
+ * Unless you have over 2 billion nodes somehow, feeding "-1" into this
+ * should return NULL, not because index of -1 doesnt exist, but because
+ * -1 as an unsigned int is 2 billion something, which shouldn't exist either.
  *
  * @head: the head of the doubly linked list
  * @index: index of the list to find the node at
