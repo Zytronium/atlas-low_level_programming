@@ -65,9 +65,7 @@ hash_node_t *add_node_at_head(hash_node_t **head, hash_node_t *node)
 
 	if (!headIsNull)
 	{
-		temp->key = strdup(head[0]->key);
-		temp->value = strdup(head[0]->value);
-		temp->next = head[0]->next;
+		temp = *head;
 	}
 	else
 	{
