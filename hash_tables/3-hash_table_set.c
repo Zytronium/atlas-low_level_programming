@@ -14,7 +14,7 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	hash_node_t *newElement, *collidedElement = NULL;
+	hash_node_t *newElement;
 
 	/* check if key is empty or NULL */
 	if (key == NULL || key[0] == '\0')
@@ -35,18 +35,57 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	/* handle collisions */
 	if (ht->array[index] != NULL)
-	{
-		collidedElement = ht->array[index];
-		/* iterate until theres no collision */
-		while (collidedElement->next != NULL)
-			collidedElement = collidedElement->next;
-		/* when this loop is over, collidedElement will be the tail node */
-
-		/* add element to the end of the linked list at this idx*/
-		collidedElement->next = newElement;
-	}
+		add_node_at_head(&ht->array[index], newElement);
 	else /* place the element in the array at the correct index */
 		ht->array[index] = newElement;
 
 	return (1);
+}
+
+/**
+ * add_node_at_head - adds a new node to the beginning of a linked list
+ *
+ * @head: the pointer to the head of the list
+ * @node: node to add
+ *
+ * Return: address of the new node, or NULL if it failed
+ */
+hash_node_t *add_node_at_head(hash_node_t **head, hash_node_t *node)
+{
+	hash_node_t *newNode;
+	hash_node_t *temp;
+	int headIsNull = *head == NULL;
+
+	if (node == NULL)
+		return (NULL);
+
+	temp = malloc(sizeof(hash_node_t));
+	if (temp == NULL)
+		return (NULL);
+
+	if (!headIsNull)
+	{
+		temp->key = strdup(head[0]->key);
+		temp->value = strdup(head[0]->value);
+		temp->next = head[0]->next;
+	}
+	else
+	{
+		temp->key = NULL;
+		temp->value = NULL;
+		temp->next = NULL;
+	}
+	newNode = malloc(sizeof(hash_node_t));
+	if (newNode == NULL)
+	{
+		free(temp->key);
+		free(temp->value);
+		free(temp);
+		free(newNode);
+		return (NULL);
+	}
+	newNode = node;
+	newNode->next = temp;
+	*head = newNode;
+	return (newNode);
 }
