@@ -24,7 +24,7 @@ unsigned long int hash_djb2(const unsigned char *key)
 
 	/* generates the hash value based on each character in the string */
 	for (c = key; *c != '\0'; c++)
-		hashValue = (hashValue << 5) + hashValue + *c; /* hashValue * 33 + *c */
+		hashValue = hashValue * 33 + *c;
 
 	return (hashValue);
 }
