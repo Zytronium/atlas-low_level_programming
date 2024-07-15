@@ -17,18 +17,21 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
 	dlistint_t *nodeAtIndex = get_dnodeint_at_index(*head, idx); /*existing node at given index*/
 	dlistint_t *newNode = malloc(sizeof(dlistint_t)); /* new node to add */
 	int nodeIsTail = (nodeBeforeIndex != NULL && nodeAtIndex == NULL);
+	int listIsEmpty = *head == NULL;
 
 	/* malloc fail check, plus check if given index is out of bounds */
-	if (newNode == NULL || (!nodeAtIndex && !nodeIsTail))
+	if (newNode == NULL || (!nodeAtIndex && !nodeIsTail && !listIsEmpty))
 		return (NULL); /* return null to indicate failure */
 
 	/* initialize new node at the given index with the given data (n) */
 	newNode->n = n; /* set data */
 	newNode->next = nodeAtIndex; /* place newNode before the existing node */
-
-	if (nodeIsTail) /* place newNode before existing node */
+	/* place newNode before existing node */
+	if (nodeIsTail) /* if index is at the tail */
 		newNode->prev = nodeBeforeIndex;
-	else /* place newNode before existing node */
+	else if (listIsEmpty) /* if list is empty */
+		newNode->prev = NULL;
+	else /* if list is not empty & index is not at the tail, */
 		newNode->prev = (nodeAtIndex->prev) ? nodeAtIndex->prev : NULL;
 
 	if (newNode->prev != NULL) /* if newNode is not the head, aka idx != 0, */
@@ -36,7 +39,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
 	else /* else, if nodeAtIndex/newNode is the head, */
 		*head = newNode; /* update list head to point to this */
 
-	if (!nodeIsTail)
+	if (!nodeIsTail && !listIsEmpty)
 		nodeAtIndex->prev = newNode;/*place the node previously here after newNode*/
 
 	return (newNode);
