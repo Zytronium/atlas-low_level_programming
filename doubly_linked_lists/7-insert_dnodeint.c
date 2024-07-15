@@ -3,21 +3,25 @@
 /**
  * insert_dnodeint_at_index - inserts a new node at the given index,
  * right before the node that already exists at that index.
- * Note: May not work if head is null or index is tail node.
  *
- * @h: The head of the doubly linked list
+ * @h: The h of the doubly linked list
  * @idx: Index of the list where the new node should be added.
  * @n: The data (node->n) to create the new node with
  *
  * Return: Pointer to the new node, or NULL if it failed
  */
-dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *nodeBeforeIndex = get_dnodeint_at_index(*head, idx - 1); /*node right before this node*/
-	dlistint_t *nodeAtIndex = get_dnodeint_at_index(*head, idx); /*existing node at given index*/
-	dlistint_t *newNode = malloc(sizeof(dlistint_t)); /* new node to add */
+	/*node right before this node*/
+	dlistint_t *nodeBeforeIndex = get_dnodeint_at_index(*h, idx - 1);
+	/*existing node at given index*/
+	dlistint_t *nodeAtIndex = get_dnodeint_at_index(*h, idx);
+	/* new node to add */
+	dlistint_t *newNode = malloc(sizeof(dlistint_t));
+	/* index given is right after current tail node */
 	int nodeIsTail = (nodeBeforeIndex != NULL && nodeAtIndex == NULL);
-	int listIsEmpty = *head == NULL;
+	/* list given was empty (head was null) */
+	int listIsEmpty = *h == NULL;
 
 	/* malloc fail check, plus check if given index is out of bounds */
 	if (newNode == NULL || (!nodeAtIndex && !nodeIsTail && !listIsEmpty))
@@ -26,7 +30,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
 	/* initialize new node at the given index with the given data (n) */
 	newNode->n = n; /* set data */
 	newNode->next = nodeAtIndex; /* place newNode before the existing node */
-	/* place newNode before existing node */
+
+	/* place newNode before existing node - set prev ptr */
 	if (nodeIsTail) /* if index is at the tail */
 		newNode->prev = nodeBeforeIndex;
 	else if (listIsEmpty) /* if list is empty */
@@ -34,13 +39,15 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
 	else /* if list is not empty & index is not at the tail, */
 		newNode->prev = (nodeAtIndex->prev) ? nodeAtIndex->prev : NULL;
 
+	/* place newNode before existing node - set prev node's next ptr */
 	if (newNode->prev != NULL) /* if newNode is not the head, aka idx != 0, */
 		newNode->prev->next = newNode; /* update nxt ptr of the prv node */
 	else /* else, if nodeAtIndex/newNode is the head, */
-		*head = newNode; /* update list head to point to this */
+		*h = newNode; /* update list head to point to this */
 
+	/* place the node previously here after newNode */
 	if (!nodeIsTail && !listIsEmpty)
-		nodeAtIndex->prev = newNode;/*place the node previously here after newNode*/
+		nodeAtIndex->prev = newNode;
 
 	return (newNode);
 }
