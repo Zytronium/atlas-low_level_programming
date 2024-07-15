@@ -65,7 +65,7 @@ hash_node_t *add_node_at_head(hash_node_t **head, hash_node_t *node)
 
 	if (!headIsNull)
 	{
-		temp = *head;
+		*temp = **head;
 	}
 	else
 	{
