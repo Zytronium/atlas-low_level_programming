@@ -27,11 +27,15 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	index = key_index((const unsigned char *) key, ht->size);
 
 	/* initialize new element */
-	newElement->next = NULL;
+	newElement->next = NULL; /* what is this even for? It's in an array, not linked list */
 	newElement->key = (char *) key;
 	newElement->value = (char *) value;
 
-
+	/* put the element into the hash table at the right place */
+	if (ht->array[index] != NULL) /* check for collision */
+	{} /* handle collision */
+	else
+		ht->array[index] = newElement;
 
 	return (1);
 }
