@@ -1,7 +1,9 @@
 #include "lists.h"
 
 /**
- * insert_dnodeint_at_index - inserts a new node at the given index
+ * insert_dnodeint_at_index - inserts a new node at the given index,
+ * right before the node that already exists at that index.
+ * Note: May not work if head is null or index is tail node.
  *
  * @h: The head of the doubly linked list
  * @idx: Index of the list where the new node should be added.
@@ -9,9 +11,20 @@
  *
  * Return: Pointer to the new node, or NULL if it failed
  */
-dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
 {
-	dlistint_t *newNode;
+	dlistint_t *nodeAtIndex = get_dnodeint_at_index(*head, idx); /*existing node at given index*/
+	dlistint_t *newNode = malloc(sizeof(dlistint_t)); /* new node to add */
+
+	/* malloc fail check, plus check if node at given index exists*/
+	if (newNode == NULL || nodeAtIndex == NULL)
+		return (NULL); /* return null to indicate failure */
+
+	/* initialize new node at the given index with the given data (n) */
+	newNode->n = n; /* set data */
+	newNode->next = nodeAtIndex; /* place newNode before the existing node */
+	newNode->prev = nodeAtIndex->prev; /* place newNode before existing node */
+	nodeAtIndex->prev = newNode;/*place the node previously here after newNode*/
 
 	return (newNode);
 }
