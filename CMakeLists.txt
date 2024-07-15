@@ -4,14 +4,8 @@ project(atlas-low-level-programming C)
 set(CMAKE_C_STANDARD 90)
 
 add_executable(atlas-low-level-programming
-        doubly_linked_lists/0-print_dlistint.c
-        doubly_linked_lists/main.c
-        doubly_linked_lists/1-dlistint_len.c
-        doubly_linked_lists/2-add_dnodeint.c
-        doubly_linked_lists/lists.h
-        doubly_linked_lists/3-add_dnodeint_end.c
-        doubly_linked_lists/4-free_dlistint.c
-        doubly_linked_lists/5-get_dnodeint.c
-        doubly_linked_lists/6-sum_dlistint.c
-        doubly_linked_lists/7-insert_dnodeint.c
-        doubly_linked_lists/8-delete_dnodeint.c)
+        hash_tables/hash_tables.h
+        hash_tables/_putchar.c
+        hash_tables/main.c
+        hash_tables/0-hash_table_create.c
+)
