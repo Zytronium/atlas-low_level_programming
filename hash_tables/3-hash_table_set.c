@@ -33,9 +33,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	newElement->key = strdup(key);
 	newElement->value = strdup(value);
 
-	/* place the element in the array at the correct index */
-	add_node_at_head(&ht->array[index], newElement);
-	/* presumably, this also handles collisions */
+	/* handle collisions */
+	if (ht->array[index] != NULL)
+		add_node_at_head(&ht->array[index], newElement);
+	else /* place the element in the array at the correct index */
+		ht->array[index] = newElement;
 
 	return (1);
 }
