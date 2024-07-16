@@ -9,7 +9,7 @@
  */
 void hash_table_delete(hash_table_t *ht)
 {
-	hash_node_t *node, *prevNode;
+	hash_node_t *node, *nextNode;
 	unsigned long int i;
 
 	if (ht == NULL)
@@ -23,12 +23,12 @@ void hash_table_delete(hash_table_t *ht)
 		/* iterate over each item in each linked list in the array */
 		while (node != NULL)
 		{
-			prevNode = node; /* this is so we can free node after we iterate */
+			nextNode = node->next; /* this is so we can free node after we iterate */
 			/* free node */
 			free(node->key); /* free key */
 			free(node->value); /* free value */
-			node = node->next; /* iterate */
-			free(prevNode); /* free node */
+			free(node); /* free node */
+			node = nextNode; /* iterate */
 		}
 		free(node);
 	}
