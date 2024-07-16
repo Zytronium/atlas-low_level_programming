@@ -19,10 +19,11 @@ void hash_table_delete(hash_table_t *ht)
 
 	list = ht->array[0];
 
+	/* iterate over each list in array */
 	for (i = 0; i <= ht->size; list = ht->array[i])
 	{
 		node = list;
-		/* iterate over each linked list in the array */
+		/* iterate over each item in each linked list in the array */
 		while (node != NULL)
 		{
 			prevNode = node; /* this is so we can free node after we iterate */
