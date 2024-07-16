@@ -30,7 +30,6 @@ void hash_table_delete(hash_table_t *ht)
 			free(node); /* free node */
 			node = nextNode; /* iterate */
 		}
-		free(node);
 	}
 
 	/* free table and array */
