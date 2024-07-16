@@ -2,13 +2,14 @@
 #include <stdlib.h>
 
 /**
- * main - creates a hashtag-shaped grid hash table, like for tic-tac-toe
+ * hashtag_table_create - creates a hashtag-shaped
+ * grid hash table, like for tic-tac-toe
  *
- * @param1:
- *
- * Return: 0 (success)
+ * Return:ptr to new hash table
  */
-int main(void)
+hash_table_t *hashtag_table_create(void)
 {
-	return (EXIT_SUCCESS);
+	hash_table_t *hashtagTable;
+	/* This is pointless. Just use a 2D array. */
+	return (hashtagTable);
 }

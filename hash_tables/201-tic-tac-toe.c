@@ -21,5 +21,6 @@ typedef struct move_t {
  */
 char tic_tac_toe_move(hash_table_t board, move_t move)
 {
-	return ('#');
+	/* Never gonna actually do this. Not soon, anyway. */
+	return ('#'); /* the move was made successfully and the game has not ended */
 }
