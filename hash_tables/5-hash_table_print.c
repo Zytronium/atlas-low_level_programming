@@ -8,5 +8,25 @@
  */
 void hash_table_print(const hash_table_t *ht)
 {
+	hash_node_t *list, *node;
+	int i;
 
+	if (ht == NULL)
+		return;
+
+	list = ht->array[0];
+	node = list;
+
+	/* iterate over ht->array */
+	for (i = 0; i <= ht->size && list != NULL; list = ht->array[i])
+	{
+		/* iterate over each linked list in the array */
+		while (node != NULL)
+		{
+			/* print item contents */
+			/*WIP*/
+
+			node = node->next;
+		}
+	}
 }
