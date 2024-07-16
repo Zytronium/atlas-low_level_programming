@@ -10,7 +10,7 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	hash_node_t *list, *node;
-	int i, lastElmnt = 0;
+	int i, firstElmnt = 1;
 
 	if (ht == NULL)
 		return;
@@ -24,16 +24,10 @@ void hash_table_print(const hash_table_t *ht)
 		node = list;
 		/* iterate over each linked list in the array */
 		while (node != NULL)
-		{
-			/*
-			 * TODO: add variable to determine if this s the last item
-			 *  in the array
-			 */
-
-			/* print item contents */
-			printf("'%s': '%s'%s", node->key, node->value,
-				   (!lastElmnt) ? ", " : ""); /* add commas where needed */
-
+		{	/* print item contents */
+			printf("%s'%s': '%s'", (!firstElmnt) ? ", " : "", node->key,
+				   node->value);
+			firstElmnt = 0;
 			node = node->next;
 		}
 		i++;
