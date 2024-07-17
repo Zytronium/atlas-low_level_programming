@@ -28,15 +28,15 @@ uploaded that you should watch: https://www.youtube.com/watch?v=pyoURHR-g4U ;-)
   - [C - Function pointers](https://github.com/Zytronium/atlas-low_level_programming/tree/main/function_pointers)
   - [C - Variadic functions](https://github.com/Zytronium/atlas-low_level_programming/tree/main/variadic_functions)
 - ### `PP1200`
-  - ###### [C - printf](https://github.com/Zytronium/printf) (group project)
+  - #### [C - printf](https://github.com/Zytronium/printf)
   - [C - Singly linked lists](https://github.com/Zytronium/atlas-low_level_programming/tree/main/singly_linked_lists)
   - [C - More singly linked lists](https://github.com/Zytronium/atlas-low_level_programming/tree/main/more_singly_linked_lists)
   - [C - Bit manipulation](https://github.com/Zytronium/atlas-low_level_programming/tree/main/bit_manipulation) (That's a bit manipulative, don't you think?)
   - [C - File I/O](https://github.com/Zytronium/atlas-low_level_programming/tree/main/file_io) (Good thing it's not Shell I/O task number 7. There's only ~~4~~ 3 tasks including task 0.)
 - ### `PP1300`
   - [C - Doubly linked lists](https://github.com/Zytronium/atlas-low_level_programming/tree/main/doubly_linked_lists)
-  - [C - Hash tables](https://github.com/Zytronium/atlas-low_level_programming/tree/main/hash_tables) *[^1]
-  - ###### [C - Simple shell]() (But not I/O task number 7... Right?)
+  - [C - Hash tables](https://github.com/Zytronium/atlas-low_level_programming/tree/main/hash_tables)
+  - #### [C - Simple shell](https://github.com/Zytronium/atlas-simple_shell) (But not I/O task number 7... Right?) *[^1]
   - [C - Stacks, Queues - LIFO, FIFO]()
   - [C - Sorting algorithms & Big O]()
   - [C - Search Algorithms]()
