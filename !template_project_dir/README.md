@@ -1,9 +1,12 @@
 # Readme Project Name
-###### insert joke here
-Insert 2-part joke answer here
+Insert joke here
+###### Insert 2-part joke answer here
 
 ---
-Description of this project and the concepts covered in it. 
+###### Description of this project and the concepts covered in it.
+ 
+
+---
 
 Examples of this concept.
 
