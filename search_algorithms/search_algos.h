@@ -2,7 +2,6 @@
 #define MAIN_H
 
 /* ↓ LIBRARIES ↓ */
-#include <stdlib.h>
 #include <stdio.h>
 /* ------------------- */
 
@@ -11,7 +10,7 @@
 /* ------------------- */
 
 /* ↓ FUNCTIONS ↓ */
-int _putchar(char c);
+int linear_search(int *array, size_t size, int value);
 /* ------------------- */
 
 #endif /* MAIN_H */
