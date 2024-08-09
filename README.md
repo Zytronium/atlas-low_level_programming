@@ -38,8 +38,8 @@ uploaded that you should watch: https://www.youtube.com/watch?v=pyoURHR-g4U ;-)
   - [C - Hash tables](https://github.com/Zytronium/atlas-low_level_programming/tree/main/hash_tables)
   - #### [C - Simple shell](https://github.com/Zytronium/atlas-simple_shell) (But not I/O task number 7... Right?)
   - [C - Stacks, Queues - LIFO, FIFO](https://github.com/Zytronium/atlas-monty)
-  - [C - Sorting algorithms & Big O](https://github.com/Zytronium/atlas-sorting_algorithms) *[^1]
-  - [C - Search Algorithms]()
+  - [C - Sorting algorithms & Big O](https://github.com/Zytronium/atlas-sorting_algorithms)
+  - [C - Search Algorithms](https://github.com/Zytronium/atlas-low_level_programming/tree/main/search_algorithms) *[^1]
   - [C - Binary Trees]()
 
 ---

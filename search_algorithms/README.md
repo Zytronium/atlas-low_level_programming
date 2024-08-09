@@ -1,5 +1,5 @@
 # C - Search Algorithms
-###### I need an algorithm to search for projectsin this repo
+###### I need an algorithm to search for projects in this repo
 
 ---
 ## Compiling and Running (Linux/WSL with Bash):
