@@ -38,28 +38,14 @@ end of the command will run the program with Valgrind memcheck.
 
 ---
 
-###### Description of this project and the concepts covered in it.
+### Project Description and Concepts
 
-###### This readme is a template. It should be filled in properly later.
-
----
-
-Examples of this concept.
-
-```c
-float primary(NULL)
-{
-	writef("Goodbye, user. I must terminate now."
-		   "It's been a fun 3 milliseconds!\n");
-	exit(RETURN_SUCCESS);
-}
-
-```
-Example output:
-```
-margorP\.
-Goodbye, user. I must terminate now. It's been a
- fun 3 milliseconds!
-
-Program terminated with exit code 0.
-```
+Search algorithms are algorithms that search for a given element in a list
+of items. There are a couple different widely used search algorithms (or at
+the ones used in this project), which are Linear and Binary. Linear search
+algorithms simply search one by one in order from the beginning to end until
+they find the given item or reach the end of the list. Binary search algorithms
+are usually faster because they perform fewer operations to find the average
+item, assuming the list is pre-sorted from least to greatest. Binary search
+algorithms move by half of the remaining list, check if the value is equal,
+less than, or greater than the value its searching for, and repeats.
