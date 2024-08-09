@@ -18,17 +18,15 @@ int linear_search(int *array, size_t size, int value)
 	if (array == NULL)
 		return (-1); /* indicate failure */
 
-	while (i <= size)
+	while (i < size)
 	{
 		printf("Value checked array[%d] = [%d]\n", i, array[i]);
+
 		if (array[i] == value)
-		{
-			printf("Found %d at index: %d\n", value, i);
 			return (i); /* return index of value found */
-		}
+
 		i++;
 	}
 
-	printf("Could not find value %d\n", value);
 	return (-1); /* indicate value was not found */
 }
