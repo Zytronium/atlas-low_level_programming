@@ -7,4 +7,5 @@ add_executable(atlas-low-level-programming
         search_algorithms/search_algos.h
         search_algorithms/0-linear.c
         search_algorithms/main.c
+        search_algorithms/1-binary.c
 )
