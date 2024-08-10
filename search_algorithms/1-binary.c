@@ -37,12 +37,12 @@ int binary_search(int *array, size_t size, int value)
 		if (array[i] > value)
 		{
 			i -= size;
-			max = i + (size / 2);
+			min = i - size;
 		}
 		else
 		{
 			i += size;
-			min = i - (size / 2);
+			max = i + size;
 		}
 	}
 
