@@ -23,7 +23,7 @@ int binary_search(int *array, size_t size, int value)
 
 	while (size > 0)
 	{
-		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
+		print_search(array, i, size);
 
 		if (array[i] == value) /* value found */
 			return ((int) i); /* return index of value found */
@@ -37,4 +37,16 @@ int binary_search(int *array, size_t size, int value)
 	}
 
 	return (-1); /* indicate value was not found */
+}
+
+void print_search(const int *array, size_t i, size_t size)
+{
+	int j = 0;
+	printf("Searching in array: ");
+
+	while (j++)
+	{
+
+	}
+	putchar('\n');
 }
