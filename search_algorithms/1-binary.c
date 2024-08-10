@@ -27,7 +27,8 @@ int binary_search(int *array, size_t size, int value)
 	size--;
 	while (size > 0)
 	{
-		print_search(array, min, max);
+		if (min < max)
+			print_search(array, min, max);
 
 		if (array[i] == value) /* value found */
 			return ((int) i); /* return index of value found */
@@ -37,7 +38,7 @@ int binary_search(int *array, size_t size, int value)
 		if (array[i] > value)
 		{
 			i -= size;
-			min = size + 1;
+			min = size;
 		}
 		else
 		{
