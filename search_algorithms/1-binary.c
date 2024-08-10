@@ -24,25 +24,28 @@ int binary_search(int *array, size_t size, int value)
 	if (array == NULL)
 		return (-1); /* indicate failure */
 
+	size--;
 	while (size > 0)
 	{
-		print_search(array, min, max);
-
 		if (array[i] == value) /* value found */
+		{
+			print_search(array, min, max);
 			return ((int) i); /* return index of value found */
+		}
 
 		size /= 2;
 
 		if (array[i] > value)
 		{
+			max = i;
 			i -= size;
-			max -= size;
 		}
 		else
 		{
+			min = i;
 			i += size;
-			min += size;
 		}
+		print_search(array, min, max);
 	}
 
 	return (-1); /* indicate value was not found */
