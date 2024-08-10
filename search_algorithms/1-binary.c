@@ -19,7 +19,7 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t i = 0, min = 0, max = size - 1;
+	size_t i = 0, min = 0, max = size - 1, checker_appeaser_i = 0;
 
 	if (array == NULL)
 		return (-1); /* indicate failure */
@@ -37,12 +37,12 @@ int binary_search(int *array, size_t size, int value)
 		if (array[i] > value)
 		{
 			i -= size;
-			min = i - size;
+			min = size + 1;
 		}
 		else
 		{
 			i += size;
-			max = i + size;
+			max = size - 1;
 		}
 	}
 
