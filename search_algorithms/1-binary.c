@@ -7,9 +7,6 @@
  * Assumes the array is sorted from least to greatest
  * and that the given value only appears at most once
  *
- * If you do not print as you search, the min and max
- * variables are not needed, and they can be removed.
- *
  * @array: the array to search in
  * @size: the size of the array
  * @value: the value to search for
@@ -21,27 +18,46 @@ int binary_search(int *array, size_t size, int value)
 {
 	size_t i = 0, range = size - 1, min = 0, max = range;
 
-	if (array == NULL)
+	if (array == NULL || size == 0)
 		return (-1); /* indicate failure */
 
-	while (range > 0 && i < size)
+	while (range > 0 && i < size && i >= min && i <= max)
 	{
-		print_search(array, min, max);
 
 		if (array[i] == value) /* value found */
+		{
+			/*debug_print(min, max, i);*/
+			print_search(array, min, max);
 			return ((int) i); /* return index of value found */
+		}
 
 		if (array[i] > value)
 		{
-			max = i;
+			if (max != i)
+			{
+				/*debug_print(min, max, i);*/
+				print_search(array, min, max);
+				max = i - 1;
+			}
 			i -= range / 2;
 		}
 		else
 		{
-			min = i;
+			if (min != i)
+			{
+				/*debug_print(min, max, i);*/
+				print_search(array, min, max);
+				min = i + 1;
+			}
 			i += range / 2;
 		}
 		range = max - min;
+	}
+	/*debug_print(min, max, i);*/
+	if (array[i] == value && i >= min && i <= max) /* value found */
+	{
+		print_search(array, min, max);
+		return ((int) i); /* return index of value found */
 	}
 
 	return (-1); /* indicate value was not found */
@@ -69,3 +85,15 @@ void print_search(const int *array, size_t min, size_t max)
 	}
 	putchar('\n');
 }
+
+/**
+ * debug_print - print debug stuff
+ *
+ * @min: value of min to print
+ * @max: value of max to print
+ * @i: value of i to print
+ */
+/*void debug_print(size_t min, size_t max, size_t i)
+{
+	printf("min: %d\tmax: %d\ti: %d\n", (int) min, (int) max, (int) i);
+}*/
