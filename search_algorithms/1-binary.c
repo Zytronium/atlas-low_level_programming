@@ -23,10 +23,8 @@ int binary_search(int *array, size_t size, int value)
 
 	while (range > 0 && i < size && i >= min && i <= max)
 	{
-
 		if (array[i] == value) /* value found */
 		{
-			/*debug_print(min, max, i);*/
 			print_search(array, min, max);
 			return ((int) i); /* return index of value found */
 		}
@@ -35,7 +33,6 @@ int binary_search(int *array, size_t size, int value)
 		{
 			if (max != i)
 			{
-				/*debug_print(min, max, i);*/
 				print_search(array, min, max);
 				max = i - 1;
 			}
@@ -48,7 +45,6 @@ int binary_search(int *array, size_t size, int value)
 		{
 			if (min != i)
 			{
-				/*debug_print(min, max, i);*/
 				print_search(array, min, max);
 				min = i + 1;
 			}
@@ -59,7 +55,6 @@ int binary_search(int *array, size_t size, int value)
 		}
 		range = max - min;
 	}
-	/*debug_print(min, max, i);*/
 	if (array[i] == value && i >= min && i <= max) /* value found */
 	{
 		print_search(array, min, max);
@@ -91,15 +86,3 @@ void print_search(const int *array, size_t min, size_t max)
 	}
 	putchar('\n');
 }
-
-/**
- * debug_print - print debug stuff
- *
- * @min: value of min to print
- * @max: value of max to print
- * @i: value of i to print
- */
-/*void debug_print(size_t min, size_t max, size_t i)
-{
-	printf("min: %d\tmax: %d\ti: %d\n", (int) min, (int) max, (int) i);
-}*/
