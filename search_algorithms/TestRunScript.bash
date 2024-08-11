@@ -11,7 +11,7 @@ if [ "$1" == "valgrind" ]   #checks if the first arg to this script is 'valgrind
 then
   valgrind --leak-check=full --show-reachable=yes --track-origins=yes -s ./testRun  #runs the program with valgrind (usage: "./TestRunScript.bash valgrind")
 else
-  ./testRun   #runs the program (usage: "./TestRunScript.bash")
+  timeout 10 bash -c ./testRun   #runs the program (usage: "./TestRunScript.bash")
 fi
 exitcode=$?   #save exit code
 echo  #blank line, to separate the running program from everything else

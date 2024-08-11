@@ -39,7 +39,10 @@ int binary_search(int *array, size_t size, int value)
 				print_search(array, min, max);
 				max = i - 1;
 			}
-			i -= range / 2;
+			if (range == 1)
+				i--;
+			else
+				i -= range / 2;
 		}
 		else
 		{
@@ -49,7 +52,10 @@ int binary_search(int *array, size_t size, int value)
 				print_search(array, min, max);
 				min = i + 1;
 			}
-			i += range / 2;
+			if (range == 1)
+				i++;
+			else
+				i += range / 2;
 		}
 		range = max - min;
 	}
