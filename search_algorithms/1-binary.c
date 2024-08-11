@@ -20,7 +20,6 @@ int binary_search(int *array, size_t size, int value)
 
 	if (array == NULL || size == 0)
 		return (-1); /* indicate failure */
-
 	while (range > 0 && i < size && i >= min && i <= max)
 	{
 		if (array[i] == value) /* value found */
@@ -28,31 +27,10 @@ int binary_search(int *array, size_t size, int value)
 			print_search(array, min, max);
 			return ((int) i); /* return index of value found */
 		}
-
 		if (array[i] > value)
-		{
-			if (max != i)
-			{
-				print_search(array, min, max);
-				max = i - 1;
-			}
-			if (range == 1)
-				i--;
-			else
-				i -= range / 2;
-		}
+		search_less_than
 		else
-		{
-			if (min != i)
-			{
-				print_search(array, min, max);
-				min = i + 1;
-			}
-			if (range == 1)
-				i++;
-			else
-				i += range / 2;
-		}
+		search_greater_than
 		range = max - min;
 	}
 	if (array[i] == value && i >= min && i <= max) /* value found */
@@ -60,7 +38,6 @@ int binary_search(int *array, size_t size, int value)
 		print_search(array, min, max);
 		return ((int) i); /* return index of value found */
 	}
-
 	return (-1); /* indicate value was not found */
 }
 

@@ -9,6 +9,30 @@
 
 /* ------------------- */
 
+#define search_greater_than {\
+            if (min != i)\
+            {\
+                print_search(array, min, max);\
+                min = i + 1;\
+            }\
+            if (range == 1)\
+                i++;\
+            else\
+                i += range / 2;\
+        }
+
+#define search_less_than {\
+            if (max != i)\
+            {\
+                print_search(array, min, max);\
+                max = i - 1;\
+            }\
+            if (range == 1)\
+                i--;\
+            else\
+                i -= range / 2;\
+        }
+
 /* ↓ FUNCTIONS ↓ */
 int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
