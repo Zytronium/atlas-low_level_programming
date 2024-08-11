@@ -24,7 +24,7 @@ int binary_search(int *array, size_t size, int value)
 	if (array == NULL)
 		return (-1); /* indicate failure */
 
-	while (range > 0 && i >= 0 && i < size)
+	while (range > 0 && i < size)
 	{
 		print_search(array, min, max);
 
