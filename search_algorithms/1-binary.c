@@ -46,8 +46,16 @@ int binary_search(int *array, size_t size, int value)
 	return (-1); /* indicate value was not found */
 }
 
-void
-iterate_up(const int *array, size_t range, size_t max, size_t *i, size_t *min)
+/**
+ * iterate_up - iterate up in the array
+ * @array: array to iterate through
+ * @range: current range from min to max
+ * @min: current min
+ * @i: iterator variable to change
+ * @max: current max
+ */
+void iterate_up(const int *array, size_t range, size_t max, size_t *i,
+				size_t *min)
 {
 	if ((*min) != (*i))
 	{
@@ -60,6 +68,14 @@ iterate_up(const int *array, size_t range, size_t max, size_t *i, size_t *min)
 		(*i) += range / 2;
 }
 
+/**
+ * iterate_down - iterate down in the array
+ * @array: array to iterate through
+ * @range: current range from min to max
+ * @min: current min
+ * @i: iterator variable to change
+ * @max: current max
+ */
 void iterate_down(const int *array, size_t range, size_t min, size_t *i,
 				  size_t *max)
 {
