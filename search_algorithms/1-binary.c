@@ -20,43 +20,23 @@ int binary_search(int *array, size_t size, int value)
 
 	if (array == NULL || size == 0)
 		return (-1); /* indicate failure */
+
 	while (range > 0 && i < size && i >= min && i <= max)
 	{
 		if (array[i] == value) /* value found */
 		{
-			/*debug_print(min, max, i);*/
 			print_search(array, min, max);
 			return ((int) i); /* return index of value found */
 		}
+
 		if (array[i] > value)
-		{
-			if (max != i)
-			{
-				/*debug_print(min, max, i);*/
-				print_search(array, min, max);
-				max = i - 1;
-			}
-			if (range == 1)
-				i--;
-			else
-				i -= range / 2;
-		}
+			iterate_down(array, range, min, &i, &max);
 		else
-		{
-			if (min != i)
-			{
-				/*debug_print(min, max, i);*/
-				print_search(array, min, max);
-				min = i + 1;
-			}
-			if (range == 1)
-				i++;
-			else
-				i += range / 2;
-		}
+			iterate_up(array, range, max, &i, &min);
+
 		range = max - min;
 	}
-	/*debug_print(min, max, i);*/
+
 	if (array[i] == value && i >= min && i <= max) /* value found */
 	{
 		print_search(array, min, max);
@@ -64,6 +44,34 @@ int binary_search(int *array, size_t size, int value)
 	}
 
 	return (-1); /* indicate value was not found */
+}
+
+void
+iterate_up(const int *array, size_t range, size_t max, size_t *i, size_t *min)
+{
+	if ((*min) != (*i))
+	{
+		print_search(array, (*min), max);
+		(*min) = (*i) + 1;
+	}
+	if (range == 1)
+		(*i)++;
+	else
+		(*i) += range / 2;
+}
+
+void iterate_down(const int *array, size_t range, size_t min, size_t *i,
+				  size_t *max)
+{
+	if ((*max) != (*i))
+	{
+		print_search(array, min, (*max));
+		(*max) = (*i) - 1;
+	}
+	if (range == 1)
+		(*i)--;
+	else
+		(*i) -= range / 2;
 }
 
 /**
@@ -88,15 +96,3 @@ void print_search(const int *array, size_t min, size_t max)
 	}
 	putchar('\n');
 }
-
-/**
- * debug_print - print debug stuff
- *
- * @min: value of min to print
- * @max: value of max to print
- * @i: value of i to print
- */
-/*void debug_print(size_t min, size_t max, size_t i)
-{
-	printf("min: %d\tmax: %d\ti: %d\n", (int) min, (int) max, (int) i);
-}*/
