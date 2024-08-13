@@ -39,11 +39,9 @@ uploaded that you should watch: https://www.youtube.com/watch?v=pyoURHR-g4U ;-)
   - #### [C - Simple shell](https://github.com/Zytronium/atlas-simple_shell) (But not I/O task number 7... Right?)
   - [C - Stacks, Queues - LIFO, FIFO](https://github.com/Zytronium/atlas-monty)
   - [C - Sorting algorithms & Big O](https://github.com/Zytronium/atlas-sorting_algorithms)
-  - [C - Search Algorithms](https://github.com/Zytronium/atlas-low_level_programming/tree/main/search_algorithms) *[^1]
-  - [C - Binary Trees]()
+  - [C - Search Algorithms](https://github.com/Zytronium/atlas-low_level_programming/tree/main/search_algorithms)
+  - [C - Binary Trees](https://github.com/Zytronium/atlas-binary_trees)
 
 ---
 ###### <sup><sub>There's something really satisfying about a ReadMe like this one. [**_~~`I love formatting`~~_**.](https://github.com/lifeparticle/Markdown-Cheatsheet?tab=readme-ov-file#introduction)</sub></sup>
-
-[^1]: \* <sup><sub>: _As of the most recent readme update, this is where I am. Nothing below here exists yet._</sub></sup>
 - - -
