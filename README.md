@@ -7,6 +7,22 @@ If you are reading this and are another student, and are here to copy and cheat,
 uploaded that you should watch: https://www.youtube.com/watch?v=pyoURHR-g4U ;-)
 
 ---
+<details>
+<summary>Projects Key</summary>
+
+- ### `Course Name`
+  - [Project (with link to its directory or repo on GitHub)]()
+  - #### [Group Project (with link to its repo)]()
+  - [Single Project Split into Multiple Directories for Organization) (link to first part)]()
+    - [Project part 1]()
+    - [Project part 2]()
+
+*Projects are in chronological order, and are separated by courses, but not by sprints.*
+
+###### *I wanted to make the courses dropdown menus like this key, but I'd have to do weird looking formatting to keep the style of the course names.*
+</details>
+
+---
 # Projects:
 - ### `PP1000`
   - [C - Hello, World](https://github.com/Zytronium/atlas-low_level_programming/tree/main/hello_world)
