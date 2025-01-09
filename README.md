@@ -69,7 +69,7 @@ uploaded that you should watch: https://www.youtube.com/watch?v=pyoURHR-g4U ;-)
 ---
 
 - ### `LP1000`
-  - ***[C - Makefiles](makefiles)***
+  - **[C - Makefiles](makefiles)**
   - *[C - Static variables, getline]()*
 
 
